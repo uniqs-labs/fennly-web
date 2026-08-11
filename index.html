@@ -53,8 +53,8 @@
   h1 em{font-style:normal;color:var(--sage)}
   .lede{font-size:19px;color:var(--muted);margin:0 0 26px;max-width:30em}
   .hero-shot{position:relative}
-  .hero-shot img{width:100%;max-width:330px;margin:0 auto;border-radius:26px;
-    box-shadow:0 24px 60px -18px rgba(42,38,34,.32)}
+  .hero-shot img{width:100%;max-width:392px;margin:0 auto;border-radius:20px;border:1px solid var(--line);
+    box-shadow:0 22px 54px -20px rgba(42,38,34,.28)}
 
   /* store buttons */
   .stores{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px}
@@ -78,12 +78,12 @@
 
   .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
   .step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
-    padding:24px 22px 0;overflow:hidden}
+    padding:24px 22px;overflow:hidden}
   .num{width:30px;height:30px;border-radius:9px;background:var(--sage);color:#fff;
     display:grid;place-items:center;font-weight:700;font-size:15px;margin-bottom:14px}
   .step h3{margin:0 0 7px;font-size:19px;letter-spacing:-.3px}
-  .step p{margin:0 0 20px;color:var(--muted);font-size:15.5px}
-  .step img{border-radius:14px 14px 0 0;box-shadow:0 -1px 0 var(--line)}
+  .step p{margin:0 0 18px;color:var(--muted);font-size:15.5px}
+  .step img{border-radius:12px;border:1px solid var(--line)}
 
   .feats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   .feat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
@@ -93,8 +93,8 @@
   .split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;
     background:var(--card);border:1px solid var(--line);border-radius:26px;
     padding:44px;margin-bottom:22px}
-  .split img{max-width:300px;border-radius:20px;margin:0 auto;
-    box-shadow:0 18px 44px -16px rgba(42,38,34,.26)}
+  .split img{max-width:352px;border-radius:18px;margin:0 auto;border:1px solid var(--line);
+    box-shadow:0 16px 40px -18px rgba(42,38,34,.22)}
   .split h2{font-size:clamp(23px,2.8vw,29px)}
   .split p{color:var(--muted);margin:0}
 
@@ -132,7 +132,7 @@
     .lede{margin-left:auto;margin-right:auto}
     .stores{justify-content:center}
     .hero-shot{order:-1}
-    .hero-shot img{max-width:250px}
+    .hero-shot img{max-width:300px}
     .steps,.feats{grid-template-columns:1fr}
     .split{grid-template-columns:1fr;padding:30px;text-align:center;gap:28px}
     .split .txt{order:2}
@@ -174,7 +174,7 @@
       </div>
       <p class="trust"><b>Free to download.</b> Your data stays in the EU. Delete it any time.</p>
     </div>
-    <div class="hero-shot"><img src="assets/suspects.webp" alt="Fennly showing ranked suspected food triggers, with lactose at the top" width="560" height="1211" fetchpriority="high"></div>
+    <div class="hero-shot"><img src="assets/suspects.webp" alt="Fennly showing ranked suspected food triggers, with lactose at the top" width="620" height="829" fetchpriority="high"></div>
   </div>
 
   <section>
@@ -187,19 +187,19 @@
         <div class="num">1</div>
         <h3>Snap your meal</h3>
         <p>Fennly recognises the dish and splits it into ingredients with their trigger categories. It knows a pizza is dough, cheese and tomato.</p>
-        <img src="assets/capture.webp" alt="Meal photo broken down into detected ingredients" loading="lazy" width="560" height="1211">
+        <img src="assets/capture.webp" alt="Meal photo broken down into detected ingredients" loading="lazy" width="620" height="1046">
       </div>
       <div class="step">
         <div class="num">2</div>
         <h3>Say how you feel</h3>
         <p>Ten seconds in the evening. Bloating, cramps, fatigue, headache, skin. Or an acute entry the moment it hits.</p>
-        <img src="assets/log.webp" alt="Logging options: photo, voice, text, evening recap, acute entry" loading="lazy" width="560" height="1211">
+        <img src="assets/log.webp" alt="Logging options: photo, voice, text, evening recap, acute entry" loading="lazy" width="620" height="689">
       </div>
       <div class="step">
         <div class="num">3</div>
         <h3>Meet your suspects</h3>
         <p>After a few days Fennly ranks what is statistically most likely behind your symptoms, with a confidence score for each.</p>
-        <img src="assets/suspects.webp" alt="Ranked list of suspected triggers with confidence scores" loading="lazy" width="560" height="1211">
+        <img src="assets/suspects.webp" alt="Ranked list of suspected triggers with confidence scores" loading="lazy" width="620" height="829">
       </div>
     </div>
   </section>
@@ -225,10 +225,10 @@
         <h2>A hunch is not an answer. So Fennly tests it.</h2>
         <p>When a suspect is strong enough, Fennly walks you through a proper elimination and reintroduction test: cut it for a set window, then bring it back, and read the verdict. That is the same method a dietitian would use, minus the paperwork.</p>
       </div>
-      <img src="assets/test.webp" alt="Guided elimination test for lactose over seven days" loading="lazy" width="560" height="1211">
+      <img src="assets/test.webp" alt="Guided elimination test for lactose over seven days" loading="lazy" width="620" height="1047">
     </div>
     <div class="split">
-      <img src="assets/withwithout.webp" alt="Comparison of symptom load on days with and without a suspected trigger" loading="lazy" width="560" height="1211">
+      <img src="assets/withwithout.webp" alt="Comparison of symptom load on days with and without a suspected trigger" loading="lazy" width="620" height="1066">
       <div class="txt">
         <h2>See the difference, do not just feel it</h2>
         <p>Days with the suspect against days without, side by side. It is the moment most people stop guessing, and the chart you can hand to your doctor instead of trying to remember what you ate three Tuesdays ago.</p>
@@ -300,7 +300,7 @@
       </div>
       <p class="trust"><b>Kostenlos laden.</b> Deine Daten liegen in der EU. Jederzeit löschbar.</p>
     </div>
-    <div class="hero-shot"><img src="assets/suspects.webp" alt="Fennly zeigt die wahrscheinlichsten Auslöser, ganz oben Laktose" width="560" height="1211"></div>
+    <div class="hero-shot"><img src="assets/suspects.webp" alt="Fennly zeigt die wahrscheinlichsten Auslöser, ganz oben Laktose" width="620" height="829"></div>
   </div>
 
   <section>
@@ -313,19 +313,19 @@
         <div class="num">1</div>
         <h3>Mahlzeit fotografieren</h3>
         <p>Fennly erkennt das Gericht und zerlegt es in Zutaten mit ihren Auslöser-Kategorien. Es weiß, dass eine Pizza aus Teig, Käse und Tomate besteht.</p>
-        <img src="assets/capture.webp" alt="Foto einer Mahlzeit, aufgeschlüsselt in erkannte Zutaten" loading="lazy" width="560" height="1211">
+        <img src="assets/capture.webp" alt="Foto einer Mahlzeit, aufgeschlüsselt in erkannte Zutaten" loading="lazy" width="620" height="1046">
       </div>
       <div class="step">
         <div class="num">2</div>
         <h3>Befinden erfassen</h3>
         <p>Zehn Sekunden am Abend. Blähbauch, Krämpfe, Müdigkeit, Kopfschmerzen, Haut. Oder ein Akuteintrag genau dann, wenn es losgeht.</p>
-        <img src="assets/log.webp" alt="Erfassungsoptionen: Foto, Sprache, Text, Abend-Rückblick, Akuteintrag" loading="lazy" width="560" height="1211">
+        <img src="assets/log.webp" alt="Erfassungsoptionen: Foto, Sprache, Text, Abend-Rückblick, Akuteintrag" loading="lazy" width="620" height="689">
       </div>
       <div class="step">
         <div class="num">3</div>
         <h3>Verdächtige ansehen</h3>
         <p>Nach ein paar Tagen zeigt dir Fennly, was statistisch am ehesten hinter deinen Beschwerden steckt, mit einem Sicherheitswert pro Verdacht.</p>
-        <img src="assets/suspects.webp" alt="Rangliste der verdächtigen Auslöser mit Sicherheitswerten" loading="lazy" width="560" height="1211">
+        <img src="assets/suspects.webp" alt="Rangliste der verdächtigen Auslöser mit Sicherheitswerten" loading="lazy" width="620" height="829">
       </div>
     </div>
   </section>
@@ -351,10 +351,10 @@
         <h2>Eine Vermutung ist keine Antwort. Also testet Fennly sie.</h2>
         <p>Wenn ein Verdacht stark genug ist, führt dich Fennly durch einen richtigen Eliminations- und Wiedereinführungstest: für einen festen Zeitraum weglassen, dann zurückholen, Ergebnis ablesen. Dieselbe Methode wie in der Ernährungsberatung, nur ohne Zettelwirtschaft.</p>
       </div>
-      <img src="assets/test.webp" alt="Geführter Eliminationstest für Laktose über sieben Tage" loading="lazy" width="560" height="1211">
+      <img src="assets/test.webp" alt="Geführter Eliminationstest für Laktose über sieben Tage" loading="lazy" width="620" height="1047">
     </div>
     <div class="split">
-      <img src="assets/withwithout.webp" alt="Vergleich der Beschwerden an Tagen mit und ohne den verdächtigen Auslöser" loading="lazy" width="560" height="1211">
+      <img src="assets/withwithout.webp" alt="Vergleich der Beschwerden an Tagen mit und ohne den verdächtigen Auslöser" loading="lazy" width="620" height="1066">
       <div class="txt">
         <h2>Den Unterschied sehen, nicht nur ahnen</h2>
         <p>Tage mit dem Verdächtigen gegen Tage ohne, direkt nebeneinander. Das ist der Moment, in dem die meisten aufhören zu raten. Und die Grafik, die du deiner Ärztin zeigen kannst, statt zu rekonstruieren, was du vor drei Dienstagen gegessen hast.</p>
