@@ -3,37 +3,464 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fennly — Spot your food triggers</title>
-<meta name="description" content="Fennly helps you discover which foods are most likely behind your symptoms. Photo your meals, track how you feel, find your likely triggers. Free on Android.">
+<title>Fennly: Find the food behind your bloating | Food & symptom diary</title>
+<meta name="description" content="Photograph your meal, log how you feel, and Fennly ranks the foods most likely behind your symptoms. Lactose, fructose, histamine, gluten, FODMAPs and more. For bloating, IBS and food intolerance. iOS and Android.">
+<link rel="canonical" href="https://fennly.app/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fennly.app/">
+<meta property="og:title" content="Fennly: Find the food behind your bloating">
+<meta property="og:description" content="Photograph your meal, log how you feel, and Fennly ranks your most likely food triggers. For bloating, IBS and food intolerance.">
+<meta property="og:image" content="https://fennly.app/assets/suspects.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#3E7C5A">
+<link rel="icon" href="assets/icon.png">
 <style>
-  :root{--sage:#3E7C5A;--bg:#FBF7F2;--ink:#2A2622;--muted:#6F675F;--line:#ECE6DD}
+  :root{
+    --sage:#3E7C5A; --sage-dark:#2F6146; --bg:#FBF7F2; --card:#fff;
+    --ink:#2A2622; --muted:#6F675F; --line:#ECE6DD; --warm:#F4EDE3;
+    --radius:18px; --max:1080px;
+  }
   *{box-sizing:border-box}
-  html,body{height:100%}
-  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px}
-  .card{max-width:560px}
-  .brand{font-weight:800;font-size:34px;color:var(--sage);letter-spacing:-.5px}
-  h1{font-size:24px;font-weight:600;margin:18px 0 8px}
-  p{color:var(--muted);margin:0 auto 8px;max-width:440px}
-  .cta{display:inline-block;margin-top:18px;background:var(--sage);color:#fff;text-decoration:none;font-weight:600;font-size:16px;border-radius:999px;padding:13px 26px}
-  .cta:hover{opacity:.92}
-  .note{display:block;margin-top:12px;font-size:13px;color:var(--muted)}
-  .soon{display:inline-block;margin-top:10px;font-size:13px;color:var(--sage);border:1px solid var(--line);border-radius:999px;padding:6px 14px}
-  footer{margin-top:28px;font-size:13px;color:var(--muted)}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
   a{color:var(--sage)}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+  [hidden]{display:none !important}
+
+  /* header */
+  header{padding:22px 0;position:sticky;top:0;background:rgba(251,247,242,.9);
+    backdrop-filter:saturate(180%) blur(12px);z-index:20;border-bottom:1px solid transparent}
+  header.stuck{border-bottom-color:var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;
+    color:var(--sage);letter-spacing:-.4px;text-decoration:none}
+  .brand img{width:32px;height:32px;border-radius:8px}
+  .lang{display:flex;gap:2px;background:var(--warm);border-radius:999px;padding:3px}
+  .lang button{border:0;background:none;font:inherit;font-size:13px;font-weight:600;
+    color:var(--muted);padding:5px 12px;border-radius:999px;cursor:pointer}
+  .lang button[aria-pressed="true"]{background:var(--card);color:var(--ink);
+    box-shadow:0 1px 3px rgba(0,0,0,.07)}
+
+  /* hero */
+  .hero{padding:44px 0 8px;display:grid;grid-template-columns:1.05fr .95fr;
+    gap:48px;align-items:center}
+  .eyebrow{display:inline-block;font-size:13px;font-weight:600;color:var(--sage);
+    background:var(--warm);border-radius:999px;padding:6px 14px;margin-bottom:18px}
+  h1{font-size:clamp(32px,5vw,50px);line-height:1.1;letter-spacing:-1.4px;
+    font-weight:800;margin:0 0 16px}
+  h1 em{font-style:normal;color:var(--sage)}
+  .lede{font-size:19px;color:var(--muted);margin:0 0 26px;max-width:30em}
+  .hero-shot{position:relative}
+  .hero-shot img{width:100%;max-width:330px;margin:0 auto;border-radius:26px;
+    box-shadow:0 24px 60px -18px rgba(42,38,34,.32)}
+
+  /* store buttons */
+  .stores{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px}
+  .store{display:inline-flex;align-items:center;gap:11px;background:var(--ink);
+    color:#fff;text-decoration:none;border-radius:14px;padding:11px 20px 11px 17px;
+    transition:transform .15s ease,opacity .15s ease}
+  .store:hover{transform:translateY(-2px);opacity:.93}
+  .store svg{width:24px;height:24px;flex:none;fill:#fff}
+  .store span{display:block;line-height:1.15}
+  .store .s{font-size:10.5px;opacity:.8;letter-spacing:.4px;text-transform:uppercase}
+  .store .b{font-size:16px;font-weight:600;letter-spacing:-.2px}
+  .trust{font-size:14px;color:var(--muted)}
+  .trust b{color:var(--ink);font-weight:600}
+
+  /* sections */
+  section{padding:64px 0}
+  .sec-head{max-width:44ch;margin-bottom:40px}
+  h2{font-size:clamp(25px,3.4vw,34px);line-height:1.2;letter-spacing:-.8px;
+    font-weight:800;margin:0 0 12px}
+  .sec-head p{color:var(--muted);margin:0;font-size:18px}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px 22px 0;overflow:hidden}
+  .num{width:30px;height:30px;border-radius:9px;background:var(--sage);color:#fff;
+    display:grid;place-items:center;font-weight:700;font-size:15px;margin-bottom:14px}
+  .step h3{margin:0 0 7px;font-size:19px;letter-spacing:-.3px}
+  .step p{margin:0 0 20px;color:var(--muted);font-size:15.5px}
+  .step img{border-radius:14px 14px 0 0;box-shadow:0 -1px 0 var(--line)}
+
+  .feats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .feat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+  .feat h3{margin:0 0 7px;font-size:17.5px;letter-spacing:-.2px}
+  .feat p{margin:0;color:var(--muted);font-size:15.5px}
+
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;
+    background:var(--card);border:1px solid var(--line);border-radius:26px;
+    padding:44px;margin-bottom:22px}
+  .split img{max-width:300px;border-radius:20px;margin:0 auto;
+    box-shadow:0 18px 44px -16px rgba(42,38,34,.26)}
+  .split h2{font-size:clamp(23px,2.8vw,29px)}
+  .split p{color:var(--muted);margin:0}
+
+  .tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:6px}
+  .tag{background:var(--card);border:1px solid var(--line);border-radius:999px;
+    padding:8px 15px;font-size:14.5px;color:var(--ink)}
+
+  details{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:17px 20px;margin-bottom:10px}
+  details[open]{border-color:#DCD3C6}
+  summary{cursor:pointer;font-weight:600;list-style:none;font-size:16.5px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";float:right;color:var(--sage);font-weight:700;font-size:20px;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{color:var(--muted);margin:11px 0 0;font-size:15.5px}
+
+  .cta-band{background:var(--sage);color:#fff;border-radius:26px;padding:52px 40px;text-align:center}
+  .cta-band h2{color:#fff;margin-bottom:10px}
+  .cta-band p{color:rgba(255,255,255,.86);margin:0 auto 26px;max-width:42ch;font-size:18px}
+  .cta-band .stores{justify-content:center;margin-bottom:14px}
+  .cta-band .store{background:#fff;color:var(--ink)}
+  .cta-band .store svg{fill:var(--ink)}
+  .cta-band .trust{color:rgba(255,255,255,.82)}
+
+  .disc{background:var(--warm);border-radius:16px;padding:22px 24px;
+    font-size:15px;color:var(--muted);margin-top:40px}
+  .disc b{color:var(--ink)}
+
+  footer{border-top:1px solid var(--line);padding:34px 0 46px;
+    font-size:14.5px;color:var(--muted)}
+  footer .fl{display:flex;flex-wrap:wrap;gap:8px 20px;margin-bottom:12px}
+
+  @media(max-width:900px){
+    .hero{grid-template-columns:1fr;gap:32px;padding-top:26px;text-align:center}
+    .lede{margin-left:auto;margin-right:auto}
+    .stores{justify-content:center}
+    .hero-shot{order:-1}
+    .hero-shot img{max-width:250px}
+    .steps,.feats{grid-template-columns:1fr}
+    .split{grid-template-columns:1fr;padding:30px;text-align:center;gap:28px}
+    .split .txt{order:2}
+    .sec-head{margin-left:auto;margin-right:auto;text-align:center}
+    section{padding:48px 0}
+    .cta-band{padding:40px 24px}
+  }
 </style>
 </head>
 <body>
-  <div class="card">
-    <div class="brand">Fennly</div>
-    <h1>Find out what doesn't agree with you.</h1>
-    <p>Photo your meals, track how you feel, and let Fennly surface the foods most likely behind your symptoms. Hints and suspected triggers, not a medical diagnosis.</p>
-    <a class="cta" href="https://play.google.com/store/apps/details?id=lu.uniqs.fennly">Get it on Google Play</a>
-    <span class="note">Free to start. Scan your first meals without an account.</span>
-    <span class="soon">iOS coming soon</span>
-    <footer>
-      <a href="/privacy/">Privacy Policy · Datenschutz</a> · <a href="/terms/">Terms · AGB</a><br>
-      UNIQS vGmbH · Luxembourg · <a href="mailto:support@fennly.app">support@fennly.app</a>
-    </footer>
+
+<header id="hdr"><div class="wrap bar">
+  <a class="brand" href="/"><img src="assets/icon.png" alt="" onerror="this.style.display='none'">Fennly</a>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-lang="en" aria-pressed="true">EN</button>
+    <button type="button" data-lang="de" aria-pressed="false">DE</button>
   </div>
+</div></header>
+
+<main class="wrap">
+
+<!-- ============================= ENGLISH ============================= -->
+<div data-block="en">
+
+  <div class="hero">
+    <div>
+      <span class="eyebrow">Food &amp; symptom diary</span>
+      <h1>Bloated after eating and <em>no idea why?</em></h1>
+      <p class="lede">Photograph your meal. Fennly breaks it into ingredients, learns from how you feel, and ranks the foods most likely behind your symptoms. Then it helps you prove it.</p>
+      <div class="stores">
+        <a class="store" data-ios href="https://apps.apple.com/app/id6790508044">
+          <svg viewBox="0 0 24 24"><path d="M17.05 12.54c.02-2.3 1.88-3.4 1.96-3.45-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.77 2.29-1.61 2.79-.41 6.92 1.15 9.19.76 1.11 1.67 2.35 2.86 2.31 1.15-.05 1.58-.74 2.97-.74 1.39 0 1.78.74 2.99.72 1.24-.02 2.02-1.13 2.78-2.24.87-1.28 1.23-2.53 1.25-2.59-.03-.01-2.4-.92-2.42-3.65zM14.79 5.6c.63-.77 1.06-1.83.94-2.9-.91.04-2.02.61-2.67 1.37-.58.68-1.09 1.77-.96 2.81 1.02.08 2.06-.52 2.69-1.28z"/></svg>
+          <span><span class="s">Download on the</span><span class="b">App Store</span></span>
+        </a>
+        <a class="store" data-android href="https://play.google.com/store/apps/details?id=lu.uniqs.fennly">
+          <svg viewBox="0 0 24 24"><path d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L3.6 2.4zM16.3 15.1l-3.1-3.1v-.2l3.1-3.1.1.1 3.6 2.1c1 .6 1 1.6 0 2.2l-3.6 2.1-.1-.1zM15.6 15.8L12.4 12.6 3.2 21.8c.3.4.9.4 1.5.1l10.9-6.1M15.6 8.2L4.7 2.1c-.6-.3-1.2-.3-1.5.1l9.2 9.2 3.2-3.2z"/></svg>
+          <span><span class="s">Get it on</span><span class="b">Google Play</span></span>
+        </a>
+      </div>
+      <p class="trust"><b>Free to download.</b> Your data stays in the EU. Delete it any time.</p>
+    </div>
+    <div class="hero-shot"><img src="assets/suspects.webp" alt="Fennly showing ranked suspected food triggers, with lactose at the top" width="560" height="1211" fetchpriority="high"></div>
+  </div>
+
+  <section>
+    <div class="sec-head">
+      <h2>Three steps, about a minute a day</h2>
+      <p>No weighing, no barcode hunting, no typing out every ingredient.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Snap your meal</h3>
+        <p>Fennly recognises the dish and splits it into ingredients with their trigger categories. It knows a pizza is dough, cheese and tomato.</p>
+        <img src="assets/capture.webp" alt="Meal photo broken down into detected ingredients" loading="lazy" width="560" height="1211">
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Say how you feel</h3>
+        <p>Ten seconds in the evening. Bloating, cramps, fatigue, headache, skin. Or an acute entry the moment it hits.</p>
+        <img src="assets/log.webp" alt="Logging options: photo, voice, text, evening recap, acute entry" loading="lazy" width="560" height="1211">
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Meet your suspects</h3>
+        <p>After a few days Fennly ranks what is statistically most likely behind your symptoms, with a confidence score for each.</p>
+        <img src="assets/suspects.webp" alt="Ranked list of suspected triggers with confidence scores" loading="lazy" width="560" height="1211">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Why a plain food diary never worked for you</h2>
+      <p>Intolerances do not behave like allergies. Fennly is built around how they actually work.</p>
+    </div>
+    <div class="feats">
+      <div class="feat"><h3>Delayed reactions</h3><p>Symptoms often show up four to twelve hours later. Fennly looks across that window instead of blaming your last meal.</p></div>
+      <div class="feat"><h3>Dose, not presence</h3><p>A splash of milk is fine, a latte is not. Fennly adds up the total load across the day rather than ticking a box.</p></div>
+      <div class="feat"><h3>Stress and sleep</h3><p>A rough night makes almost everything worse. Those get factored in, so your lunch does not take the blame.</p></div>
+      <div class="feat"><h3>Fourteen categories</h3><p>Lactose, fructose, sorbitol, fructans, histamine, gluten, caffeine, alcohol and more, tracked separately.</p></div>
+      <div class="feat"><h3>Works offline</h3><p>Log anywhere, syncs when you are back online. Nothing is lost on a plane or in a basement restaurant.</p></div>
+      <div class="feat"><h3>Private by design</h3><p>Hosted in the EU. Photos are only analysed after you explicitly agree. Export or delete everything in two taps.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="split">
+      <div class="txt">
+        <h2>A hunch is not an answer. So Fennly tests it.</h2>
+        <p>When a suspect is strong enough, Fennly walks you through a proper elimination and reintroduction test: cut it for a set window, then bring it back, and read the verdict. That is the same method a dietitian would use, minus the paperwork.</p>
+      </div>
+      <img src="assets/test.webp" alt="Guided elimination test for lactose over seven days" loading="lazy" width="560" height="1211">
+    </div>
+    <div class="split">
+      <img src="assets/withwithout.webp" alt="Comparison of symptom load on days with and without a suspected trigger" loading="lazy" width="560" height="1211">
+      <div class="txt">
+        <h2>See the difference, do not just feel it</h2>
+        <p>Days with the suspect against days without, side by side. It is the moment most people stop guessing, and the chart you can hand to your doctor instead of trying to remember what you ate three Tuesdays ago.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Built for people who are tired of guessing</h2>
+      <p>Whatever you already suspect, Fennly starts there and narrows it down.</p>
+    </div>
+    <div class="tags">
+      <span class="tag">Bloating</span><span class="tag">IBS</span><span class="tag">Lactose intolerance</span>
+      <span class="tag">Fructose malabsorption</span><span class="tag">Histamine intolerance</span>
+      <span class="tag">Gluten sensitivity</span><span class="tag">Low FODMAP diet</span>
+      <span class="tag">Reflux</span><span class="tag">Unexplained fatigue</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>Questions people ask</h2></div>
+    <details><summary>Is this a medical diagnosis?</summary><p>No, and Fennly will never pretend otherwise. It surfaces statistical patterns from your own diary and labels them as suspects. Confirming an intolerance needs a test, and anything persistent belongs in front of a doctor.</p></details>
+    <details><summary>What does it cost?</summary><p>The app is free to download. Fennly Pro unlocks unlimited meal analyses, the full report with a confidence score per suspect, the guided elimination test and management mode. It is 4.99 € a week, or a one time lifetime purchase if you would rather not subscribe.</p></details>
+    <details><summary>Do I have to photograph everything?</summary><p>No. A photo is fastest, but you can speak your meal or type it. Manual text entries work offline and do not use an analysis.</p></details>
+    <details><summary>How long until I see something useful?</summary><p>Usually four to five days of logging. Intolerances need a few repetitions before a pattern separates from noise, and Fennly will tell you honestly when it does not have enough data yet.</p></details>
+    <details><summary>Where does my data live?</summary><p>On servers in the EU. Meal photos are sent for analysis only after you grant explicit consent in the app, and they are not used to train anything. You can export or delete your account and every entry from Settings.</p></details>
+    <details><summary>Which triggers does it track?</summary><p>Fourteen categories: lactose, fructose, sorbitol, mannitol, fructans, GOS, histamine, gluten, caffeine, alcohol, capsaicin, fat load, sulphites and salicylates.</p></details>
+  </section>
+
+  <section>
+    <div class="cta-band">
+      <h2>Stop keeping the diary in your head</h2>
+      <p>One photo a day is enough to start. In a week you will know more about your gut than you did in the last year.</p>
+      <div class="stores">
+        <a class="store" href="https://apps.apple.com/app/id6790508044">
+          <svg viewBox="0 0 24 24"><path d="M17.05 12.54c.02-2.3 1.88-3.4 1.96-3.45-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.77 2.29-1.61 2.79-.41 6.92 1.15 9.19.76 1.11 1.67 2.35 2.86 2.31 1.15-.05 1.58-.74 2.97-.74 1.39 0 1.78.74 2.99.72 1.24-.02 2.02-1.13 2.78-2.24.87-1.28 1.23-2.53 1.25-2.59-.03-.01-2.4-.92-2.42-3.65zM14.79 5.6c.63-.77 1.06-1.83.94-2.9-.91.04-2.02.61-2.67 1.37-.58.68-1.09 1.77-.96 2.81 1.02.08 2.06-.52 2.69-1.28z"/></svg>
+          <span><span class="s">Download on the</span><span class="b">App Store</span></span>
+        </a>
+        <a class="store" href="https://play.google.com/store/apps/details?id=lu.uniqs.fennly">
+          <svg viewBox="0 0 24 24"><path d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L3.6 2.4zM16.3 15.1l-3.1-3.1v-.2l3.1-3.1.1.1 3.6 2.1c1 .6 1 1.6 0 2.2l-3.6 2.1-.1-.1zM15.6 15.8L12.4 12.6 3.2 21.8c.3.4.9.4 1.5.1l10.9-6.1M15.6 8.2L4.7 2.1c-.6-.3-1.2-.3-1.5.1l9.2 9.2 3.2-3.2z"/></svg>
+          <span><span class="s">Get it on</span><span class="b">Google Play</span></span>
+        </a>
+      </div>
+      <p class="trust">Free to download · EU hosting · Cancel any time</p>
+    </div>
+    <p class="disc"><b>Fennly is not a medical device.</b> It does not diagnose, treat or cure anything. It shows suspected triggers derived from your own entries and always asks you to confirm them with a test. If your symptoms are severe, persistent, or come with weight loss, blood or fever, please see a doctor rather than an app.</p>
+  </section>
+
+</div>
+
+<!-- ============================= DEUTSCH ============================= -->
+<div data-block="de" hidden>
+
+  <div class="hero">
+    <div>
+      <span class="eyebrow">Ernährungs- und Symptomtagebuch</span>
+      <h1>Blähbauch nach dem Essen und <em>keine Ahnung, woran es liegt?</em></h1>
+      <p class="lede">Mahlzeit fotografieren. Fennly zerlegt sie in Zutaten, lernt aus deinem Befinden und zeigt dir, welche Lebensmittel am wahrscheinlichsten hinter deinen Beschwerden stecken. Danach hilft es dir, den Verdacht zu beweisen.</p>
+      <div class="stores">
+        <a class="store" data-ios href="https://apps.apple.com/de/app/id6790508044">
+          <svg viewBox="0 0 24 24"><path d="M17.05 12.54c.02-2.3 1.88-3.4 1.96-3.45-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.77 2.29-1.61 2.79-.41 6.92 1.15 9.19.76 1.11 1.67 2.35 2.86 2.31 1.15-.05 1.58-.74 2.97-.74 1.39 0 1.78.74 2.99.72 1.24-.02 2.02-1.13 2.78-2.24.87-1.28 1.23-2.53 1.25-2.59-.03-.01-2.4-.92-2.42-3.65zM14.79 5.6c.63-.77 1.06-1.83.94-2.9-.91.04-2.02.61-2.67 1.37-.58.68-1.09 1.77-.96 2.81 1.02.08 2.06-.52 2.69-1.28z"/></svg>
+          <span><span class="s">Laden im</span><span class="b">App Store</span></span>
+        </a>
+        <a class="store" data-android href="https://play.google.com/store/apps/details?id=lu.uniqs.fennly&hl=de">
+          <svg viewBox="0 0 24 24"><path d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L3.6 2.4zM16.3 15.1l-3.1-3.1v-.2l3.1-3.1.1.1 3.6 2.1c1 .6 1 1.6 0 2.2l-3.6 2.1-.1-.1zM15.6 15.8L12.4 12.6 3.2 21.8c.3.4.9.4 1.5.1l10.9-6.1M15.6 8.2L4.7 2.1c-.6-.3-1.2-.3-1.5.1l9.2 9.2 3.2-3.2z"/></svg>
+          <span><span class="s">Jetzt bei</span><span class="b">Google Play</span></span>
+        </a>
+      </div>
+      <p class="trust"><b>Kostenlos laden.</b> Deine Daten liegen in der EU. Jederzeit löschbar.</p>
+    </div>
+    <div class="hero-shot"><img src="assets/suspects.webp" alt="Fennly zeigt die wahrscheinlichsten Auslöser, ganz oben Laktose" width="560" height="1211"></div>
+  </div>
+
+  <section>
+    <div class="sec-head">
+      <h2>Drei Schritte, rund eine Minute am Tag</h2>
+      <p>Kein Abwiegen, keine Barcode-Jagd, kein Abtippen jeder einzelnen Zutat.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Mahlzeit fotografieren</h3>
+        <p>Fennly erkennt das Gericht und zerlegt es in Zutaten mit ihren Auslöser-Kategorien. Es weiß, dass eine Pizza aus Teig, Käse und Tomate besteht.</p>
+        <img src="assets/capture.webp" alt="Foto einer Mahlzeit, aufgeschlüsselt in erkannte Zutaten" loading="lazy" width="560" height="1211">
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Befinden erfassen</h3>
+        <p>Zehn Sekunden am Abend. Blähbauch, Krämpfe, Müdigkeit, Kopfschmerzen, Haut. Oder ein Akuteintrag genau dann, wenn es losgeht.</p>
+        <img src="assets/log.webp" alt="Erfassungsoptionen: Foto, Sprache, Text, Abend-Rückblick, Akuteintrag" loading="lazy" width="560" height="1211">
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Verdächtige ansehen</h3>
+        <p>Nach ein paar Tagen zeigt dir Fennly, was statistisch am ehesten hinter deinen Beschwerden steckt, mit einem Sicherheitswert pro Verdacht.</p>
+        <img src="assets/suspects.webp" alt="Rangliste der verdächtigen Auslöser mit Sicherheitswerten" loading="lazy" width="560" height="1211">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Warum ein normales Ernährungstagebuch bei dir nie funktioniert hat</h2>
+      <p>Unverträglichkeiten verhalten sich nicht wie Allergien. Genau darauf ist Fennly gebaut.</p>
+    </div>
+    <div class="feats">
+      <div class="feat"><h3>Verzögerte Reaktionen</h3><p>Beschwerden kommen oft erst vier bis zwölf Stunden später. Fennly schaut über dieses Fenster statt die letzte Mahlzeit zu beschuldigen.</p></div>
+      <div class="feat"><h3>Menge statt Ja oder Nein</h3><p>Ein Schuss Milch ist in Ordnung, ein Latte nicht. Fennly rechnet die Gesamtmenge über den Tag zusammen, statt nur ein Häkchen zu setzen.</p></div>
+      <div class="feat"><h3>Stress und Schlaf</h3><p>Eine schlechte Nacht macht fast alles schlimmer. Das fließt mit ein, damit nicht dein Mittagessen die Schuld bekommt.</p></div>
+      <div class="feat"><h3>Vierzehn Kategorien</h3><p>Laktose, Fruktose, Sorbit, Fruktane, Histamin, Gluten, Koffein, Alkohol und mehr, jeweils getrennt verfolgt.</p></div>
+      <div class="feat"><h3>Funktioniert offline</h3><p>Überall erfassen, Synchronisierung sobald du wieder online bist. Nichts geht im Flugzeug oder im Kellerlokal verloren.</p></div>
+      <div class="feat"><h3>Datenschutz eingebaut</h3><p>Gehostet in der EU. Fotos werden nur analysiert, wenn du ausdrücklich zustimmst. Alles exportieren oder löschen mit zwei Taps.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="split">
+      <div class="txt">
+        <h2>Eine Vermutung ist keine Antwort. Also testet Fennly sie.</h2>
+        <p>Wenn ein Verdacht stark genug ist, führt dich Fennly durch einen richtigen Eliminations- und Wiedereinführungstest: für einen festen Zeitraum weglassen, dann zurückholen, Ergebnis ablesen. Dieselbe Methode wie in der Ernährungsberatung, nur ohne Zettelwirtschaft.</p>
+      </div>
+      <img src="assets/test.webp" alt="Geführter Eliminationstest für Laktose über sieben Tage" loading="lazy" width="560" height="1211">
+    </div>
+    <div class="split">
+      <img src="assets/withwithout.webp" alt="Vergleich der Beschwerden an Tagen mit und ohne den verdächtigen Auslöser" loading="lazy" width="560" height="1211">
+      <div class="txt">
+        <h2>Den Unterschied sehen, nicht nur ahnen</h2>
+        <p>Tage mit dem Verdächtigen gegen Tage ohne, direkt nebeneinander. Das ist der Moment, in dem die meisten aufhören zu raten. Und die Grafik, die du deiner Ärztin zeigen kannst, statt zu rekonstruieren, was du vor drei Dienstagen gegessen hast.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Für alle, die das Raten satt haben</h2>
+      <p>Was auch immer du schon vermutest, Fennly fängt dort an und grenzt es ein.</p>
+    </div>
+    <div class="tags">
+      <span class="tag">Blähbauch</span><span class="tag">Reizdarm</span><span class="tag">Laktoseintoleranz</span>
+      <span class="tag">Fruktosemalabsorption</span><span class="tag">Histaminintoleranz</span>
+      <span class="tag">Glutenunverträglichkeit</span><span class="tag">FODMAP-Diät</span>
+      <span class="tag">Sodbrennen</span><span class="tag">Unerklärliche Müdigkeit</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>Häufige Fragen</h2></div>
+    <details><summary>Ist das eine medizinische Diagnose?</summary><p>Nein, und Fennly tut auch nie so. Die App zeigt statistische Muster aus deinem eigenen Tagebuch und nennt sie ausdrücklich Verdachtsmomente. Eine Unverträglichkeit bestätigt nur ein Test, und alles Hartnäckige gehört zur Ärztin oder zum Arzt.</p></details>
+    <details><summary>Was kostet die App?</summary><p>Das Laden ist kostenlos. Fennly Pro schaltet unbegrenzte Analysen frei, den vollen Report mit Sicherheitswert pro Verdacht, den geführten Eliminationstest und den Management-Modus. 4,99 € pro Woche, oder einmalig als Lifetime-Kauf, wenn du kein Abo willst.</p></details>
+    <details><summary>Muss ich alles fotografieren?</summary><p>Nein. Das Foto ist am schnellsten, du kannst deine Mahlzeit aber auch einsprechen oder tippen. Manuelle Texteinträge funktionieren offline und verbrauchen keine Analyse.</p></details>
+    <details><summary>Wie lange dauert es, bis ich etwas sehe?</summary><p>Meist vier bis fünf Tage. Unverträglichkeiten brauchen ein paar Wiederholungen, bevor sich ein Muster vom Rauschen abhebt. Fennly sagt dir ehrlich, wenn die Datenlage noch nicht reicht.</p></details>
+    <details><summary>Wo liegen meine Daten?</summary><p>Auf Servern in der EU. Fotos werden erst nach deiner ausdrücklichen Zustimmung zur Analyse geschickt und nicht zum Training verwendet. Konto und alle Einträge kannst du in den Einstellungen exportieren oder löschen.</p></details>
+    <details><summary>Welche Auslöser werden erfasst?</summary><p>Vierzehn Kategorien: Laktose, Fruktose, Sorbit, Mannit, Fruktane, GOS, Histamin, Gluten, Koffein, Alkohol, Capsaicin, Fettmenge, Sulfite und Salicylate.</p></details>
+  </section>
+
+  <section>
+    <div class="cta-band">
+      <h2>Hör auf, das Tagebuch im Kopf zu führen</h2>
+      <p>Ein Foto am Tag reicht zum Start. In einer Woche weißt du mehr über deinen Darm als im ganzen letzten Jahr.</p>
+      <div class="stores">
+        <a class="store" href="https://apps.apple.com/de/app/id6790508044">
+          <svg viewBox="0 0 24 24"><path d="M17.05 12.54c.02-2.3 1.88-3.4 1.96-3.45-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.77 2.29-1.61 2.79-.41 6.92 1.15 9.19.76 1.11 1.67 2.35 2.86 2.31 1.15-.05 1.58-.74 2.97-.74 1.39 0 1.78.74 2.99.72 1.24-.02 2.02-1.13 2.78-2.24.87-1.28 1.23-2.53 1.25-2.59-.03-.01-2.4-.92-2.42-3.65zM14.79 5.6c.63-.77 1.06-1.83.94-2.9-.91.04-2.02.61-2.67 1.37-.58.68-1.09 1.77-.96 2.81 1.02.08 2.06-.52 2.69-1.28z"/></svg>
+          <span><span class="s">Laden im</span><span class="b">App Store</span></span>
+        </a>
+        <a class="store" href="https://play.google.com/store/apps/details?id=lu.uniqs.fennly&hl=de">
+          <svg viewBox="0 0 24 24"><path d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L3.6 2.4zM16.3 15.1l-3.1-3.1v-.2l3.1-3.1.1.1 3.6 2.1c1 .6 1 1.6 0 2.2l-3.6 2.1-.1-.1zM15.6 15.8L12.4 12.6 3.2 21.8c.3.4.9.4 1.5.1l10.9-6.1M15.6 8.2L4.7 2.1c-.6-.3-1.2-.3-1.5.1l9.2 9.2 3.2-3.2z"/></svg>
+          <span><span class="s">Jetzt bei</span><span class="b">Google Play</span></span>
+        </a>
+      </div>
+      <p class="trust">Kostenlos laden · Hosting in der EU · Jederzeit kündbar</p>
+    </div>
+    <p class="disc"><b>Fennly ist kein Medizinprodukt.</b> Die App diagnostiziert, behandelt und heilt nichts. Sie zeigt Verdachtsmomente aus deinen eigenen Einträgen und bittet dich immer, sie mit einem Test zu bestätigen. Bei starken oder anhaltenden Beschwerden, bei Gewichtsverlust, Blut oder Fieber gehst du bitte zur Ärztin oder zum Arzt und nicht in eine App.</p>
+  </section>
+
+</div>
+</main>
+
+<footer><div class="wrap">
+  <div class="fl">
+    <a href="/privacy/">Privacy · Datenschutz</a>
+    <a href="/terms/">Terms · AGB</a>
+    <a href="/delete-account/">Delete account · Konto löschen</a>
+    <a href="mailto:support@fennly.app">support@fennly.app</a>
+  </div>
+  UNIQS vGmbH · route de Mersch 140, 7432 Lintgen, Luxembourg · © 2026
+</div></footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MobileApplication","name":"Fennly",
+"applicationCategory":"HealthApplication","operatingSystem":"iOS, Android",
+"description":"Food and symptom diary that ranks the foods most likely behind your symptoms, for bloating, IBS and food intolerance.",
+"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},
+"author":{"@type":"Organization","name":"UNIQS vGmbH","address":{"@type":"PostalAddress","streetAddress":"route de Mersch 140","postalCode":"7432","addressLocality":"Lintgen","addressCountry":"LU"}},
+"downloadUrl":["https://apps.apple.com/app/id6790508044","https://play.google.com/store/apps/details?id=lu.uniqs.fennly"]}
+</script>
+
+<script>
+(function(){
+  var blocks = {en: document.querySelector('[data-block="en"]'),
+                de: document.querySelector('[data-block="de"]')};
+  var btns = document.querySelectorAll('.lang button');
+
+  function setLang(l){
+    blocks.en.hidden = (l !== 'en');
+    blocks.de.hidden = (l !== 'de');
+    document.documentElement.lang = l;
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.lang === l)); });
+    try { localStorage.setItem('fennly_lang', l); } catch(e){}
+  }
+
+  var saved = null;
+  try { saved = localStorage.getItem('fennly_lang'); } catch(e){}
+  var initial = saved || ((navigator.language || 'en').toLowerCase().indexOf('de') === 0 ? 'de' : 'en');
+  setLang(initial);
+
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLang(b.dataset.lang); }); });
+
+  // Put the store button matching the visitor's device first.
+  var ua = navigator.userAgent || '';
+  var isIOS = /iPhone|iPad|iPod/.test(ua) || (/Mac/.test(ua) && navigator.maxTouchPoints > 1);
+  var isAndroid = /Android/.test(ua);
+  if (isIOS || isAndroid) {
+    document.querySelectorAll('.stores').forEach(function(row){
+      var want = row.querySelector(isIOS ? '[data-ios]' : '[data-android]');
+      if (want) row.prepend(want);
+    });
+  }
+
+  var hdr = document.getElementById('hdr');
+  addEventListener('scroll', function(){ hdr.classList.toggle('stuck', scrollY > 8); }, {passive:true});
+})();
+</script>
 </body>
 </html>
