@@ -81,7 +81,7 @@
   .trust b{color:var(--ink);font-weight:600}
 
   /* sections */
-  section{padding:64px 0}
+  section{padding:64px 0;scroll-margin-top:88px}
   .sec-head{max-width:44ch;margin-bottom:40px}
   h2{font-size:clamp(25px,3.4vw,34px);line-height:1.2;letter-spacing:-.8px;
     font-weight:800;margin:0 0 12px}
@@ -439,6 +439,13 @@
 
 <script>
 (function(){
+  // Google Ads conversion label for store button clicks.
+  // Create the conversion action in Google Ads, then paste the part after
+  // the slash here (e.g. 'AbC-D_efGhIjKlMnOp'). Until then only the plain
+  // store_click event fires, so nothing breaks and nothing is misreported.
+  var ADS_ID = 'AW-18309415304';
+  var ADS_CONVERSION_LABEL = '';
+
   var blocks = {en: document.querySelector('[data-block="en"]'),
                 de: document.querySelector('[data-block="de"]')};
   var btns = document.querySelectorAll('.lang button');
@@ -451,12 +458,55 @@
     try { localStorage.setItem('fennly_lang', l); } catch(e){}
   }
 
+  // ?lang=de or ?lang=en wins over the saved choice and the browser language.
+  // Without this a German ad click on an English browser lands on the English page.
+  var param = null;
+  try {
+    var m = /[?&]lang=(de|en)/i.exec(location.search);
+    if (m) param = m[1].toLowerCase();
+  } catch(e){}
+
   var saved = null;
   try { saved = localStorage.getItem('fennly_lang'); } catch(e){}
-  var initial = saved || ((navigator.language || 'en').toLowerCase().indexOf('de') === 0 ? 'de' : 'en');
+  var initial = param || saved || ((navigator.language || 'en').toLowerCase().indexOf('de') === 0 ? 'de' : 'en');
   setLang(initial);
 
-  btns.forEach(function(b){ b.addEventListener('click', function(){ setLang(b.dataset.lang); }); });
+  // Anchors for Google sitelinks. Both language blocks have the same section
+  // order, so the target is resolved by index inside the visible block.
+  var SECTIONS = {schritte:0, steps:0, warum:1, why:1, test:2,
+                  ausloeser:3, triggers:3, faq:4};
+
+  function scrollToHash(){
+    var key = (location.hash || '').replace('#','').toLowerCase();
+    if (!Object.prototype.hasOwnProperty.call(SECTIONS, key)) return;
+    var active = blocks.de.hidden ? blocks.en : blocks.de;
+    var sec = active.querySelectorAll('section')[SECTIONS[key]];
+    if (sec) sec.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  if (location.hash) setTimeout(scrollToHash, 80);
+  addEventListener('hashchange', scrollToHash);
+
+  btns.forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.dataset.lang); scrollToHash(); });
+  });
+
+  // Measure store button clicks. Uses beacon transport so the hit survives
+  // the navigation to the App Store or Play Store.
+  document.querySelectorAll('a.store').forEach(function(a){
+    a.addEventListener('click', function(){
+      if (typeof gtag !== 'function') return;
+      var store = /apps\.apple\.com/.test(a.href) ? 'ios' : 'android';
+      gtag('event', 'store_click', {
+        store: store,
+        page_language: document.documentElement.lang,
+        transport_type: 'beacon'
+      });
+      if (ADS_CONVERSION_LABEL) {
+        gtag('event', 'conversion', {send_to: ADS_ID + '/' + ADS_CONVERSION_LABEL});
+      }
+    });
+  });
 
   // Put the store button matching the visitor's device first.
   var ua = navigator.userAgent || '';
