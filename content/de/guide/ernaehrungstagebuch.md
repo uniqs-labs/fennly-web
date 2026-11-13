@@ -31,7 +31,7 @@ sources:
     url: "https://doi.org/10.1111/j.1398-9995.2008.01705.x"
 faq:
   - q: "Wie lange sollte man ein Ernährungstagebuch führen?"
-    a: "Eine feste Dauer nennen die hier zitierten Leitlinien nicht. Plane mehrere Wochen ein, damit du genug gute und schlechte Tage vergleichen kannst und auch Reaktionen siehst, die erst ein bis zwei Tage später kommen. Wenn du mit Fachleuten eine Auslassdiät machst, führst du das Tagebuch während der ganzen Testphase weiter."
+    a: "Eine feste Dauer nennen die hier zitierten Leitlinien nicht. Plane mehrere Wochen ein, damit du genug gute und schlechte Tage vergleichen kannst und auch Beschwerden erfasst, die verzögert kommen oder ein bis zwei Tage anhalten. Wenn du mit Fachleuten eine Auslassdiät machst, führst du das Tagebuch während der ganzen Testphase weiter."
   - q: "Was schreibt man in ein Ernährungstagebuch?"
     a: "Uhrzeit, was genau und wie viel du gegessen und getrunken hast und deine Beschwerden mit Uhrzeit und Stärke von 0 bis 10. Dazu kommen Stress und Schlaf sowie Infekte, neue Medikamente und Alkohol. Schreib Zutaten statt nur Gerichte auf, etwa Zwiebeln und Knoblauch in der Soße."
   - q: "Kann ein Ernährungstagebuch eine Unverträglichkeit nachweisen?"
@@ -41,7 +41,7 @@ faq:
   - q: "Ist eine App besser als ein Ernährungstagebuch auf Papier?"
     a: "Nicht automatisch. Papier ist kostenlos und flexibel, wird aber leicht nachträglich aus dem Gedächtnis ausgefüllt. Eine App setzt Zeitstempel und kann Zusammenhänge über mehrere Tage auswerten; prüfe aber, wo deine Daten gespeichert werden, und kontrolliere automatisch erkannte Einträge."
 related: []
-draft: true
+draft: false
 ---
 Ein Ernährungstagebuch zeigt nur dann Muster, wenn du zeitnah notierst, was du wann und wie viel gegessen hast, wann welche Beschwerden wie stark auftraten und wie es dir mit Stress und Schlaf ging. Beschwerden einer Nahrungsmittelunverträglichkeit beginnen meist erst einige Stunden nach dem Essen und können Stunden bis Tage anhalten [1], deshalb gehört bei einem schlechten Tag auch der Vortag in den Blick. Führe das Tagebuch über mehrere Wochen und behandle das Ergebnis als Verdacht, den du mit ärztlicher oder ernährungstherapeutischer Hilfe prüfst, nicht als Diagnose.
 
@@ -80,7 +80,7 @@ Bei vielen Unverträglichkeiten kommt es auf die Menge an [5] [7]. Ein typisches
 
 Für dein Tagebuch heißt das: Schreib Zutaten und Mengen auf, nicht nur Gerichte, und notiere auch Kleinigkeiten.
 
-## Beschwerden kommen oft Stunden oder Tage später
+## Beschwerden kommen oft erst Stunden später und können Tage anhalten
 
 Ein naheliegender Denkfehler ist, nur die letzte Mahlzeit zu verdächtigen. Laut NHS beginnen die Beschwerden einer Nahrungsmittelunverträglichkeit meist einige Stunden nach dem Essen und können einige Stunden oder Tage anhalten [1]. Für die Gluten-Sensitivität ohne Zöliakie beschreiben die Salerno-Kriterien eine Zeitspanne zwischen Essen und Beschwerden von Stunden bis Tagen [2]. Und im Monash-Protokoll legst du nach jedem Test zwei bis drei Tage Pause ein, damit sich die Beschwerden wieder normalisieren, bevor der nächste beginnt [7].
 
@@ -105,7 +105,7 @@ Beides kann funktionieren. Entscheidend ist, dass du zeitnah einträgst, und gen
 
 **Papier** kostet nichts, braucht kein Konto, und deine Daten bleiben bei dir. Schwächen: Nachtragen aus dem Gedächtnis, ungenaue Uhrzeiten und mühsames Auswerten über 48 Stunden.
 
-**Eine App** setzt Zeitstempel automatisch, kann dich erinnern und Zusammenhänge über mehrere Tage auswerten. Prüfe aber, wo die Daten gespeichert werden, kontrolliere automatisch erkannte Zutaten und erwarte keine Diagnose von ihr.
+**Eine App** setzt Zeitstempel automatisch und kann Zusammenhänge über mehrere Tage auswerten. Prüfe aber, wo die Daten gespeichert werden, kontrolliere automatisch erkannte Zutaten und erwarte keine Diagnose von ihr.
 
 Wenn du eine App nutzen willst, achte darauf, dass sie verzögerte Reaktionen, Mengen, Stress und Schlaf berücksichtigt. Unsere eigene App Fennly ist so gebaut: Du erfasst Mahlzeiten per Foto, Sprache oder Text, und bei den langsamen Auslösern Gluten, Fruktane und GOS (Galakto-Oligosaccharide) bezieht sie ein Fenster von bis zu 48 Stunden ein. Was sie nach einigen Tagen zeigt, sind Verdachtsmomente mit einer Einschätzung, wie sicher sie sind, ausdrücklich keine Diagnose.
 
@@ -118,7 +118,7 @@ Nach einigen Wochen gehst du so vor:
 3. **Mit guten Tagen vergleichen:** Taucht derselbe Verdächtige in ähnlicher Menge auch an guten Tagen auf, ist er als Auslöser weniger wahrscheinlich.
 4. **Störfaktoren prüfen:** Waren die schlechten Tage auch die mit viel Stress, wenig Schlaf, einem Infekt oder einem neuen Medikament?
 
-Am Ende steht ein Verdacht, kein Beweis, und den prüfst du am besten nicht allein. Für Reizdarm sieht die NICE-Leitlinie vor, dass Beratung zu Auslassdiäten (also Diäten, bei denen du einzelne Lebensmittel oder ganze Gruppen weglässt, etwa FODMAP-arm) nur von Fachleuten mit Erfahrung in Ernährungstherapie kommt [3]. Die BSG empfiehlt, eine FODMAP-arme Diät von einer geschulten Ernährungsfachkraft begleiten zu lassen und FODMAPs danach je nach Verträglichkeit wieder einzuführen [6]. Bei Monash dauert die strenge Phase 2 bis 6 Wochen, die Wiedereinführung kann 8 bis 12 Wochen dauern [7]. Lass keine Lebensmittel ohne ärztlichen oder ernährungstherapeutischen Rat weg, weil dir sonst Vitamine und Mineralstoffe fehlen können [1]. Wenn Essen für dich ohnehin mit viel Angst oder Kontrolle verbunden ist, sprich vor jeder Einschränkung mit deiner Ärztin oder deinem Arzt: Die BSG rät, ein Risiko für zu restriktives Essverhalten vor solchen Diäten zu erkennen [6].
+Am Ende steht ein Verdacht, kein Beweis, und den prüfst du am besten nicht allein. Für Reizdarm sieht die NICE-Leitlinie vor, dass Beratung zu Auslassdiäten (also Diäten, bei denen du einzelne Lebensmittel oder ganze Gruppen weglässt, etwa FODMAP-arm) nur von Fachleuten mit Erfahrung in Ernährungstherapie kommt [3]. Die BSG empfiehlt, eine FODMAP-arme Diät von einer geschulten Ernährungsfachkraft begleiten zu lassen und FODMAPs danach je nach Verträglichkeit wieder einzuführen; die Studienlage dazu stuft sie allerdings als sehr schwach ein [6]. Bei Monash dauert die strenge Phase 2 bis 6 Wochen, die Wiedereinführung kann 8 bis 12 Wochen dauern [7]. Lass keine Lebensmittel ohne ärztlichen oder ernährungstherapeutischen Rat weg, weil dir sonst Vitamine und Mineralstoffe fehlen können [1]. Wenn Essen für dich ohnehin mit viel Angst oder Kontrolle verbunden ist, sprich vor jeder Einschränkung mit deiner Ärztin oder deinem Arzt: Die BSG rät, ein Risiko für zu restriktives Essverhalten vor solchen Diäten zu erkennen [6].
 
 ### Was du vor jedem Verzicht wissen solltest
 

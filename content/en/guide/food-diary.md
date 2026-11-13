@@ -31,7 +31,7 @@ sources:
     url: "https://doi.org/10.1111/j.1398-9995.2008.01705.x"
 faq:
   - q: "How long should you keep a food diary?"
-    a: "The guidelines cited here do not set a fixed length. Plan on several weeks so you have enough good and bad days to compare and can catch reactions that appear a day or two later. If you start an elimination diet with a dietitian, keep the diary going through the whole test phase."
+    a: "The guidelines cited here do not set a fixed length. Plan on several weeks so you have enough good and bad days to compare and can catch symptoms that start late or last a day or two. If you start an elimination diet with a dietitian, keep the diary going through the whole test phase."
   - q: "What should you write in a food and symptom diary?"
     a: "Record the time, exactly what you ate and drank and how much, and any symptoms with their time and a 0 to 10 severity score. Add your stress level and sleep, plus infections, new medicines and alcohol. List ingredients rather than dish names, for example the onion and garlic in a sauce."
   - q: "Can a food diary diagnose a food intolerance?"
@@ -41,7 +41,7 @@ faq:
   - q: "Is a food diary app better than a paper diary?"
     a: "Not automatically. Paper is free and flexible, but entries are easily filled in later from memory. An app adds timestamps and can analyse links across several days, but check where your data is stored and correct any automatic entries."
 related: []
-draft: true
+draft: false
 ---
 A food diary only shows useful patterns if you write things down as they happen: what you ate and drank, how much and when, plus when symptoms started, how strong they were, and how stressed and rested you felt. Food intolerance symptoms usually start a few hours after eating and can last for hours or days [1], so on a bad day you need to look back at yesterday too, not just your last meal. Keep the diary for several weeks and treat what it shows as a lead to check with a doctor or dietitian, not as a diagnosis.
 
@@ -80,7 +80,7 @@ The same logic applies to FODMAPs, short-chain fermentable carbohydrates found i
 
 So log ingredients and portions, not just dish names, and include the small stuff.
 
-## Why symptoms can show up hours or days later
+## Why symptoms can start hours later and last for days
 
 An easy mistake is to blame only the last thing you ate. The NHS says food intolerance symptoms usually appear a few hours after eating and can last a few hours or days [1]. For non-coeliac gluten sensitivity, the Salerno criteria describe a gap of hours or days between eating gluten and symptoms [2]. And Monash builds a 2 to 3 day break into reintroduction after each test so symptoms can settle [7].
 
@@ -105,7 +105,7 @@ Both can work if you log close to the moment, and that is where paper has a know
 
 **Paper** is free, needs no account and keeps your data with you. Its weak spots: back-filling from memory, vague times and slow analysis across 48 hours.
 
-**An app** timestamps entries, can remind you and can look for links across several days. Check where your data is stored, double-check automatically recognised ingredients, and do not expect a diagnosis.
+**An app** timestamps entries and can look for links across several days. Check where your data is stored, double-check automatically recognised ingredients, and do not expect a diagnosis.
 
 If you go the app route, look for one that handles delayed reactions, portion sizes, stress and sleep. Our own app, Fennly, is built that way: you log meals by photo, voice or text, and for the slow triggers gluten, fructans and GOS (galacto-oligosaccharides) it looks back up to 48 hours. After a few days it shows suspects with a rating of how confident it is, and it is explicitly not a diagnosis.
 
@@ -118,7 +118,7 @@ After a few weeks:
 3. **Compare with good days:** if the same suspect shows up in similar amounts on good days, it is less likely to be your trigger.
 4. **Check the confounders:** were the bad days also the ones with high stress, poor sleep, an infection or a new medicine?
 
-You end up with a suspicion, not proof, and it is best tested with professional help. For IBS, NICE recommends that advice on exclusion diets (diets that cut out single foods or food groups, such as low FODMAP) only comes from a healthcare professional with expertise in dietary management [3]. The BSG recommends that a low FODMAP diet be supervised by a trained dietitian, with FODMAPs reintroduced according to tolerance [6]. In the Monash approach, the strict phase lasts 2 to 6 weeks and reintroduction can take 8 to 12 weeks [7]. Do not cut foods out without advice from a doctor or dietitian, because you could miss out on vitamins and minerals [1]. If food already feels tied up with anxiety or control for you, talk to your doctor before restricting anything: the BSG advises identifying people at risk of overly restrictive eating before such diets [6].
+You end up with a suspicion, not proof, and it is best tested with professional help. For IBS, NICE recommends that advice on exclusion diets (diets that cut out single foods or food groups, such as low FODMAP) only comes from a healthcare professional with expertise in dietary management [3]. The BSG recommends that a low FODMAP diet be supervised by a trained dietitian, with FODMAPs reintroduced according to tolerance, although it rates the evidence as very low quality [6]. In the Monash approach, the strict phase lasts 2 to 6 weeks and reintroduction can take 8 to 12 weeks [7]. Do not cut foods out without advice from a doctor or dietitian, because you could miss out on vitamins and minerals [1]. If food already feels tied up with anxiety or control for you, talk to your doctor before restricting anything: the BSG advises identifying people at risk of overly restrictive eating before such diets [6].
 
 ### What to know before you cut anything out
 
