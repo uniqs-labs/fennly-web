@@ -3,13 +3,14 @@
 //
 // Input:  the site repo (static files), content/<lang>/<type>/<slug>.md, content.config.json
 // Output: dist/ = every static file byte for byte, plus article pages, hubs, draft
-//         previews under /_preview/, sitemap.xml, robots.txt and llms.txt.
+//         previews under /_preview/, sitemap.xml, robots.txt, llms.txt and the IndexNow
+//         key file /<key>.txt (when content.config.json has indexnow.key).
 //
 // Usage: node build.mjs [--root .] [--out dist] [--engine v1] [--origin https://...] [--drafts-as-live]
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { loadSiteConfig, ConfigError, PREVIEW_DIR } from './lib/config.mjs';
+import { loadSiteConfig, ConfigError, PREVIEW_DIR, engineTag } from './lib/config.mjs';
 import { loadContent, createUniverse, hreflangFor } from './lib/content.mjs';
 import { renderBody } from './lib/markdown.mjs';
 import { articlePage, hubPage, previewIndexPage } from './lib/templates.mjs';
@@ -26,7 +27,7 @@ export function engineInfo(dir = HERE) {
     if (fs.existsSync(f)) {
       const j = JSON.parse(fs.readFileSync(f, 'utf8'));
       if (j.tag) return { version: j.version, tag: j.tag };
-      if (j.name === '@uniqs/content-engine') return { version: j.version, tag: `v${j.version.split('.')[0]}` };
+      if (j.name === '@uniqs/content-engine') return { version: j.version, tag: engineTag(j.version) };
     }
   }
   return { version: 'dev', tag: 'dev' };
@@ -152,6 +153,9 @@ export function build({ root = process.cwd(), out, origin, draftsAsLive = false,
       linkFor: (x) => config.url.preview(x.path),
     }));
   }
+
+  // IndexNow key file: exactly the key, no newline (https://www.indexnow.org/documentation).
+  if (config.indexnow) pages.set(`${config.indexnow.key}.txt`, config.indexnow.key);
 
   errors.push(...staticConflicts(files, [...pages.keys()]));
 
