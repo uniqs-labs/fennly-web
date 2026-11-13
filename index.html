@@ -477,6 +477,35 @@
   var ADS_ID = 'AW-18309415304';
   var ADS_CONVERSION_LABEL = 'kmGZCIqztOgcEIiDzppE';
 
+  // Store attribution. Tags the store links with a campaign so downloads show up
+  // per source: App Store Connect > App Analytics > Acquisition > Campaigns (pt/ct)
+  // and Play Console > Acquisition > UTM campaigns (referrer).
+  // A visit counts as paid when Google's click id is in the URL. Nothing is stored,
+  // no cookie is set; the tag only lives in the link the visitor taps.
+  var APPLE_PT = '129105472';
+  var PAID = /[?&](gclid|gbraid|wbraid)=/i.test(location.search) ||
+             /[?&]utm_medium=cpc(&|$)/i.test(location.search);
+
+  function tagStoreLinks(lang){
+    var campaign = (PAID ? 'gads_' : 'web_') + lang;
+    document.querySelectorAll('a.store').forEach(function(a){
+      if (!a.dataset.base) a.dataset.base = a.getAttribute('href');
+      var u;
+      try { u = new URL(a.dataset.base); } catch(e){ return; }
+      if (/apps\.apple\.com$/.test(u.hostname)) {
+        u.searchParams.set('pt', APPLE_PT);
+        u.searchParams.set('ct', campaign);
+        u.searchParams.set('mt', '8');
+      } else if (/play\.google\.com$/.test(u.hostname)) {
+        u.searchParams.set('referrer',
+          'utm_source=' + (PAID ? 'google' : 'fennly.app') +
+          '&utm_medium=' + (PAID ? 'cpc' : 'web') +
+          '&utm_campaign=' + campaign);
+      }
+      a.href = u.toString();
+    });
+  }
+
   var blocks = {en: document.querySelector('[data-block="en"]'),
                 de: document.querySelector('[data-block="de"]')};
   var btns = document.querySelectorAll('.lang button');
@@ -487,6 +516,7 @@
     document.documentElement.lang = l;
     btns.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.lang === l)); });
     try { localStorage.setItem('fennly_lang', l); } catch(e){}
+    tagStoreLinks(l);
   }
 
   // ?lang=de or ?lang=en wins over the saved choice and the browser language.
