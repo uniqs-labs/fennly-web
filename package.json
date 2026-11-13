@@ -1,0 +1,14 @@
+{
+  "name": "fennly-web",
+  "private": true,
+  "scripts": {
+    "build": "node .content-engine/build.mjs --engine v1"
+  },
+  "devDependencies": {
+    "gray-matter": "4.0.3",
+    "marked": "18.1.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
