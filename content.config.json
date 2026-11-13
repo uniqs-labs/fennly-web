@@ -1,0 +1,223 @@
+{
+  "generatedBy": "content-engine v1 init --app fennly. Everything except robots, sitemap and build is rewritten on every init; change apps/fennly/config.yml in uniqs-labs/content-engine instead.",
+  "engine": "v1",
+  "app": "fennly",
+  "origin": "https://fennly.app",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "xDefault": "en",
+  "brand": {
+    "name": "Fennly",
+    "publisher": "UNIQS vGmbH",
+    "logo": "/assets/icon.png",
+    "ogImage": {
+      "de": "/assets/de/suspects.webp",
+      "en": "/assets/en/suspects.webp"
+    },
+    "colors": {
+      "primary": "#3E7C5A",
+      "primaryDark": "#2F6146",
+      "background": "#FBF7F2",
+      "surface": "#FFFFFF",
+      "text": "#2A2622",
+      "muted": "#6F675F",
+      "line": "#ECE6DD",
+      "soft": "#F4EDE3"
+    },
+    "fontStack": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif"
+  },
+  "home": {
+    "de": "/?lang=de",
+    "en": "/?lang=en"
+  },
+  "urlPatterns": {
+    "de": {
+      "guide": "/de/ratgeber/{slug}/",
+      "compare": "/de/vergleich/{slug}/"
+    },
+    "en": {
+      "guide": "/en/guides/{slug}/",
+      "compare": "/en/compare/{slug}/"
+    }
+  },
+  "store": {
+    "appleId": "6790508044",
+    "applePt": "129105472",
+    "playPackage": "lu.uniqs.fennly"
+  },
+  "legal": [
+    {
+      "href": "/privacy/",
+      "label": {
+        "de": "Datenschutz",
+        "en": "Privacy"
+      }
+    },
+    {
+      "href": "/terms/",
+      "label": {
+        "de": "AGB",
+        "en": "Terms"
+      }
+    },
+    {
+      "href": "/delete-account/",
+      "label": {
+        "de": "Konto löschen",
+        "en": "Delete account"
+      }
+    }
+  ],
+  "contact": "support@fennly.app",
+  "copy": {
+    "de": {
+      "tagline": "Ernährungs- und Symptomtagebuch mit KI für iPhone und Android: zeigt, welche Lebensmittel am ehesten hinter Blähbauch und Unverträglichkeiten stecken.",
+      "aiNote": "Erstellt von der Fennly-Redaktion mit KI-Unterstützung, jede Aussage gegen die genannten Quellen geprüft.",
+      "cta": {
+        "inline": {
+          "title": "Deine Auslöser finden, statt zu raten",
+          "text": "Fennly verknüpft deine Mahlzeiten mit deinem Befinden und zeigt dir nach einigen Tagen, welche Lebensmittel am ehesten verdächtig sind. Kostenlos laden."
+        },
+        "end": {
+          "title": "Hör auf, das Tagebuch im Kopf zu führen",
+          "text": "Mahlzeit per Foto, Sprache oder Text erfassen, abends ein kurzer Tagescheck. Nach einigen Tagen zeigt dir Fennly deine wahrscheinlichsten Auslöser, als Verdacht und nicht als Diagnose.",
+          "trust": "Kostenlos laden · Daten in der EU · Jederzeit löschbar"
+        }
+      },
+      "hubs": {
+        "guide": {
+          "title": "Ratgeber: Blähbauch, Reizdarm und Unverträglichkeiten | Fennly",
+          "description": "Verständliche Ratgeber zu Blähbauch, Reizdarm und Nahrungsmittelunverträglichkeiten. Mit Quellen belegt und ohne Heilversprechen.",
+          "intro": "Verständlich erklärt und mit Quellen belegt: was hinter Blähbauch, Reizdarm und Unverträglichkeiten stecken kann und wie du deinen Auslösern auf die Spur kommst.",
+          "empty": "Die ersten Ratgeber erscheinen in Kürze."
+        },
+        "compare": {
+          "title": "Vergleiche: Apps und Methoden fürs Symptomtagebuch | Fennly",
+          "description": "Faire Vergleiche von Symptomtagebüchern, Apps und Methoden bei Blähbauch und Unverträglichkeiten, mit klaren Kriterien und Quellen.",
+          "intro": "Apps, Tagebücher und Methoden im direkten Vergleich, mit offenen Kriterien und Quellen.",
+          "empty": "Die ersten Vergleiche erscheinen in Kürze."
+        }
+      }
+    },
+    "en": {
+      "tagline": "AI food and symptom diary for iPhone and Android that shows which foods are the most likely suspects behind bloating and food intolerance.",
+      "aiNote": "Written by the Fennly editorial team with AI assistance; every claim checked against the sources listed.",
+      "cta": {
+        "inline": {
+          "title": "Find your triggers instead of guessing",
+          "text": "Fennly links your meals with how you feel and, after a few days, shows which foods are the most likely suspects. Free to download."
+        },
+        "end": {
+          "title": "Stop keeping the diary in your head",
+          "text": "Log each meal by photo, voice or text and do a quick day check in the evening. After a few days Fennly shows your most likely triggers, as suspects, not a diagnosis.",
+          "trust": "Free to download · Data stays in the EU · Delete it any time"
+        }
+      },
+      "hubs": {
+        "guide": {
+          "title": "Guides: bloating, IBS and food intolerance | Fennly",
+          "description": "Clear guides on bloating, IBS and food intolerance. Every health claim is sourced, with no miracle-cure promises.",
+          "intro": "Clear explanations with sources: what can be behind bloating, IBS and food intolerance, and how to track down your own triggers.",
+          "empty": "The first guides are coming soon."
+        },
+        "compare": {
+          "title": "Comparisons: food diary apps and methods | Fennly",
+          "description": "Fair comparisons of food and symptom diary apps and methods for bloating and food intolerance, with clear criteria and sources.",
+          "intro": "Apps, diaries and methods side by side, with open criteria and sources.",
+          "empty": "The first comparisons are coming soon."
+        }
+      }
+    }
+  },
+  "cta": {
+    "placement": [
+      "afterSecondH2",
+      "end"
+    ]
+  },
+  "disclaimers": [
+    {
+      "module": "ymyl-gesundheit",
+      "de": {
+        "title": "Keine medizinische Diagnose",
+        "text": "Dieser Artikel ist allgemeine Information und ersetzt keine ärztliche Untersuchung oder Beratung. Geh bitte zeitnah zur Ärztin oder zum Arzt, wenn eines davon auf dich zutrifft:",
+        "outro": "Auch starke, anhaltende oder zunehmende Beschwerden gehören ärztlich abgeklärt, bevor du etwas dauerhaft änderst. Im Notfall: 112.",
+        "flags": [
+          "Blut im Stuhl oder schwarzer Stuhl",
+          "Gewichtsverlust, den du dir nicht erklären kannst",
+          "Fieber",
+          "Beschwerden, die dich nachts aufwecken",
+          "Beschwerden, die erst nach dem 50. Lebensjahr begonnen haben",
+          "Zöliakie oder eine chronisch-entzündliche Darmerkrankung in der Familie",
+          "Starke oder zunehmende Schmerzen"
+        ]
+      },
+      "en": {
+        "title": "Not a medical diagnosis",
+        "text": "This article is general information and does not replace a medical examination or advice. Please see a doctor promptly if any of these apply to you:",
+        "outro": "Severe, persistent or worsening symptoms also deserve a check-up before you change anything for good. In an emergency, call your local emergency number.",
+        "flags": [
+          "Blood in your stool or black stools",
+          "Weight loss you cannot explain",
+          "Fever",
+          "Symptoms that wake you up at night",
+          "Symptoms that first started after the age of 50",
+          "Coeliac disease or inflammatory bowel disease in your family",
+          "Severe or worsening pain"
+        ]
+      }
+    }
+  ],
+  "rules": {
+    "minSources": 5
+  },
+  "robots": {
+    "allow": [
+      "*",
+      "GPTBot",
+      "OAI-SearchBot",
+      "ChatGPT-User",
+      "ClaudeBot",
+      "Claude-Web",
+      "PerplexityBot",
+      "Google-Extended",
+      "Applebot",
+      "Applebot-Extended",
+      "Bingbot",
+      "Amazonbot",
+      "meta-externalagent"
+    ]
+  },
+  "sitemap": {
+    "pages": {
+      "/": {
+        "lastmod": "2026-08-31",
+        "changefreq": "weekly",
+        "priority": 1
+      },
+      "/privacy/": {
+        "lastmod": "2026-08-31",
+        "changefreq": "yearly",
+        "priority": 0.3
+      },
+      "/terms/": {
+        "lastmod": "2026-08-31",
+        "changefreq": "yearly",
+        "priority": 0.3
+      },
+      "/delete-account/": {
+        "lastmod": "2026-08-31",
+        "changefreq": "yearly",
+        "priority": 0.2
+      }
+    },
+    "exclude": [
+      "/openpaywall/"
+    ]
+  },
+  "build": {
+    "exclude": []
+  }
+}
