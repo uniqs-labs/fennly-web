@@ -12,6 +12,15 @@ export const CAMPAIGN_MAX = 40;
 const HEX = /^#[0-9a-fA-F]{6}$/;
 const LANG = /^[a-z]{2}$/;
 const COLOR_KEYS = ['primary', 'primaryDark', 'background', 'surface', 'text', 'muted', 'line', 'soft'];
+// IndexNow key: public by protocol, served as /<key>.txt. 32 lowercase hex characters.
+export const INDEXNOW_KEY = /^[a-f0-9]{32}$/;
+
+/** Release tag of an engine version: 1.0.0 -> v1, 1.1.0 -> v1.1, 1.1.2 -> v1.1.2. */
+export function engineTag(version) {
+  const [major, minor = '0', patch = '0'] = String(version).split('.');
+  if (patch !== '0') return `v${major}.${minor}.${patch}`;
+  return minor !== '0' ? `v${major}.${minor}` : `v${major}`;
+}
 
 export class ConfigError extends Error {}
 
@@ -121,6 +130,9 @@ export function normalizeConfig(raw) {
   c.sitemap = { pages: {}, exclude: [], ...(c.sitemap || {}) };
   c.robots = { allow: ['*'], ...(c.robots || {}) };
   c.build = { exclude: [], ...(c.build || {}) };
+  if (c.indexnow !== undefined) {
+    need(INDEXNOW_KEY.test(c.indexnow?.key || ''), 'indexnow.key must be 32 lowercase hex characters (content-engine init writes it)');
+  }
 
   if (problems.length) {
     throw new ConfigError(`${CONFIG_FILE} has problems:\n  - ${problems.join('\n  - ')}`);
