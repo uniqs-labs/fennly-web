@@ -87,7 +87,7 @@ Ein naheliegender Denkfehler ist, nur die letzte Mahlzeit zu verdächtigen. Laut
 Daraus ergeben sich zwei praktische Regeln:
 
 1. Schau bei einem schlechten Tag auf die letzten 24 bis 48 Stunden, nicht nur auf das Essen kurz davor.
-2. Notiere auch, wann Beschwerden aufhören. Ein Blähbauch über zwei Tage ist ein anderes Muster als eine Stunde Unwohlsein nach dem Frühstück.
+2. Notiere auch, wann Beschwerden aufhören. Ein Blähbauch über zwei Tage ist ein anderes Muster als eine Stunde Unwohlsein nach dem Frühstück. Was hinter einem [Blähbauch nach dem Essen](/de/ratgeber/blaehbauch-nach-dem-essen/) stecken kann, erklären wir in einem eigenen Ratgeber.
 
 Ehrlich gesagt: Eine feste Zeitspanne für alle Menschen und Lebensmittel nennen diese Quellen nicht. Wie lange es bei dir dauert, zeigt erst das Tagebuch über viele Tage.
 

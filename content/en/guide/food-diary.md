@@ -87,7 +87,7 @@ An easy mistake is to blame only the last thing you ate. The NHS says food intol
 Two practical rules follow:
 
 1. On a bad day, look back over the previous 24 to 48 hours, not just at the meal right before.
-2. Write down when symptoms stop, too. Bloating that lasts two days is a different pattern from an hour of discomfort after breakfast.
+2. Write down when symptoms stop, too. Bloating that lasts two days is a different pattern from an hour of discomfort after breakfast. Our guide to [bloating after eating](/en/guides/bloating-after-eating/) explains what can be behind it.
 
 To be honest about the limits: none of these sources gives one time window for everyone and every food. Your own window only shows up over many days of logging.
 
