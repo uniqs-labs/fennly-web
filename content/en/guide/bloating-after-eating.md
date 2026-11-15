@@ -90,7 +90,7 @@ Common high FODMAP foods, according to Monash [5]:
 | Excess fructose | Apples, pears, mango, cherries, watermelon, honey |
 | Polyols | Sorbitol in apples, stone fruit and sugar-free sweets; mannitol in mushrooms and celery |
 
-This is not a list of foods to ban. Hard cheeses and butter, for example, are naturally low in lactose [5], and which group bothers you, if any, varies from person to person.
+This is not a list of foods to ban. Hard cheeses and butter, for example, are naturally low in lactose [5], and which group bothers you, if any, varies from person to person. For a fuller overview with low FODMAP swaps, see our [FODMAP food list](/en/guides/fodmap-list/).
 
 One important distinction with fructose: in fructose malabsorption, the gut cannot absorb fructose normally, which can cause bloating, wind and tummy pain. That is different from the rare hereditary fructose intolerance, which shows up in infancy and, with continued fructose intake, can damage the liver and kidneys [13]. If you suspect the hereditary form, do not experiment with fructose yourself; see a doctor.
 

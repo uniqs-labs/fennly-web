@@ -92,7 +92,7 @@ Typische FODMAP-Quellen laut Monash [5]:
 | Fruktose im Überschuss | Äpfel, Birnen, Mango, Kirschen, Wassermelone, Honig |
 | Polyole (Zuckeralkohole) | Sorbit in Äpfeln, Steinobst und zuckerfreien Süßigkeiten; Mannit in Pilzen und Sellerie |
 
-Das ist keine Verbotsliste. Hartkäse und Butter zum Beispiel enthalten von Natur aus wenig Laktose [5], und welche Gruppe dir Probleme macht, ist individuell.
+Das ist keine Verbotsliste. Hartkäse und Butter zum Beispiel enthalten von Natur aus wenig Laktose [5], und welche Gruppe dir Probleme macht, ist individuell. Eine ausführlichere Übersicht mit Alternativen findest du in unserer [FODMAP-Liste](/de/ratgeber/fodmap-liste/).
 
 Ein wichtiger Unterschied bei Fruktose: Bei einer Fruktosemalabsorption nimmt der Darm Fruktose nicht normal auf, was Blähbauch, Blähungen und Bauchschmerzen auslösen kann. Davon zu unterscheiden ist die seltene erbliche (hereditäre) Fruktoseintoleranz, die sich schon im Säuglingsalter zeigt und bei weiterem Fruktoseverzehr Leber und Nieren schädigen kann [13]. Wenn du die erbliche Form vermutest, mach keine Selbstversuche mit Fruktose, sondern lass das ärztlich abklären.
 
