@@ -5,8 +5,8 @@
     {
       "kind": "hook",
       "kicker": "Bloating after eating",
-      "main": "Bloated after eating? Some gas during and after meals is normal.",
-      "sub": "What can be behind it, and what may help."
+      "main": "Bloated after dinner? It may not be dinner.",
+      "sub": "Where gas comes from, which symptoms can start hours later, and what may help."
     },
     {
       "kind": "learning",
@@ -18,7 +18,7 @@
       "kind": "learning",
       "kicker": "It can be delayed",
       "main": "Food intolerance symptoms usually start a few hours after eating.",
-      "sub": "So if you feel bloated after dinner, dinner is not automatically the culprit."
+      "sub": "They can last for hours or days. Bloating, wind and tummy pain are typical."
     },
     {
       "kind": "learning",

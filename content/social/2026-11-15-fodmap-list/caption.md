@@ -1,4 +1,4 @@
-A FODMAP list is a swap list, not a list of banned foods.
+Low FODMAP is a swap, not a ban.
 
 The low FODMAP diet is meant for people with medically diagnosed IBS: you swap high FODMAP foods for 2 to 6 weeks, then reintroduce one group at a time. Serving size often decides, because the same food can be low or high FODMAP depending on how much you eat.
 

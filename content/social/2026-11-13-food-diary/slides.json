@@ -5,32 +5,32 @@
     {
       "kind": "hook",
       "kicker": "Food diary",
-      "main": "Blaming your last meal? Symptoms can start hours later.",
-      "sub": "How to keep a food diary that actually shows patterns."
+      "main": "4 food diary mistakes that hide your triggers.",
+      "sub": "What to do instead, so patterns actually show up."
     },
     {
       "kind": "learning",
-      "kicker": "Timing",
-      "main": "Food intolerance symptoms usually start a few hours after eating and can last days.",
-      "sub": "On a bad day, look back over the previous 24 to 48 hours."
+      "kicker": "Mistake 1: memory",
+      "main": "Filling in your diary from memory at bedtime.",
+      "sub": "Recall is unreliable and full of biases. Log entries straight after eating."
     },
     {
       "kind": "learning",
-      "kicker": "Amounts",
-      "main": "Write down how much, not just what you ate.",
+      "kicker": "Mistake 2: amounts",
+      "main": "Writing down what you ate, but not how much.",
       "sub": "A splash of milk in your coffee and a large milkshake are not the same."
     },
     {
       "kind": "learning",
-      "kicker": "Stress and sleep",
-      "main": "Log stress and sleep, the columns most people skip.",
-      "sub": "Otherwise bread can look guilty when a stressful week made the difference."
+      "kicker": "Mistake 3: timing",
+      "main": "Blaming only the meal you ate right before.",
+      "sub": "Food intolerance symptoms usually start a few hours after eating. Look back 24 to 48 hours."
     },
     {
       "kind": "learning",
-      "kicker": "Next step",
-      "main": "Treat what you find as a lead to check, not a diagnosis.",
-      "sub": "Do not cut foods out without advice from a doctor or dietitian."
+      "kicker": "Mistake 4: stress, sleep",
+      "main": "Leaving out stress and sleep.",
+      "sub": "Otherwise bread can look guilty when stress made the difference. Do not cut foods out without advice from a doctor or dietitian."
     },
     {
       "kind": "warning",

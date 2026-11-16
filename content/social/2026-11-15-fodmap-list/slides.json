@@ -5,7 +5,7 @@
     {
       "kind": "hook",
       "kicker": "FODMAP list",
-      "main": "A FODMAP list is a swap list, not a list of banned foods.",
+      "main": "Low FODMAP is a swap, not a ban.",
       "sub": "Why portions matter, what to swap, and who it is for."
     },
     {
