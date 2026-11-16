@@ -130,6 +130,8 @@ export function normalizeConfig(raw) {
   c.sitemap = { pages: {}, exclude: [], ...(c.sitemap || {}) };
   c.robots = { allow: ['*'], ...(c.robots || {}) };
   c.build = { exclude: [], ...(c.build || {}) };
+  c.shortLinks = c.shortLinks || {};
+  need(typeof c.shortLinks === 'object' && !Array.isArray(c.shortLinks), 'shortLinks must be an object like { "ig": "/en/guides/?src=ig" }');
   if (c.indexnow !== undefined) {
     need(INDEXNOW_KEY.test(c.indexnow?.key || ''), 'indexnow.key must be 32 lowercase hex characters (content-engine init writes it)');
   }

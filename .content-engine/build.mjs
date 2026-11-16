@@ -4,8 +4,9 @@
 // Input:  the site repo (static files), content/<lang>/<type>/<slug>.md, content.config.json
 // Output: dist/ = every static file byte for byte, plus article pages, hubs, draft
 //         previews under /_preview/, sitemap.xml, robots.txt, llms.txt, the IndexNow
-//         key file /<key>.txt (when content.config.json has indexnow.key) and the social
-//         carousels and reels from content/social/ under /social/ with /social/index.json.
+//         key file /<key>.txt (when content.config.json has indexnow.key), the social
+//         carousels and reels from content/social/ under /social/ with /social/index.json,
+//         and a redirect page per short link (shortLinks, e.g. /ig -> /en/guides/?src=ig).
 //
 // Usage: node build.mjs [--root .] [--out dist] [--engine v1] [--origin https://...] [--drafts-as-live]
 import fs from 'node:fs';
@@ -20,6 +21,7 @@ import { sitemapEntries, sitemapXml, robotsTxt, llmsTxt } from './lib/feeds.mjs'
 import { outputFile } from './lib/slug.mjs';
 import { imageSize } from './lib/imagesize.mjs';
 import { loadSocial, SOCIAL_INDEX, FileRef } from './lib/social.mjs';
+import { shortLinkPages } from './lib/shortlinks.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 
@@ -156,6 +158,11 @@ export function build({ root = process.cwd(), out, origin, draftsAsLive = false,
     }));
   }
 
+  // Short links for social bios: one small redirect page each, never in the sitemap.
+  const short = shortLinkPages(config, knownPaths);
+  errors.push(...short.errors);
+  for (const [rel, html] of short.pages) pages.set(rel, html);
+
   // IndexNow key file: exactly the key, no newline (https://www.indexnow.org/documentation).
   if (config.indexnow) pages.set(`${config.indexnow.key}.txt`, config.indexnow.key);
 
@@ -174,7 +181,7 @@ export function build({ root = process.cwd(), out, origin, draftsAsLive = false,
   pages.set('robots.txt', robotsTxt(config));
   pages.set('llms.txt', llmsTxt({ config, articles: liveArticles, hubs, pages: pagesStatic }));
 
-  const stats = { static: files.length, live: live.articles.length, drafts: drafts.length, generated: pages.size, carousels: social.items.length, reels: social.reels?.length || 0 };
+  const stats = { static: files.length, live: live.articles.length, drafts: drafts.length, generated: pages.size, carousels: social.items.length, reels: social.reels?.length || 0, shortLinks: short.pages.size };
   if (errors.length || !write) return { errors, warnings, pages, stats, config };
 
   fs.rmSync(out, { recursive: true, force: true });

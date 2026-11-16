@@ -1,6 +1,6 @@
 {
-  "generatedBy": "content-engine v1.4 init --app fennly. Everything except robots, sitemap and build is rewritten on every init; change apps/fennly/config.yml in uniqs-labs/content-engine instead.",
-  "engine": "v1.4",
+  "generatedBy": "content-engine v1.5 init --app fennly. Everything except robots, sitemap and build is rewritten on every init; change apps/fennly/config.yml in uniqs-labs/content-engine instead.",
+  "engine": "v1.5",
   "app": "fennly",
   "origin": "https://fennly.app",
   "languages": [
@@ -175,6 +175,10 @@
   },
   "indexnow": {
     "key": "7af0663851702dfc10ae23544c7f7b30"
+  },
+  "shortLinks": {
+    "ig": "/en/guides/?src=ig",
+    "tt": "/en/guides/?src=tt"
   },
   "robots": {
     "allow": [
