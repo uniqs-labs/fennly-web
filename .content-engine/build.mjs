@@ -3,8 +3,9 @@
 //
 // Input:  the site repo (static files), content/<lang>/<type>/<slug>.md, content.config.json
 // Output: dist/ = every static file byte for byte, plus article pages, hubs, draft
-//         previews under /_preview/, sitemap.xml, robots.txt, llms.txt and the IndexNow
-//         key file /<key>.txt (when content.config.json has indexnow.key).
+//         previews under /_preview/, sitemap.xml, robots.txt, llms.txt, the IndexNow
+//         key file /<key>.txt (when content.config.json has indexnow.key) and the social
+//         carousels from content/social/ under /social/ with /social/index.json.
 //
 // Usage: node build.mjs [--root .] [--out dist] [--engine v1] [--origin https://...] [--drafts-as-live]
 import fs from 'node:fs';
@@ -18,6 +19,7 @@ import { listStatic, staticConflicts, copyStatic, staticPages } from './lib/stat
 import { sitemapEntries, sitemapXml, robotsTxt, llmsTxt } from './lib/feeds.mjs';
 import { outputFile } from './lib/slug.mjs';
 import { imageSize } from './lib/imagesize.mjs';
+import { loadSocial, SOCIAL_INDEX } from './lib/social.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 
@@ -157,6 +159,13 @@ export function build({ root = process.cwd(), out, origin, draftsAsLive = false,
   // IndexNow key file: exactly the key, no newline (https://www.indexnow.org/documentation).
   if (config.indexnow) pages.set(`${config.indexnow.key}.txt`, config.indexnow.key);
 
+  // Social carousels: copied byte for byte (Buffers), plus the index of the live ones.
+  const social = loadSocial(root, { config, live });
+  errors.push(...social.errors);
+  warnings.push(...social.warnings);
+  for (const [rel, bytes] of social.files) pages.set(rel, bytes);
+  if (social.index) pages.set(SOCIAL_INDEX, social.index);
+
   errors.push(...staticConflicts(files, [...pages.keys()]));
 
   const liveArticles = config.languages.flatMap((l) => live.list(l));
@@ -164,16 +173,16 @@ export function build({ root = process.cwd(), out, origin, draftsAsLive = false,
   pages.set('robots.txt', robotsTxt(config));
   pages.set('llms.txt', llmsTxt({ config, articles: liveArticles, hubs, pages: pagesStatic }));
 
-  const stats = { static: files.length, live: live.articles.length, drafts: drafts.length, generated: pages.size };
+  const stats = { static: files.length, live: live.articles.length, drafts: drafts.length, generated: pages.size, carousels: social.items.length };
   if (errors.length || !write) return { errors, warnings, pages, stats, config };
 
   fs.rmSync(out, { recursive: true, force: true });
   fs.mkdirSync(out, { recursive: true });
   copyStatic(root, out, files);
-  for (const [rel, html] of pages) {
+  for (const [rel, data] of pages) {
     const dest = path.join(out, rel);
     fs.mkdirSync(path.dirname(dest), { recursive: true });
-    fs.writeFileSync(dest, html);
+    fs.writeFileSync(dest, data);
   }
   return { errors, warnings, pages, stats, config };
 }

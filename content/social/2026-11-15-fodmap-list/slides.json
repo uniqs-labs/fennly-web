@@ -1,0 +1,53 @@
+{
+  "lang": "en",
+  "translationKey": "fodmap-list",
+  "slides": [
+    {
+      "kind": "hook",
+      "kicker": "FODMAP list",
+      "main": "Low FODMAP is a swap, not a ban.",
+      "sub": "Why portions matter, what to swap, and who it is for."
+    },
+    {
+      "kind": "learning",
+      "kicker": "What FODMAPs are",
+      "main": "Fermentable carbs that are not fully absorbed and get fermented into gas.",
+      "sub": "Most people eat them every day without trouble. In IBS, the gut can be more sensitive."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Portions matter",
+      "main": "The same food can be low or high FODMAP depending on the serving.",
+      "sub": "You cannot guess FODMAP content. It has to be measured in a lab."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Swap examples",
+      "main": "Swap wheat toast with honey for sourdough spelt toast with jam.",
+      "sub": "Or your daily apple for an orange. Before cutting out wheat, get tested for coeliac disease."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Three steps",
+      "main": "Swap for 2 to 6 weeks, then reintroduce one group at a time.",
+      "sub": "In the end you only limit what triggers symptoms. A dietitian with IBS experience should guide you."
+    },
+    {
+      "kind": "warning",
+      "kicker": "See a doctor first",
+      "main": "Low FODMAP is for diagnosed IBS. See a doctor first, especially with:",
+      "items": [
+        "Blood in your stool or black stools",
+        "Weight loss you cannot explain",
+        "Symptoms that first started after age 50",
+        "Coeliac disease or IBD in your family"
+      ]
+    },
+    {
+      "kind": "cta",
+      "kicker": "Save this",
+      "main": "Full guide with 14 sources: link in bio",
+      "cta": "Find your likely triggers with Fennly."
+    }
+  ]
+}

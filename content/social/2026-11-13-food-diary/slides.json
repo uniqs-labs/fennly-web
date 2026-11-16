@@ -1,0 +1,53 @@
+{
+  "lang": "en",
+  "translationKey": "food-diary",
+  "slides": [
+    {
+      "kind": "hook",
+      "kicker": "Food diary",
+      "main": "4 food diary mistakes that hide your triggers.",
+      "sub": "What to do instead, so patterns actually show up."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Mistake 1: memory",
+      "main": "Filling in your diary from memory at bedtime.",
+      "sub": "Recall is unreliable and full of biases. Log entries straight after eating."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Mistake 2: amounts",
+      "main": "Writing down what you ate, but not how much.",
+      "sub": "A splash of milk in your coffee and a large milkshake are not the same."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Mistake 3: timing",
+      "main": "Blaming only the meal you ate right before.",
+      "sub": "Food intolerance symptoms usually start a few hours after eating. Look back 24 to 48 hours."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Mistake 4: stress, sleep",
+      "main": "Leaving out stress and sleep.",
+      "sub": "Otherwise bread can look guilty when stress made the difference. Do not cut foods out without advice from a doctor or dietitian."
+    },
+    {
+      "kind": "warning",
+      "kicker": "See a doctor first",
+      "main": "See a doctor if symptoms keep coming back, or if you have:",
+      "items": [
+        "Blood in your stool or black stools",
+        "Weight loss you cannot explain",
+        "Symptoms that wake you up at night",
+        "Severe or worsening pain"
+      ]
+    },
+    {
+      "kind": "cta",
+      "kicker": "Save this",
+      "main": "Full guide with 10 sources: link in bio",
+      "cta": "Find your likely triggers with Fennly."
+    }
+  ]
+}

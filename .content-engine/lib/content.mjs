@@ -5,6 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
 import { slugProblems } from './slug.mjs';
+import { SOCIAL_DIR } from './social.mjs';
 
 export const TITLE_MAX = 60;
 export const DESCRIPTION_MAX = 155;
@@ -168,7 +169,8 @@ export function loadContent(root, config) {
   const ignore = (name) => name.startsWith('.') || name === 'README.md';
 
   for (const lang of fs.readdirSync(contentDir).sort()) {
-    if (ignore(lang)) continue;
+    // content/social/ holds the carousels (site/lib/social.mjs), not articles.
+    if (ignore(lang) || lang === SOCIAL_DIR) continue;
     const langDir = path.join(contentDir, lang);
     if (!fs.statSync(langDir).isDirectory() || !config.languages.includes(lang)) {
       errors.push(`${rel(langDir)}: unexpected entry; content lives in content/{${config.languages.join(',')}}/`);
