@@ -1,0 +1,53 @@
+{
+  "lang": "en",
+  "translationKey": "food-diary",
+  "slides": [
+    {
+      "kind": "hook",
+      "kicker": "Food diary",
+      "main": "Blaming your last meal? Symptoms can start hours later.",
+      "sub": "How to keep a food diary that actually shows patterns."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Timing",
+      "main": "Food intolerance symptoms usually start a few hours after eating and can last days.",
+      "sub": "On a bad day, look back over the previous 24 to 48 hours."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Amounts",
+      "main": "Write down how much, not just what you ate.",
+      "sub": "A splash of milk in your coffee and a large milkshake are not the same."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Stress and sleep",
+      "main": "Log stress and sleep, the columns most people skip.",
+      "sub": "Otherwise bread can look guilty when a stressful week made the difference."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Next step",
+      "main": "Treat what you find as a lead to check, not a diagnosis.",
+      "sub": "Do not cut foods out without advice from a doctor or dietitian."
+    },
+    {
+      "kind": "warning",
+      "kicker": "See a doctor first",
+      "main": "See a doctor if symptoms keep coming back, or if you have:",
+      "items": [
+        "Blood in your stool or black stools",
+        "Weight loss you cannot explain",
+        "Symptoms that wake you up at night",
+        "Severe or worsening pain"
+      ]
+    },
+    {
+      "kind": "cta",
+      "kicker": "Save this",
+      "main": "Full guide with 10 sources: link in bio",
+      "cta": "Find your likely triggers with Fennly."
+    }
+  ]
+}

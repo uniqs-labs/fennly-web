@@ -1,6 +1,6 @@
 {
-  "generatedBy": "content-engine v1.1 init --app fennly. Everything except robots, sitemap and build is rewritten on every init; change apps/fennly/config.yml in uniqs-labs/content-engine instead.",
-  "engine": "v1.1",
+  "generatedBy": "content-engine v1.3 init --app fennly. Everything except robots, sitemap and build is rewritten on every init; change apps/fennly/config.yml in uniqs-labs/content-engine instead.",
+  "engine": "v1.3",
   "app": "fennly",
   "origin": "https://fennly.app",
   "languages": [

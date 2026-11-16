@@ -1,0 +1,54 @@
+{
+  "lang": "en",
+  "translationKey": "bloating-after-eating",
+  "slides": [
+    {
+      "kind": "hook",
+      "kicker": "Bloating after eating",
+      "main": "Bloated after eating? Some gas during and after meals is normal.",
+      "sub": "What can be behind it, and what may help."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Where gas comes from",
+      "main": "Swallowed air and gut bacteria breaking down undigested carbs make gas.",
+      "sub": "Large meals, eating quickly, fizzy drinks and foods like onion, beans or apples can make it worse."
+    },
+    {
+      "kind": "learning",
+      "kicker": "It can be delayed",
+      "main": "Food intolerance symptoms usually start a few hours after eating.",
+      "sub": "So if you feel bloated after dinner, dinner is not automatically the culprit."
+    },
+    {
+      "kind": "learning",
+      "kicker": "How you eat",
+      "main": "Eat smaller, more frequent meals and take time to eat.",
+      "sub": "Chew with your mouth closed to swallow less air. Sensible, but no treatment works consistently for everyone."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Find your triggers",
+      "main": "Find your own triggers instead of cutting out long lists of foods.",
+      "sub": "Cutting foods out without advice from a GP or dietitian could leave you short of vitamins and minerals."
+    },
+    {
+      "kind": "warning",
+      "kicker": "See a doctor first",
+      "main": "See a doctor if you feel bloated regularly or have:",
+      "items": [
+        "Sudden severe pain, swollen tummy: call emergency services",
+        "Weight loss you cannot explain",
+        "Blood in your stool or black stools",
+        "A swelling or lump in your tummy",
+        "Severe or worsening pain"
+      ]
+    },
+    {
+      "kind": "cta",
+      "kicker": "Save this",
+      "main": "Full guide with 13 sources: link in bio",
+      "cta": "Find your likely triggers with Fennly."
+    }
+  ]
+}
