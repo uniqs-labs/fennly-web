@@ -1,19 +1,39 @@
 // content/social/<YYYY-MM-DD>-<slug>/: Instagram and TikTok carousels (slides.json,
 // caption.md, ig/NN.jpg, tiktok/NN.jpg), written and rendered by the engine's daily run.
+// content/social/reels/<YYYY-MM-DD>-<slug>/: reels (video.mp4, caption.md), brought in by
+// scripts/sync-reels.sh in the engine (since v1.4).
 // The build copies every file to /social/ byte for byte and writes /social/index.json:
-// every carousel whose article is live, newest first, with absolute URLs, so a posting
-// routine or the Instagram API can fetch them. Never in the sitemap, hubs or llms.txt,
-// and robots.txt does not block it. A broken carousel is a warning, never a build error.
+// every carousel whose article is live and every complete reel, newest first, with
+// absolute URLs, so the Instagram API can fetch them. Never in the sitemap, hubs or
+// llms.txt, and robots.txt does not block it. A broken carousel or reel is a warning; a
+// file over 50 MB is a build error (keeps the repo small).
 import fs from 'node:fs';
 import path from 'node:path';
 
 export const SOCIAL_DIR = 'social';
 export const SOCIAL_INDEX = `${SOCIAL_DIR}/index.json`;
+export const REELS_DIR = 'reels';
+export const MAX_FILE_BYTES = 50 * 1024 * 1024;
+/** Files above this size are copied from disk at write time instead of being held in memory. */
+const INLINE_BYTES = 2 * 1024 * 1024;
 const FOLDER_RE = /^(\d{4}-\d{2}-\d{2})-([a-z0-9]+(?:-[a-z0-9]+)*)$/;
 const IMAGE_RE = /^\d{2}\.jpg$/;
 
-/** Every file under content/social/ as a Map of 'social/<rel>' to its bytes. */
-function readTree(dir) {
+/** A file the build copies from disk when it writes dist/ (large videos). */
+export class FileRef {
+  constructor(src) {
+    this.src = src;
+  }
+}
+
+/** Megabytes rounded up, so a file just over the limit never reads as exactly the limit. */
+const mb = (n) => `${(Math.ceil((n / 1024 / 1024) * 10) / 10).toFixed(1)} MB`;
+
+/**
+ * Every file under content/social/ as a Map of 'social/<rel>' to its bytes (or a FileRef
+ * for large files). Files over MAX_FILE_BYTES are reported in `errors` and left out.
+ */
+function readTree(dir, errors) {
   const files = new Map();
   const walk = (d, rel) => {
     for (const name of fs.readdirSync(d).sort()) {
@@ -23,11 +43,35 @@ function readTree(dir) {
       const r = rel ? `${rel}/${name}` : name;
       if (stat.isSymbolicLink()) continue;
       if (stat.isDirectory()) walk(full, r);
-      else if (stat.isFile()) files.set(`${SOCIAL_DIR}/${r}`, fs.readFileSync(full));
+      else if (!stat.isFile()) continue;
+      else if (stat.size > MAX_FILE_BYTES) {
+        errors.push(`content/${SOCIAL_DIR}/${r} is ${mb(stat.size)}, at most ${MAX_FILE_BYTES / 1024 / 1024} MB is allowed; compress it (scripts/sync-reels.sh in the engine brings reels to 15 MB) or remove it`);
+      } else files.set(`${SOCIAL_DIR}/${r}`, stat.size > INLINE_BYTES ? new FileRef(full) : fs.readFileSync(full));
     }
   };
   walk(dir, '');
   return files;
+}
+
+/** content/social/reels/: every folder with video.mp4 and caption.md, newest first. */
+function loadReels(dir, { config, skip }) {
+  const reels = [];
+  for (const name of fs.readdirSync(dir).sort()) {
+    const folder = path.join(dir, name);
+    if (name.startsWith('.') || !fs.statSync(folder).isDirectory()) continue;
+    const where = `${REELS_DIR}/${name}`;
+    const m = FOLDER_RE.exec(name);
+    if (!m) { skip(where, 'folder must be named <YYYY-MM-DD>-<slug>'); continue; }
+    const video = path.join(folder, 'video.mp4');
+    const captionFile = path.join(folder, 'caption.md');
+    if (!fs.existsSync(video) || !fs.statSync(video).isFile()) { skip(where, 'video.mp4 is missing'); continue; }
+    if (fs.statSync(video).size > MAX_FILE_BYTES) continue;
+    if (!fs.existsSync(captionFile)) { skip(where, 'caption.md is missing'); continue; }
+    const caption = fs.readFileSync(captionFile, 'utf8').replace(/\r\n/g, '\n').trim();
+    if (!caption) { skip(where, 'caption.md is empty'); continue; }
+    reels.push({ date: m[1], slug: m[2], videoUrl: config.url.abs(`/${SOCIAL_DIR}/${REELS_DIR}/${name}/video.mp4`), caption });
+  }
+  return reels.sort((a, b) => b.date.localeCompare(a.date) || a.slug.localeCompare(b.slug));
 }
 
 /**
@@ -37,9 +81,9 @@ function readTree(dir) {
  */
 export function loadSocial(root, { config, live }) {
   const dir = path.join(root, 'content', SOCIAL_DIR);
-  const out = { files: new Map(), index: null, items: [], errors: [], warnings: [] };
+  const out = { files: new Map(), index: null, items: [], reels: null, errors: [], warnings: [] };
   if (!fs.existsSync(dir) || !fs.statSync(dir).isDirectory()) return out;
-  out.files = readTree(dir);
+  out.files = readTree(dir, out.errors);
   if (out.files.has(SOCIAL_INDEX)) {
     out.errors.push(`content/${SOCIAL_INDEX} would overwrite the generated index; delete it`);
     out.files.delete(SOCIAL_INDEX);
@@ -48,7 +92,7 @@ export function loadSocial(root, { config, live }) {
 
   for (const name of fs.readdirSync(dir).sort()) {
     const folder = path.join(dir, name);
-    if (name.startsWith('.') || !fs.statSync(folder).isDirectory()) continue;
+    if (name.startsWith('.') || name === REELS_DIR || !fs.statSync(folder).isDirectory()) continue;
     const m = FOLDER_RE.exec(name);
     if (!m) { skip(name, 'folder must be named <YYYY-MM-DD>-<slug>'); continue; }
     let data;
@@ -82,6 +126,9 @@ export function loadSocial(root, { config, live }) {
     });
   }
   out.items.sort((a, b) => b.date.localeCompare(a.date) || a.slug.localeCompare(b.slug));
-  out.index = `${JSON.stringify({ carousels: out.items }, null, 2)}\n`;
+  // "reels" only when content/social/reels/ exists, so a site without reels keeps its index.json.
+  const reelsDir = path.join(dir, REELS_DIR);
+  if (fs.existsSync(reelsDir) && fs.statSync(reelsDir).isDirectory()) out.reels = loadReels(reelsDir, { config, skip });
+  out.index = `${JSON.stringify({ carousels: out.items, ...(out.reels ? { reels: out.reels } : {}) }, null, 2)}\n`;
   return out;
 }
