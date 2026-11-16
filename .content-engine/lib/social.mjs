@@ -1,7 +1,8 @@
 // content/social/<YYYY-MM-DD>-<slug>/: Instagram and TikTok carousels (slides.json,
 // caption.md, ig/NN.jpg, tiktok/NN.jpg), written and rendered by the engine's daily run.
-// content/social/reels/<YYYY-MM-DD>-<slug>/: reels (video.mp4, caption.md), brought in by
-// scripts/sync-reels.sh in the engine (since v1.4).
+// content/social/reels/<YYYY-MM-DD>-<slug>/: reels (video.mp4, caption.md and optionally
+// meta.json {"kind": "ugc" | "demo"}, default ugc), brought in by scripts/sync-reels.sh in
+// the engine (since v1.4; kinds since v1.5).
 // The build copies every file to /social/ byte for byte and writes /social/index.json:
 // every carousel whose article is live and every complete reel, newest first, with
 // absolute URLs, so the Instagram API can fetch them. Never in the sitemap, hubs or
@@ -14,6 +15,9 @@ export const SOCIAL_DIR = 'social';
 export const SOCIAL_INDEX = `${SOCIAL_DIR}/index.json`;
 export const REELS_DIR = 'reels';
 export const MAX_FILE_BYTES = 50 * 1024 * 1024;
+/** Reel kinds: first person UGC stories (reach) and app demos (installs). */
+export const REEL_KINDS = ['ugc', 'demo'];
+export const DEFAULT_REEL_KIND = 'ugc';
 /** Files above this size are copied from disk at write time instead of being held in memory. */
 const INLINE_BYTES = 2 * 1024 * 1024;
 const FOLDER_RE = /^(\d{4}-\d{2}-\d{2})-([a-z0-9]+(?:-[a-z0-9]+)*)$/;
@@ -69,7 +73,23 @@ function loadReels(dir, { config, skip }) {
     if (!fs.existsSync(captionFile)) { skip(where, 'caption.md is missing'); continue; }
     const caption = fs.readFileSync(captionFile, 'utf8').replace(/\r\n/g, '\n').trim();
     if (!caption) { skip(where, 'caption.md is empty'); continue; }
-    reels.push({ date: m[1], slug: m[2], videoUrl: config.url.abs(`/${SOCIAL_DIR}/${REELS_DIR}/${name}/video.mp4`), caption });
+    let kind = DEFAULT_REEL_KIND;
+    const metaFile = path.join(folder, 'meta.json');
+    if (fs.existsSync(metaFile)) {
+      let meta;
+      try {
+        meta = JSON.parse(fs.readFileSync(metaFile, 'utf8').replace(/^\uFEFF/, ''));
+      } catch (e) {
+        skip(where, `meta.json is not valid JSON (${String(e.message).split('\n')[0]})`);
+        continue;
+      }
+      kind = meta?.kind ?? DEFAULT_REEL_KIND;
+      if (!REEL_KINDS.includes(kind)) {
+        skip(where, `meta.json kind must be ${REEL_KINDS.map((k) => `"${k}"`).join(' or ')}, got ${JSON.stringify(kind)}`);
+        continue;
+      }
+    }
+    reels.push({ date: m[1], slug: m[2], kind, videoUrl: config.url.abs(`/${SOCIAL_DIR}/${REELS_DIR}/${name}/video.mp4`), caption });
   }
   return reels.sort((a, b) => b.date.localeCompare(a.date) || a.slug.localeCompare(b.slug));
 }
