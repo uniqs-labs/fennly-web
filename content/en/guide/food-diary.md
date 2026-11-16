@@ -78,7 +78,7 @@ With many intolerances, the amount matters [5] [7]. Lactose is the classic examp
 
 The same logic applies to FODMAPs, short-chain fermentable carbohydrates found in many fruits, vegetables, dairy products, artificial sweeteners and wheat [6]. During reintroduction after a low FODMAP phase, Monash University has people eat one test food for three days in increasing amounts and record symptoms, to learn how much they tolerate [7]. For fructans, Monash even suggests separate tests with different food groups, because people often tolerate fructans from some foods but not from others [7].
 
-So log ingredients and portions, not just dish names, and include the small stuff.
+So log ingredients and portions, not just dish names, and include the small stuff. The same goes if you suspect histamine; our guide to [histamine intolerance](/en/guides/histamine-intolerance/) explains how to approach it.
 
 ## Why symptoms can start hours later and last for days
 

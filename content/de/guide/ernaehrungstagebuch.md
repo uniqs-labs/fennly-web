@@ -78,7 +78,7 @@ Bei vielen Unverträglichkeiten kommt es auf die Menge an [5] [7]. Ein typisches
 
 Ähnlich arbeiten Fachleute bei FODMAPs, also kurzkettigen, vergärbaren Kohlenhydraten, die zum Beispiel in Obst, Gemüse, Milchprodukten, künstlichen Süßungsmitteln und Weizen stecken [6]. Bei der Wiedereinführung nach einer FODMAP-armen Phase empfiehlt die Monash University, ein Testlebensmittel drei Tage lang in steigender Menge zu essen und die Beschwerden aufzuschreiben, um herauszufinden, wie viel davon du verträgst [7]. Für Fruktane rät Monash sogar zu getrennten Tests mit verschiedenen Lebensmittelgruppen, weil viele Menschen Fruktane aus manchen Lebensmitteln vertragen und aus anderen nicht [7].
 
-Für dein Tagebuch heißt das: Schreib Zutaten und Mengen auf, nicht nur Gerichte, und notiere auch Kleinigkeiten.
+Für dein Tagebuch heißt das: Schreib Zutaten und Mengen auf, nicht nur Gerichte, und notiere auch Kleinigkeiten. Das gilt auch, wenn du Histamin im Verdacht hast; wie du dabei vorgehst, steht im [Ratgeber zur Histaminintoleranz](/de/ratgeber/histaminintoleranz/).
 
 ## Beschwerden kommen oft erst Stunden später und können Tage anhalten
 
