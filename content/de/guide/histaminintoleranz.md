@@ -117,7 +117,7 @@ Die Fachwelt ist sich dabei nicht ganz einig. Manche Übersichtsarbeiten werten 
 ### Was du dir sparen kannst
 
 - **IgG-Tests (IgG4) auf Lebensmittel:** Die europäische Allergie-Fachgesellschaft EAACI rät ausdrücklich davon ab. IgG4-Antikörper gegen Lebensmittel zeigen nur, dass du diese Lebensmittel wiederholt gegessen hast, nicht, dass du sie nicht verträgst [7].
-- **Heimtests:** Laut NHS gibt es nur begrenzte Belege, dass käufliche Unverträglichkeitstests richtige Ergebnisse liefern, und sie können dazu führen, dass du unnötig viele Lebensmittel meidest [8].
+- **Heimtests:** Laut NHS gibt es nur begrenzte Belege, dass käufliche Unverträglichkeitstests richtige Ergebnisse liefern, und sie können dazu führen, dass du unnötig viele Lebensmittel meidest [8]. Welche Tests bei Unverträglichkeiten wirklich etwas aussagen, zeigt unser Ratgeber [Lebensmittelunverträglichkeit testen](/de/ratgeber/lebensmittelunvertraeglichkeit-testen/).
 - **DAO-Kapseln:** Die Leitlinie hält ihre Wirksamkeit für nicht belegt und empfiehlt sie nicht [1].
 
 ## So gehst du bei Verdacht strukturiert vor

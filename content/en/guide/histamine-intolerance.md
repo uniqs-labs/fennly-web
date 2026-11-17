@@ -117,7 +117,7 @@ Experts do not fully agree. Some reviews treat improvement on a low histamine di
 ### What to skip
 
 - **IgG (IgG4) food intolerance tests:** The European Academy of Allergy and Clinical Immunology (EAACI) explicitly advises against them. IgG4 antibodies to foods only show that you have eaten those foods repeatedly, not that you cannot tolerate them [7].
-- **Home test kits:** The NHS says there is limited evidence that home food intolerance tests give accurate results, and they may lead you to avoid many foods unnecessarily [8].
+- **Home test kits:** The NHS says there is limited evidence that home food intolerance tests give accurate results, and they may lead you to avoid many foods unnecessarily [8]. Our guide to [food intolerance tests](/en/guides/food-intolerance-test/) explains which tests actually tell you something.
 - **DAO capsules:** The guideline considers their effect unproven and does not recommend them [1].
 
 ## A step-by-step approach if you suspect histamine

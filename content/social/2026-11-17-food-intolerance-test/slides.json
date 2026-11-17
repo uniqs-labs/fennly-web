@@ -1,0 +1,54 @@
+{
+  "lang": "en",
+  "translationKey": "food-intolerance-tests",
+  "slides": [
+    {
+      "kind": "hook",
+      "kicker": "Food intolerance tests",
+      "main": "A positive IgG food test mostly shows what you eat regularly.",
+      "sub": "Which tests actually tell you something, and what to do instead."
+    },
+    {
+      "kind": "learning",
+      "kicker": "IgG tests",
+      "main": "Allergy societies in Europe and the US advise against IgG food tests.",
+      "sub": "Many people test positive without any symptoms. Home test kits may also suggest avoiding many foods, which can be harmful."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Breath tests",
+      "main": "A breath test points to intolerance when symptoms appear during it.",
+      "sub": "Malabsorbing some lactose or fructose is common and not abnormal in itself."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Coeliac blood test",
+      "main": "Keep eating gluten before a coeliac test.",
+      "sub": "NICE advises gluten in more than one meal every day for at least 6 weeks before testing."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Cut out, then reintroduce",
+      "main": "Cut out one suspected food for a limited time, then bring it back.",
+      "sub": "A food and symptom diary helps. Don't cut foods out without advice from a GP or dietitian."
+    },
+    {
+      "kind": "warning",
+      "kicker": "See a doctor first",
+      "main": "Get medical help if you have:",
+      "items": [
+        "Symptoms that first started after age 50",
+        "Blood in your stool or black stools",
+        "Weight loss you cannot explain",
+        "Fever",
+        "Symptoms that wake you up at night"
+      ]
+    },
+    {
+      "kind": "cta",
+      "kicker": "Save this",
+      "main": "Full guide with 10 sources: link in bio",
+      "cta": "Find your likely triggers with Fennly."
+    }
+  ]
+}

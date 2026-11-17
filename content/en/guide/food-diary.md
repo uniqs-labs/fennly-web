@@ -124,6 +124,6 @@ You end up with a suspicion, not proof, and it is best tested with professional 
 
 Coeliac disease is an immune reaction to gluten [6]. Tests for it are only accurate while you are eating gluten: NICE advises eating some gluten in more than one meal every day for at least 6 weeks before testing, and not starting a gluten-free diet until a specialist has confirmed the diagnosis [9]. Going gluten free first can make the result unreliable.
 
-Skip IgG4 blood tests for food intolerance. According to the European Academy of Allergy and Clinical Immunology (EAACI), these antibodies mainly show that your body has been exposed to a food repeatedly, not that you are intolerant to it, and the tests should not be done for food-related complaints [10]. The BSG also advises against elimination diets based on IgG tests in IBS [6].
+Skip IgG4 blood tests for food intolerance. According to the European Academy of Allergy and Clinical Immunology (EAACI), these antibodies mainly show that your body has been exposed to a food repeatedly, not that you are intolerant to it, and the tests should not be done for food-related complaints [10]. The BSG also advises against elimination diets based on IgG tests in IBS [6]. Our guide to [food intolerance tests](/en/guides/food-intolerance-test/) covers which tests are worth doing instead.
 
 Finally, if symptoms keep coming back, see a doctor [1]. A diary does not replace that appointment, but it makes the conversation far more specific.
