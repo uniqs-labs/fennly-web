@@ -1,0 +1,54 @@
+{
+  "lang": "en",
+  "translationKey": "fructose-malabsorption",
+  "slides": [
+    {
+      "kind": "hook",
+      "kicker": "Fructose malabsorption",
+      "main": "Not absorbing large amounts of fructose is normal, even when healthy.",
+      "sub": "When it turns into an intolerance, and what to try instead of giving up fruit."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Amount matters",
+      "main": "In a small study, most healthy adults absorbed 25 g fructose, not 50 g.",
+      "sub": "Below 25 g, healthy volunteers had no tummy symptoms, even those with proven malabsorption."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Excess fructose",
+      "main": "Fructose in excess of glucose is thought to be absorbed worst.",
+      "sub": "Apples, pears, mangoes, honey and high fructose corn syrup are high. Sorbitol in sugar-free sweets is poorly absorbed too."
+    },
+    {
+      "kind": "learning",
+      "kicker": "The breath test",
+      "main": "A breath test reading on its own is not an intolerance.",
+      "sub": "Your symptoms are recorded during the test, and results can vary when the test is repeated."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Cut down, then test",
+      "main": "A common approach: cut down briefly, then reintroduce foods.",
+      "sub": "One at a time, to find how much you tolerate. Don't cut foods out without advice from a GP or dietitian."
+    },
+    {
+      "kind": "warning",
+      "kicker": "See a doctor first",
+      "main": "Get medical help if you have:",
+      "items": [
+        "Vomiting or low blood sugar after sweets",
+        "Blood in your stool or black stools",
+        "Weight loss you cannot explain",
+        "Fever",
+        "Symptoms that wake you up at night"
+      ]
+    },
+    {
+      "kind": "cta",
+      "kicker": "Save this",
+      "main": "Full guide with 10 sources: link in bio",
+      "cta": "Find your likely triggers with Fennly."
+    }
+  ]
+}

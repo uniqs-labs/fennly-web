@@ -78,7 +78,7 @@ Breath tests have limits worth knowing [5]:
 - **False positives:** bacterial overgrowth in the small intestine, very fast gut transit or poor oral hygiene can mimic a rise.
 - **Symptoms without malabsorption:** some people get symptoms during the test even though the test shows no malabsorption. Possible reasons include a false negative test, a sensitive gut or a nocebo effect, meaning symptoms that come from expecting them.
 
-A crucial point about fructose: common fructose malabsorption is something completely different from hereditary fructose intolerance [5] [10]. The hereditary form is a rare genetic metabolic disease that starts in infancy as soon as fructose enters the diet, and continued exposure can lead to low blood sugar and liver and kidney damage [10]. If you think the hereditary form could apply to you, do not experiment with fructose; see a doctor.
+A crucial point about fructose: common fructose malabsorption is something completely different from hereditary fructose intolerance [5] [10]. The hereditary form is a rare genetic metabolic disease that starts in infancy as soon as fructose enters the diet, and continued exposure can lead to low blood sugar and liver and kidney damage [10]. If you think the hereditary form could apply to you, do not experiment with fructose; see a doctor. Our guide to [fructose malabsorption](/en/guides/fructose-malabsorption/) covers the common form in detail.
 
 And for IBS: NICE says a hydrogen breath test is not needed to confirm a diagnosis of irritable bowel syndrome in people who meet the IBS diagnostic criteria [8]. Whether a breath test makes sense for you is a decision for your doctor.
 
