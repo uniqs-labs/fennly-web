@@ -1,0 +1,54 @@
+{
+  "lang": "en",
+  "translationKey": "ibs-diet",
+  "slides": [
+    {
+      "kind": "hook",
+      "kicker": "IBS diet",
+      "main": "Low FODMAP isn't the first step for IBS.",
+      "sub": "What guidelines say to try first, and when low FODMAP comes in."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Start with basics",
+      "main": "Eat regular meals and keep tea or coffee to 3 cups a day.",
+      "sub": "Also less alcohol, fizzy drinks and fatty food, and no more than 3 portions of fresh fruit a day."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Match your symptom",
+      "main": "Gas and bloating: oats and up to 1 tablespoon of linseeds daily.",
+      "sub": "With diarrhea, avoid the sweetener sorbitol in sugar-free sweets, gum and drinks."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Low FODMAP comes second",
+      "main": "Low FODMAP is a 2 to 6 week trial, ideally with a dietitian.",
+      "sub": "Then FODMAP groups come back one at a time. Not everyone with IBS improves on it."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Coeliac test first",
+      "main": "Don't go gluten-free before you have been tested for coeliac disease.",
+      "sub": "The test is only accurate while you eat gluten: in more than 1 meal daily for at least 6 weeks."
+    },
+    {
+      "kind": "warning",
+      "kicker": "See a doctor first",
+      "main": "Get medical advice if you have:",
+      "items": [
+        "Blood in your stool or black stools",
+        "Weight loss you cannot explain",
+        "Fever",
+        "Symptoms that wake you up at night",
+        "Symptoms that first started after age 50"
+      ]
+    },
+    {
+      "kind": "cta",
+      "kicker": "Save this",
+      "main": "Full guide with 11 sources: link in bio",
+      "cta": "Find your likely triggers with Fennly."
+    }
+  ]
+}

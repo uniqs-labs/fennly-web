@@ -117,7 +117,7 @@ Wheat, rye and barley are on the list because of their fructans, but they also c
 
 ### What the guidelines say
 
-The guidelines follow a similar order. General dietary advice comes first, such as regular meals, less alcohol and fizzy drinks, and no more than 3 cups of tea or coffee a day. Only if symptoms persist does NICE recommend exclusion diets such as low FODMAP, and only with advice from a healthcare professional with expertise in dietary management [7]. The British Dietetic Association also places low FODMAP as second-line advice, delivered by a dietitian [11]. The American College of Gastroenterology (ACG) recommends a limited trial of a low FODMAP diet to improve overall IBS symptoms [10].
+The guidelines follow a similar order. General dietary advice comes first, such as regular meals, less alcohol and fizzy drinks, and no more than 3 cups of tea or coffee a day. Only if symptoms persist does NICE recommend exclusion diets such as low FODMAP, and only with advice from a healthcare professional with expertise in dietary management [7]. The British Dietetic Association also places low FODMAP as second-line advice, delivered by a dietitian [11]. The American College of Gastroenterology (ACG) recommends a limited trial of a low FODMAP diet to improve overall IBS symptoms [10]. Our [IBS diet guide](/en/guides/ibs-diet/) walks through these steps in order.
 
 ## How to use the list: three steps, not a ban
 

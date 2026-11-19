@@ -135,7 +135,7 @@ Der britische Gesundheitsdienst NHS empfiehlt [1]:
 - regelmäßig bewegen, auch dann, wenn du dich gerade aufgebläht fühlst
 - den Bauch sanft massieren, laut NHS von rechts nach links
 
-Die britische Reizdarm-Leitlinie von NICE ergänzt: regelmäßig essen, dir Zeit dafür nehmen und keine langen Pausen zwischen den Mahlzeiten lassen [7]. Auch das Gesundheitsportal des Bundesgesundheitsministeriums schreibt, dass sich bei manchen Menschen mit Reizdarm die Beschwerden verringern, wenn sie ihre Mahlzeiten in mehreren kleinen Portionen über den Tag verteilen [14].
+Die britische Reizdarm-Leitlinie von NICE ergänzt: regelmäßig essen, dir Zeit dafür nehmen und keine langen Pausen zwischen den Mahlzeiten lassen [7]; mehr dazu im [Ratgeber zur Reizdarm-Ernährung](/de/ratgeber/reizdarm-ernaehrung/). Auch das Gesundheitsportal des Bundesgesundheitsministeriums schreibt, dass sich bei manchen Menschen mit Reizdarm die Beschwerden verringern, wenn sie ihre Mahlzeiten in mehreren kleinen Portionen über den Tag verteilen [14].
 
 ### Was du isst und trinkst
 

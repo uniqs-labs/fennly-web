@@ -133,7 +133,7 @@ The NHS recommends [1]:
 - exercising regularly, even when you feel bloated
 - gently massaging your tummy, which the NHS describes as from right to left
 
-The UK IBS guideline from NICE adds: have regular meals, take time to eat, and avoid missing meals or leaving long gaps between them [7].
+The UK IBS guideline from NICE adds: have regular meals, take time to eat, and avoid missing meals or leaving long gaps between them [7]. Our [IBS diet guide](/en/guides/ibs-diet/) covers the rest of the advice.
 
 ### What you eat and drink
 
