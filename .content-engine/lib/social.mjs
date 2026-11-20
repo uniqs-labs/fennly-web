@@ -1,11 +1,14 @@
 // content/social/<YYYY-MM-DD>-<slug>/: Instagram and TikTok carousels (slides.json,
-// caption.md, ig/NN.jpg, tiktok/NN.jpg), written and rendered by the engine's daily run.
+// caption.md, ig/NN.jpg, tiktok/NN.jpg), written and rendered by the engine's daily run,
+// and since v1.6 the guide reel made from the TikTok slides with music (reel.mp4 plus
+// reel.json {"music": "<track file>"}, scripts/reel.mjs in the engine).
 // content/social/reels/<YYYY-MM-DD>-<slug>/: reels (video.mp4, caption.md and optionally
 // meta.json {"kind": "ugc" | "demo"}, default ugc), brought in by scripts/sync-reels.sh in
 // the engine (since v1.4; kinds since v1.5).
 // The build copies every file to /social/ byte for byte and writes /social/index.json:
 // every carousel whose article is live and every complete reel, newest first, with
-// absolute URLs, so the Instagram API can fetch them. Never in the sitemap, hubs or
+// absolute URLs, so the Instagram API can fetch them. A carousel with reel.mp4 also gets
+// reelUrl, coverUrl (slide 1, 9:16) and music (the track, from reel.json). Never in the sitemap, hubs or
 // llms.txt, and robots.txt does not block it. A broken carousel or reel is a warning; a
 // file over 50 MB is a build error (keeps the repo small).
 import fs from 'node:fs';
@@ -18,6 +21,9 @@ export const MAX_FILE_BYTES = 50 * 1024 * 1024;
 /** Reel kinds: first person UGC stories (reach) and app demos (installs). */
 export const REEL_KINDS = ['ugc', 'demo'];
 export const DEFAULT_REEL_KIND = 'ugc';
+/** The guide reel in a carousel folder (slideshow of tiktok/NN.jpg with music) and its facts. */
+export const GUIDE_REEL = 'reel.mp4';
+export const GUIDE_REEL_META = 'reel.json';
 /** Files above this size are copied from disk at write time instead of being held in memory. */
 const INLINE_BYTES = 2 * 1024 * 1024;
 const FOLDER_RE = /^(\d{4}-\d{2}-\d{2})-([a-z0-9]+(?:-[a-z0-9]+)*)$/;
@@ -135,7 +141,7 @@ export function loadSocial(root, { config, live }) {
     const ig = images('ig');
     const tiktok = images('tiktok');
     if (!ig.length && !tiktok.length) { skip(name, 'no rendered images in ig/ or tiktok/'); continue; }
-    out.items.push({
+    const item = {
       date: m[1],
       slug: m[2],
       lang: data.lang,
@@ -143,7 +149,17 @@ export function loadSocial(root, { config, live }) {
       caption: fs.readFileSync(captionFile, 'utf8').replace(/\r\n/g, '\n').trim(),
       ig,
       tiktok,
-    });
+    };
+    const reel = path.join(folder, GUIDE_REEL);
+    if (fs.existsSync(reel) && fs.statSync(reel).isFile() && fs.statSync(reel).size <= MAX_FILE_BYTES) {
+      item.reelUrl = config.url.abs(`/${SOCIAL_DIR}/${name}/${GUIDE_REEL}`);
+      item.coverUrl = tiktok[0] || ig[0];
+      try {
+        const meta = JSON.parse(fs.readFileSync(path.join(folder, GUIDE_REEL_META), 'utf8'));
+        if (typeof meta?.music === 'string' && meta.music) item.music = meta.music;
+      } catch { /* no or broken reel.json: the reel is listed without its track */ }
+    }
+    out.items.push(item);
   }
   out.items.sort((a, b) => b.date.localeCompare(a.date) || a.slug.localeCompare(b.slug));
   // "reels" only when content/social/reels/ exists, so a site without reels keeps its index.json.
