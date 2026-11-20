@@ -5,7 +5,7 @@ lang: de
 type: guide
 translationKey: food-diary
 published: 2026-11-13
-reviewed: 2026-11-13
+reviewed: 2026-11-20
 author: "Fennly-Redaktion (UNIQS)"
 reviewer: ""
 sources:
@@ -29,6 +29,12 @@ sources:
     url: "https://www.nice.org.uk/guidance/ng20/chapter/Recommendations"
   - title: "Stapel SO et al.: Testing for IgG4 against foods is not recommended as a diagnostic tool: EAACI Task Force Report (2008)"
     url: "https://doi.org/10.1111/j.1398-9995.2008.01705.x"
+  - title: "NHS: Symptoms of irritable bowel syndrome (IBS) (2026)"
+    url: "https://www.nhs.uk/conditions/irritable-bowel-syndrome-ibs/symptoms/"
+  - title: "NHS: Irritable bowel syndrome (IBS) (2026)"
+    url: "https://www.nhs.uk/conditions/irritable-bowel-syndrome-ibs/"
+  - title: "NHS: Coeliac disease (2026)"
+    url: "https://www.nhs.uk/conditions/coeliac-disease/"
 faq:
   - q: "Wie lange sollte man ein Ernährungstagebuch führen?"
     a: "Eine feste Dauer nennen die hier zitierten Leitlinien nicht. Plane mehrere Wochen ein, damit du genug gute und schlechte Tage vergleichen kannst und auch Beschwerden erfasst, die verzögert kommen oder ein bis zwei Tage anhalten. Wenn du mit Fachleuten eine Auslassdiät machst, führst du das Tagebuch während der ganzen Testphase weiter."
@@ -37,10 +43,10 @@ faq:
   - q: "Kann ein Ernährungstagebuch eine Unverträglichkeit nachweisen?"
     a: "Nein. Es liefert Muster und Verdachtsmomente, aber keine Diagnose. Einen Verdacht prüfst du am besten ärztlich und, wenn es sinnvoll ist, mit einer zeitlich begrenzten Auslassdiät und anschließender Wiedereinführung unter fachlicher Begleitung."
   - q: "Sind IgG-Tests auf Nahrungsmittelunverträglichkeiten sinnvoll?"
-    a: "Nein. Die Europäische Akademie für Allergologie und Klinische Immunologie rät bei Beschwerden nach dem Essen von IgG4-Tests gegen Lebensmittel ab, weil diese Antikörper vor allem zeigen, dass du einem Lebensmittel wiederholt begegnet bist. Auch die British Society of Gastroenterology empfiehlt bei Reizdarm keine Diäten auf Basis von IgG-Tests."
+    a: "Nein. Die Europäische Akademie für Allergologie und Klinische Immunologie rät bei Beschwerden nach dem Essen von IgG4-Tests gegen Lebensmittel ab, weil diese Antikörper vor allem zeigen, dass du einem Lebensmittel wiederholt begegnet bist. Auch der britische Gesundheitsdienst NHS rät von manchen frei verkäuflichen Tests ab, die Unverträglichkeiten nachweisen sollen, weil kaum belegt ist, dass sie genaue Ergebnisse liefern."
   - q: "Ist eine App besser als ein Ernährungstagebuch auf Papier?"
     a: "Nicht automatisch. Papier ist kostenlos und flexibel, wird aber leicht nachträglich aus dem Gedächtnis ausgefüllt. Eine App setzt Zeitstempel und kann Zusammenhänge über mehrere Tage auswerten; prüfe aber, wo deine Daten gespeichert werden, und kontrolliere automatisch erkannte Einträge."
-related: []
+related: [bloating-after-eating, food-intolerance-tests, ibs-diet]
 draft: false
 ---
 Ein Ernährungstagebuch zeigt nur dann Muster, wenn du zeitnah notierst, was du wann und wie viel gegessen hast, wann welche Beschwerden wie stark auftraten und wie es dir mit Stress und Schlaf ging. Beschwerden einer Nahrungsmittelunverträglichkeit beginnen meist erst einige Stunden nach dem Essen und können Stunden bis Tage anhalten [1], deshalb gehört bei einem schlechten Tag auch der Vortag in den Blick. Führe das Tagebuch über mehrere Wochen und behandle das Ergebnis als Verdacht, den du mit ärztlicher oder ernährungstherapeutischer Hilfe prüfst, nicht als Diagnose.
@@ -76,7 +82,7 @@ Die Tagesnote am Abend zeigt dir beim Auswerten auf einen Blick, welche Tage gut
 
 Bei vielen Unverträglichkeiten kommt es auf die Menge an [5] [7]. Ein typisches Beispiel ist Laktose: Eine systematische Übersichtsarbeit kam mit Evidenz mittlerer Qualität zu dem Ergebnis, dass die meisten Erwachsenen mit vermuteter Laktoseintoleranz 12 bis 15 Gramm Laktose vertragen, das entspricht etwa einer Tasse Milch [5]. Wer nur „Milch: ja“ notiert, kann dieses Muster nicht sehen, denn der Schuss Milch im Kaffee und der große Milchshake landen dann in derselben Spalte.
 
-Ähnlich arbeiten Fachleute bei FODMAPs, also kurzkettigen, vergärbaren Kohlenhydraten, die zum Beispiel in Obst, Gemüse, Milchprodukten, künstlichen Süßungsmitteln und Weizen stecken [6]. Bei der Wiedereinführung nach einer FODMAP-armen Phase empfiehlt die Monash University, ein Testlebensmittel drei Tage lang in steigender Menge zu essen und die Beschwerden aufzuschreiben, um herauszufinden, wie viel davon du verträgst [7]. Für Fruktane rät Monash sogar zu getrennten Tests mit verschiedenen Lebensmittelgruppen, weil viele Menschen Fruktane aus manchen Lebensmitteln vertragen und aus anderen nicht [7].
+Ähnlich arbeiten Fachleute bei FODMAPs, also vergärbaren Oligo-, Di- und Monosacchariden und Polyolen [3], die zum Beispiel in Mango, Kuhmilch, Aprikosen und Bohnen stecken [7]. Bei der Wiedereinführung nach einer FODMAP-armen Phase empfiehlt die Monash University, ein Testlebensmittel drei Tage lang in steigender Menge zu essen und die Beschwerden aufzuschreiben, um herauszufinden, wie viel davon du verträgst [7]. Für Fruktane rät Monash sogar zu getrennten Tests mit verschiedenen Lebensmittelgruppen, weil viele Menschen Fruktane aus manchen Lebensmitteln vertragen und aus anderen nicht [7].
 
 Für dein Tagebuch heißt das: Schreib Zutaten und Mengen auf, nicht nur Gerichte, und notiere auch Kleinigkeiten. Das gilt auch, wenn du Histamin im Verdacht hast; wie du dabei vorgehst, steht im [Ratgeber zur Histaminintoleranz](/de/ratgeber/histaminintoleranz/).
 
@@ -93,7 +99,7 @@ Ehrlich gesagt: Eine feste Zeitspanne für alle Menschen und Lebensmittel nennen
 
 ## Stress und Schlaf: die Spalten, die meistens fehlen
 
-Essen zählt: Über 80 Prozent der Menschen mit Reizdarmsyndrom berichten von Beschwerden, die mit Essen zusammenhängen [6]. Essen ist aber nicht alles: Die Leitlinie der British Society of Gastroenterology (BSG) beschreibt das Reizdarmsyndrom, eine der häufigsten Magen-Darm-Erkrankungen, als Störung im Zusammenspiel von Darm und Gehirn [6]. Die Beschwerden kommen und gehen und werden durch Stress, andere Erkrankungen, Medikamente und oft durch das Essen selbst ausgelöst [6]. Chronischer Stress kann Häufigkeit und Stärke der Beschwerden erhöhen [6].
+Essen zählt, aber es ist selten die ganze Geschichte. Laut NHS können Schübe beim Reizdarmsyndrom durch Alkohol, Koffein und bestimmte Lebensmittel ausgelöst werden, aber auch durch Stress und Angst, und manchmal kommen sie ohne erkennbaren Grund [11]. Die Leitlinie der British Society of Gastroenterology (BSG) beschreibt das Reizdarmsyndrom, eine der häufigsten Magen-Darm-Erkrankungen, als Störung im Zusammenspiel von Darm und Gehirn [6]. Passend dazu rät der NHS Menschen mit Reizdarm, ein Tagebuch über Essen und Beschwerden zu führen [12].
 
 Auch Schlaf gehört ins Tagebuch. In einer kleinen Studie mit 24 Frauen mit Reizdarm sagte schlechter selbst eingeschätzter Schlaf mehr Bauchschmerzen, Ängstlichkeit und Müdigkeit am nächsten Tag voraus, andere Magen-Darm-Beschwerden aber nicht [8]. Das ist kein Beweis für eine allgemeine Regel, aber ein guter Grund, Schlaf mitzuschreiben.
 
@@ -118,12 +124,12 @@ Nach einigen Wochen gehst du so vor:
 3. **Mit guten Tagen vergleichen:** Taucht derselbe Verdächtige in ähnlicher Menge auch an guten Tagen auf, ist er als Auslöser weniger wahrscheinlich.
 4. **Störfaktoren prüfen:** Waren die schlechten Tage auch die mit viel Stress, wenig Schlaf, einem Infekt oder einem neuen Medikament?
 
-Am Ende steht ein Verdacht, kein Beweis, und den prüfst du am besten nicht allein. Für Reizdarm sieht die NICE-Leitlinie vor, dass Beratung zu Auslassdiäten (also Diäten, bei denen du einzelne Lebensmittel oder ganze Gruppen weglässt, etwa FODMAP-arm) nur von Fachleuten mit Erfahrung in Ernährungstherapie kommt [3]. Die BSG empfiehlt, eine FODMAP-arme Diät von einer geschulten Ernährungsfachkraft begleiten zu lassen und FODMAPs danach je nach Verträglichkeit wieder einzuführen; die Studienlage dazu stuft sie allerdings als sehr schwach ein [6]. Bei Monash dauert die strenge Phase 2 bis 6 Wochen, die Wiedereinführung kann 8 bis 12 Wochen dauern [7]. Lass keine Lebensmittel ohne ärztlichen oder ernährungstherapeutischen Rat weg, weil dir sonst Vitamine und Mineralstoffe fehlen können [1]. Wenn Essen für dich ohnehin mit viel Angst oder Kontrolle verbunden ist, sprich vor jeder Einschränkung mit deiner Ärztin oder deinem Arzt: Die BSG rät, ein Risiko für zu restriktives Essverhalten vor solchen Diäten zu erkennen [6].
+Am Ende steht ein Verdacht, kein Beweis, und den prüfst du am besten nicht allein. Für Reizdarm sieht die NICE-Leitlinie vor, dass Beratung zu Auslassdiäten (also Diäten, bei denen du einzelne Lebensmittel oder ganze Gruppen weglässt, etwa FODMAP-arm) nur von Fachleuten mit Erfahrung in Ernährungstherapie kommt [3]. Auch bei Monash ist die Wiedereinführung ein fester Schritt: Jede FODMAP-Gruppe wird einzeln getestet, während du sonst FODMAP-arm isst [7]. Bei Monash dauert die strenge Phase 2 bis 6 Wochen, die Wiedereinführung kann 8 bis 12 Wochen dauern [7]. Lass keine Lebensmittel ohne ärztlichen oder ernährungstherapeutischen Rat weg, weil dir sonst Vitamine und Mineralstoffe fehlen können [1]. Wenn Essen für dich ohnehin mit viel Angst oder Kontrolle verbunden ist, sprich vor jeder Einschränkung mit deiner Ärztin oder deinem Arzt.
 
 ### Was du vor jedem Verzicht wissen solltest
 
-Zöliakie ist eine Immunreaktion auf Gluten [6]. Die Tests darauf sind nur aussagekräftig, solange du Gluten isst: NICE empfiehlt, vor dem Test mindestens 6 Wochen lang täglich in mehr als einer Mahlzeit etwas Gluten zu essen und nicht glutenfrei zu leben, bevor eine Fachärztin oder ein Facharzt die Diagnose bestätigt hat [9]. Wer vorher glutenfrei isst, verfälscht das Ergebnis.
+Zöliakie ist eine Autoimmunerkrankung: Das Immunsystem reagiert auf Bestandteile von Gluten und schädigt dabei die Schleimhaut des Dünndarms [13]. Die Tests darauf sind nur aussagekräftig, solange du Gluten isst: NICE empfiehlt, vor dem Test mindestens 6 Wochen lang täglich in mehr als einer Mahlzeit etwas Gluten zu essen und nicht glutenfrei zu leben, bevor eine Fachärztin oder ein Facharzt die Diagnose bestätigt hat [9]. Wer vorher glutenfrei isst, kann das Ergebnis verfälschen.
 
-Von Bluttests auf IgG4-Antikörper gegen Lebensmittel solltest du die Finger lassen. Laut der Europäischen Akademie für Allergologie und Klinische Immunologie (EAACI) zeigen sie vor allem, dass dein Körper dem Lebensmittel wiederholt begegnet ist, nicht, dass du es nicht verträgst; bei Beschwerden nach dem Essen sollen sie nicht gemacht werden [10]. Auch die BSG empfiehlt bei Reizdarm keine Auslassdiäten auf Basis von IgG-Tests [6]. Welche Tests stattdessen sinnvoll sind, steht im Ratgeber [Lebensmittelunverträglichkeit testen](/de/ratgeber/lebensmittelunvertraeglichkeit-testen/).
+Von Bluttests auf IgG4-Antikörper gegen Lebensmittel solltest du die Finger lassen. Laut der Europäischen Akademie für Allergologie und Klinische Immunologie (EAACI) zeigen sie vor allem, dass dein Körper dem Lebensmittel wiederholt begegnet ist, nicht, dass du es nicht verträgst; bei Beschwerden nach dem Essen sollen sie nicht gemacht werden [10]. Auch der NHS rät von manchen frei verkäuflichen Tests ab, die Unverträglichkeiten nachweisen sollen, weil kaum belegt ist, dass sie genaue Ergebnisse liefern [1]. Welche Tests stattdessen sinnvoll sind, steht im Ratgeber [Lebensmittelunverträglichkeit testen](/de/ratgeber/lebensmittelunvertraeglichkeit-testen/).
 
 Und wenn Beschwerden immer wiederkommen, gehört das ärztlich abgeklärt [1]. Dein Tagebuch ersetzt diese Abklärung nicht, aber es macht das Gespräch deutlich konkreter.

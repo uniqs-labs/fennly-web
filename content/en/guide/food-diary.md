@@ -1,11 +1,11 @@
 ---
 title: "Food diary: how to keep one that spots likely triggers"
-description: "What a food and symptom diary must record to reveal triggers: timing, amounts, symptoms, stress, sleep. Free template and honest paper vs app comparison."
+description: "What a food intolerance diary must record to reveal triggers: timing, amounts, symptoms, stress, sleep. Free template and honest paper vs app comparison."
 lang: en
 type: guide
 translationKey: food-diary
 published: 2026-11-13
-reviewed: 2026-11-13
+reviewed: 2026-11-20
 author: "Fennly editorial team (UNIQS)"
 reviewer: ""
 sources:
@@ -29,6 +29,12 @@ sources:
     url: "https://www.nice.org.uk/guidance/ng20/chapter/Recommendations"
   - title: "Stapel SO et al.: Testing for IgG4 against foods is not recommended as a diagnostic tool: EAACI Task Force Report (2008)"
     url: "https://doi.org/10.1111/j.1398-9995.2008.01705.x"
+  - title: "NHS: Symptoms of irritable bowel syndrome (IBS) (2026)"
+    url: "https://www.nhs.uk/conditions/irritable-bowel-syndrome-ibs/symptoms/"
+  - title: "NHS: Irritable bowel syndrome (IBS) (2026)"
+    url: "https://www.nhs.uk/conditions/irritable-bowel-syndrome-ibs/"
+  - title: "NHS: Coeliac disease (2026)"
+    url: "https://www.nhs.uk/conditions/coeliac-disease/"
 faq:
   - q: "How long should you keep a food diary?"
     a: "The guidelines cited here do not set a fixed length. Plan on several weeks so you have enough good and bad days to compare and can catch symptoms that start late or last a day or two. If you start an elimination diet with a dietitian, keep the diary going through the whole test phase."
@@ -37,10 +43,10 @@ faq:
   - q: "Can a food diary diagnose a food intolerance?"
     a: "No. A diary gives you patterns and suspects, not a diagnosis. A suspicion is best checked with a doctor and, where it makes sense, a time-limited elimination diet followed by reintroduction under professional guidance."
   - q: "Are IgG food intolerance tests accurate?"
-    a: "They are not recommended. The European Academy of Allergy and Clinical Immunology advises against IgG4 food tests for food-related complaints, because these antibodies mainly reflect repeated exposure to a food. The British Society of Gastroenterology also advises against diets based on IgG tests in IBS."
+    a: "They are not recommended. The European Academy of Allergy and Clinical Immunology advises against IgG4 food tests for food-related complaints, because these antibodies mainly reflect repeated exposure to a food. The NHS also says some tests you can buy that claim to diagnose food intolerances are not recommended, because there is limited evidence that they are accurate."
   - q: "Is a food diary app better than a paper diary?"
     a: "Not automatically. Paper is free and flexible, but entries are easily filled in later from memory. An app adds timestamps and can analyse links across several days, but check where your data is stored and correct any automatic entries."
-related: []
+related: [bloating-after-eating, food-intolerance-tests, ibs-diet]
 draft: false
 ---
 A food diary only shows useful patterns if you write things down as they happen: what you ate and drank, how much and when, plus when symptoms started, how strong they were, and how stressed and rested you felt. Food intolerance symptoms usually start a few hours after eating and can last for hours or days [1], so on a bad day you need to look back at yesterday too, not just your last meal. Keep the diary for several weeks and treat what it shows as a lead to check with a doctor or dietitian, not as a diagnosis.
@@ -76,7 +82,7 @@ The evening score lets you spot good and bad days at a glance when you review th
 
 With many intolerances, the amount matters [5] [7]. Lactose is the classic example: a systematic review found moderate-quality evidence that most adults with presumed lactose intolerance tolerate 12 to 15 g of lactose, about one cup of milk [5]. If your diary only says "milk: yes", a splash in your coffee and a large milkshake look the same, and the pattern disappears.
 
-The same logic applies to FODMAPs, short-chain fermentable carbohydrates found in many fruits, vegetables, dairy products, artificial sweeteners and wheat [6]. During reintroduction after a low FODMAP phase, Monash University has people eat one test food for three days in increasing amounts and record symptoms, to learn how much they tolerate [7]. For fructans, Monash even suggests separate tests with different food groups, because people often tolerate fructans from some foods but not from others [7].
+The same logic applies to FODMAPs (fermentable oligosaccharides, disaccharides, monosaccharides and polyols) [3], found in foods such as mango, cow's milk, apricots and beans [7]. During reintroduction after a low FODMAP phase, Monash University has people eat one test food for three days in increasing amounts and record symptoms, to learn how much they tolerate [7]. For fructans, Monash even suggests separate tests with different food groups, because people often tolerate fructans from some foods but not from others [7].
 
 So log ingredients and portions, not just dish names, and include the small stuff. The same goes if you suspect histamine; our guide to [histamine intolerance](/en/guides/histamine-intolerance/) explains how to approach it.
 
@@ -93,7 +99,7 @@ To be honest about the limits: none of these sources gives one time window for e
 
 ## Stress and sleep: the columns most people skip
 
-Food clearly matters: more than 80% of people with irritable bowel syndrome (IBS) report food-related symptoms [6]. But the British Society of Gastroenterology (BSG) guideline describes IBS, one of the most common gut disorders, as a disorder of gut-brain interaction [6]. Its symptoms come and go and are triggered by stress, other illnesses, medicines and often the act of eating [6]. Chronic stress can make symptoms more frequent and more severe [6].
+Food matters, but it is rarely the whole story. The NHS says irritable bowel syndrome (IBS) flare-ups can be triggered by alcohol, caffeine and certain foods, but also by stress and anxiety, and sometimes happen for no obvious reason [11]. The British Society of Gastroenterology (BSG) guideline describes IBS, one of the most common gut disorders, as a disorder of gut-brain interaction [6]. The NHS also suggests that people with IBS keep a diary of what they eat and any symptoms they get [12].
 
 Track sleep too. In a small study of 24 women with IBS, poorer self-rated sleep predicted more abdominal pain, anxiety and fatigue the next day, though not other gut symptoms [8]. That does not prove a general rule, but it is reason enough to log it.
 
@@ -118,12 +124,12 @@ After a few weeks:
 3. **Compare with good days:** if the same suspect shows up in similar amounts on good days, it is less likely to be your trigger.
 4. **Check the confounders:** were the bad days also the ones with high stress, poor sleep, an infection or a new medicine?
 
-You end up with a suspicion, not proof, and it is best tested with professional help. For IBS, NICE recommends that advice on exclusion diets (diets that cut out single foods or food groups, such as low FODMAP) only comes from a healthcare professional with expertise in dietary management [3]. The BSG recommends that a low FODMAP diet be supervised by a trained dietitian, with FODMAPs reintroduced according to tolerance, although it rates the evidence as very low quality [6]. In the Monash approach, the strict phase lasts 2 to 6 weeks and reintroduction can take 8 to 12 weeks [7]. Do not cut foods out without advice from a doctor or dietitian, because you could miss out on vitamins and minerals [1]. If food already feels tied up with anxiety or control for you, talk to your doctor before restricting anything: the BSG advises identifying people at risk of overly restrictive eating before such diets [6].
+You end up with a suspicion, not proof, and it is best tested with professional help. For IBS, NICE recommends that advice on exclusion diets (diets that cut out single foods or food groups, such as low FODMAP) only comes from a healthcare professional with expertise in dietary management [3]. Monash also treats reintroduction as a fixed step: each FODMAP group is tested separately while you otherwise stay on the low FODMAP diet [7]. In the Monash approach, the strict phase lasts 2 to 6 weeks and reintroduction can take 8 to 12 weeks [7]. Do not cut foods out without advice from a doctor or dietitian, because you could miss out on vitamins and minerals [1]. If food already feels tied up with anxiety or control for you, talk to your doctor before restricting anything.
 
 ### What to know before you cut anything out
 
-Coeliac disease is an immune reaction to gluten [6]. Tests for it are only accurate while you are eating gluten: NICE advises eating some gluten in more than one meal every day for at least 6 weeks before testing, and not starting a gluten-free diet until a specialist has confirmed the diagnosis [9]. Going gluten free first can make the result unreliable.
+Coeliac disease is an autoimmune condition: the immune system reacts to substances in gluten and damages the lining of the small bowel [13]. Tests for it are only accurate while you are eating gluten: NICE advises eating some gluten in more than one meal every day for at least 6 weeks before testing, and not starting a gluten-free diet until a specialist has confirmed the diagnosis [9]. Going gluten free first can make the result unreliable.
 
-Skip IgG4 blood tests for food intolerance. According to the European Academy of Allergy and Clinical Immunology (EAACI), these antibodies mainly show that your body has been exposed to a food repeatedly, not that you are intolerant to it, and the tests should not be done for food-related complaints [10]. The BSG also advises against elimination diets based on IgG tests in IBS [6]. Our guide to [food intolerance tests](/en/guides/food-intolerance-test/) covers which tests are worth doing instead.
+Skip IgG4 blood tests for food intolerance. According to the European Academy of Allergy and Clinical Immunology (EAACI), these antibodies mainly show that your body has been exposed to a food repeatedly, not that you are intolerant to it, and the tests should not be done for food-related complaints [10]. The NHS also says some tests you can buy that claim to diagnose food intolerances are not recommended, because there is limited evidence that they give accurate results [1]. Our guide to [food intolerance tests](/en/guides/food-intolerance-test/) covers which tests are worth doing instead.
 
 Finally, if symptoms keep coming back, see a doctor [1]. A diary does not replace that appointment, but it makes the conversation far more specific.
