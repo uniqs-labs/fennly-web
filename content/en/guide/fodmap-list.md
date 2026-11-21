@@ -89,7 +89,7 @@ This list is based on the examples published by Monash University, which measure
 - **Vegetables:** mainly fructans, for example in artichoke, garlic, leek, onion and spring onion, and mannitol, for example in mushrooms and celery [1].
 - **Grains and cereals:** mainly fructans and, to a lesser extent, GOS, for example in wholemeal bread, rye bread, muesli containing wheat, wheat pasta and rye crispbread [1].
 - **Legumes and pulses:** mainly GOS, especially in red kidney beans, split peas, falafel and baked beans [1].
-- **Dairy:** mainly lactose. Butter and cheese are naturally low in lactose, which is why dairy is not cut out on a low FODMAP diet [1].
+- **Dairy:** mainly lactose. Butter and cheese are naturally low in lactose, which is why dairy is not cut out on a low FODMAP diet [1]. How much lactose most people tolerate is covered in our guide to [lactose intolerance](/en/guides/lactose-intolerance/).
 - **Meat, poultry, fish and eggs** are naturally free of FODMAPs. FODMAPs come in through added ingredients such as garlic and onion, in marinades, sausages or sauces [1].
 - **Nuts:** mainly GOS and fructans; most seeds are low FODMAP [1].
 

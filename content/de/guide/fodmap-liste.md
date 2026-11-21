@@ -91,7 +91,7 @@ Die folgende Liste beruht auf den Beispielen der Monash University, die den FODM
 - **Gemüse:** Vor allem Fruktane, etwa in Artischocke, Knoblauch, Lauch, Zwiebeln und Frühlingszwiebeln, und Mannit, etwa in Pilzen und Sellerie [1].
 - **Brot und Getreide:** Vor allem Fruktane, in geringerem Maß GOS, zum Beispiel in Vollkornbrot, Roggenbrot, Müsli mit Weizen, Weizennudeln und Roggenknäcke [1].
 - **Hülsenfrüchte:** Vor allem GOS, besonders in Kidneybohnen, Spalterbsen, Falafel und Baked Beans [1].
-- **Milchprodukte:** Vor allem Laktose. Butter und Käse enthalten von Natur aus wenig Laktose, deshalb sind Milchprodukte bei Low FODMAP nicht grundsätzlich gestrichen [1].
+- **Milchprodukte:** Vor allem Laktose. Butter und Käse enthalten von Natur aus wenig Laktose, deshalb sind Milchprodukte bei Low FODMAP nicht grundsätzlich gestrichen [1]. Wie viel Laktose die meisten vertragen, steht im Ratgeber [Laktoseintoleranz](/de/ratgeber/laktoseintoleranz/).
 - **Fleisch, Fisch und Eier** sind von Natur aus FODMAP-frei. FODMAPs kommen erst durch Zutaten wie Knoblauch und Zwiebeln dazu, etwa in Marinaden, Wurst oder Soßen [1].
 - **Nüsse:** Vor allem GOS und Fruktane, die meisten Samen sind FODMAP-arm [1].
 

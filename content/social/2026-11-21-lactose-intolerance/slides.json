@@ -1,0 +1,54 @@
+{
+  "lang": "en",
+  "translationKey": "lactose-intolerance",
+  "slides": [
+    {
+      "kind": "hook",
+      "kicker": "Lactose intolerance",
+      "main": "Lactose intolerant? Most adults still tolerate a cup of milk at once.",
+      "sub": "How much lactose is usually fine, and which dairy foods have the least."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Not always lactose",
+      "main": "Many people who think they are lactose intolerant digest lactose normally.",
+      "sub": "A US expert panel found this. A breath test that also records your symptoms can check."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Amount matters",
+      "main": "A review found most adults tolerate 12 to 15 g at once.",
+      "sub": "That is roughly one cup of milk. Taken with other food, up to 18 g is usually tolerated."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Hard cheese is different",
+      "main": "Hard cheese has about 0.1 g of lactose per 100 g.",
+      "sub": "Whole milk has about 4.7 g. Yoghurt and cream cheese contain more than hard cheese."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Cut down, then test",
+      "main": "A strict lactose-free diet is usually not needed.",
+      "sub": "Cut down for a short time, then add dairy back slowly. Ask a GP or dietitian first."
+    },
+    {
+      "kind": "warning",
+      "kicker": "See a doctor first",
+      "main": "Get medical help if you have:",
+      "items": [
+        "Blood in your stool or black stools",
+        "Weight loss you cannot explain",
+        "Symptoms that wake you up at night",
+        "Coeliac disease or IBD in your family",
+        "Severe or worsening pain"
+      ]
+    },
+    {
+      "kind": "cta",
+      "kicker": "Save this",
+      "main": "Full guide with 11 sources: link in bio",
+      "cta": "Find your likely triggers with Fennly."
+    }
+  ]
+}
