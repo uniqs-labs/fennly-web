@@ -134,6 +134,6 @@ Wie du ein Tagebuch so führst, dass es wirklich Muster zeigt, erklären wir im 
 
 ## Wenn Ernährung allein nicht reicht
 
-Ernährung ist ein wichtiger Baustein, aber nicht der einzige. Die BDA nennt Entspannung und regelmäßige Bewegung als Teil des Alltags mit Reizdarm [3]. Wenn Ernährungsänderungen und andere Behandlungen nicht geholfen haben, können laut BDA Hypnotherapie oder kognitive Verhaltenstherapie einen Versuch wert sein [3], und auch die ACG schlägt eine auf den Darm ausgerichtete Psychotherapie vor [6]. Welche weiteren Behandlungen für dich infrage kommen, besprichst du am besten mit deiner Hausarztpraxis [9].
+Ernährung ist ein wichtiger Baustein, aber nicht der einzige. Die BDA nennt Entspannung und regelmäßige Bewegung als Teil des Alltags mit Reizdarm [3]. Wenn Ernährungsänderungen und andere Behandlungen nicht geholfen haben, können laut BDA Hypnotherapie oder kognitive Verhaltenstherapie einen Versuch wert sein [3], und auch die ACG schlägt eine auf den Darm ausgerichtete Psychotherapie vor [6]. Welche weiteren Behandlungen für dich infrage kommen, besprichst du am besten mit deiner Hausarztpraxis [9]; eine App auf Rezept, die Hypnose und Verhaltenstherapie enthält, stellen wir im [Vergleich von Cara Care und Fennly](/de/vergleich/fennly-vs-cara-care/) vor.
 
 Ehrlich gesagt ist die Studienlage bei vielen Maßnahmen dünn: Laut IQWiG sind die meisten Behandlungen beim Reizdarm bisher nicht gut untersucht [9]. Umso wichtiger ist es, dass du selbst beobachtest, was bei dir wirkt.

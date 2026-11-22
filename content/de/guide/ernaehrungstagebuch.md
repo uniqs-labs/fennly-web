@@ -111,7 +111,7 @@ Beides kann funktionieren. Entscheidend ist, dass du zeitnah einträgst, und gen
 
 **Papier** kostet nichts, braucht kein Konto, und deine Daten bleiben bei dir. Schwächen: Nachtragen aus dem Gedächtnis, ungenaue Uhrzeiten und mühsames Auswerten über 48 Stunden.
 
-**Eine App** setzt Zeitstempel automatisch und kann Zusammenhänge über mehrere Tage auswerten. Prüfe aber, wo die Daten gespeichert werden, kontrolliere automatisch erkannte Zutaten und erwarte keine Diagnose von ihr.
+**Eine App** setzt Zeitstempel automatisch und kann Zusammenhänge über mehrere Tage auswerten. Prüfe aber, wo die Daten gespeichert werden, kontrolliere automatisch erkannte Zutaten und erwarte keine Diagnose von ihr. Worin sich ein reines Tagebuch von einer Reizdarm-App auf Rezept unterscheidet, zeigt unser [Vergleich von Cara Care und Fennly](/de/vergleich/fennly-vs-cara-care/).
 
 Wenn du eine App nutzen willst, achte darauf, dass sie verzögerte Reaktionen, Mengen, Stress und Schlaf berücksichtigt. Unsere eigene App Fennly ist so gebaut: Du erfasst Mahlzeiten per Foto, Sprache oder Text, und bei den langsamen Auslösern Gluten, Fruktane und GOS (Galakto-Oligosaccharide) bezieht sie ein Fenster von bis zu 48 Stunden ein. Was sie nach einigen Tagen zeigt, sind Verdachtsmomente mit einer Einschätzung, wie sicher sie sind, ausdrücklich keine Diagnose.
 
