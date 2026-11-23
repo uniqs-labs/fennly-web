@@ -111,7 +111,7 @@ Both can work if you log close to the moment, and that is where paper has a know
 
 **Paper** is free, needs no account and keeps your data with you. Its weak spots: back-filling from memory, vague times and slow analysis across 48 hours.
 
-**An app** timestamps entries and can look for links across several days. Check where your data is stored, double-check automatically recognised ingredients, and do not expect a diagnosis.
+**An app** timestamps entries and can look for links across several days. Check where your data is stored, double-check automatically recognised ingredients, and do not expect a diagnosis. How a general symptom tracker differs from a food-focused diary is shown in our [Bearable vs Fennly comparison](/en/compare/bearable-vs-fennly/).
 
 If you go the app route, look for one that handles delayed reactions, portion sizes, stress and sleep. Our own app, Fennly, is built that way: you log meals by photo, voice or text, and for the slow triggers gluten, fructans and GOS (galacto-oligosaccharides) it looks back up to 48 hours. After a few days it shows suspects with a rating of how confident it is, and it is explicitly not a diagnosis.
 
