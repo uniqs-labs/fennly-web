@@ -86,7 +86,7 @@ Und bei Reizdarm: Die britische Leitlinie NICE hält einen Wasserstoff-Atemtest 
 
 Bei anhaltenden, ungeklärten Bauchbeschwerden gehört auch Zöliakie auf die Liste: NICE empfiehlt den Bluttest in diesem Fall und auch bei Erwachsenen mit Reizdarm [7]. Als erste Wahl gelten der Gesamt-IgA-Wert und IgA-Antikörper gegen Gewebstransglutaminase (tTG) [7].
 
-Entscheidend ist der Zeitpunkt: Der Test ist nur verlässlich, solange du Gluten isst. NICE rät, vor dem Test mindestens 6 Wochen lang täglich in mehr als einer Mahlzeit etwas Gluten zu essen, und auch nach einem positiven Bluttest nicht auf eigene Faust glutenfrei zu werden, bevor eine Fachärztin oder ein Facharzt die Diagnose bestätigt hat [7].
+Entscheidend ist der Zeitpunkt: Der Test ist nur verlässlich, solange du Gluten isst. NICE rät, vor dem Test mindestens 6 Wochen lang täglich in mehr als einer Mahlzeit etwas Gluten zu essen, und auch nach einem positiven Bluttest nicht auf eigene Faust glutenfrei zu werden, bevor eine Fachärztin oder ein Facharzt die Diagnose bestätigt hat [7]. Wie sich Zöliakie, Weizenallergie und Glutensensitivität unterscheiden, erklärt der Ratgeber zur [Glutenunverträglichkeit](/de/ratgeber/glutenunvertraeglichkeit/).
 
 ### Allergietests: IgE-Bluttest, Pricktest, Provokation
 

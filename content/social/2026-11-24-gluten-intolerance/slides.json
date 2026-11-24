@@ -1,0 +1,53 @@
+{
+  "lang": "en",
+  "translationKey": "gluten-sensitivity",
+  "slides": [
+    {
+      "kind": "hook",
+      "kicker": "Gluten intolerance",
+      "main": "Reacting to bread? It's not always the gluten.",
+      "sub": "Why the coeliac test comes first, and what else in wheat can cause symptoms."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Three conditions",
+      "main": "Coeliac disease, wheat allergy and gluten sensitivity are not the same.",
+      "sub": "Coeliac disease damages the small intestine. Gluten sensitivity can feel similar but does not."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Test first",
+      "main": "Don't cut out gluten before a coeliac test.",
+      "sub": "Tests are only accurate while you eat gluten. Already cut down? Ask your GP before testing."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Fructans, not gluten?",
+      "main": "In one trial, fructans caused more symptoms than gluten.",
+      "sub": "59 people who avoided gluten. Gluten caused no more symptoms than placebo. One small study."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Expectation matters",
+      "main": "Expecting gluten to harm you can cause real symptoms.",
+      "sub": "A review found fermentable carbs and this nocebo effect contribute considerably in many cases."
+    },
+    {
+      "kind": "warning",
+      "kicker": "See a doctor first",
+      "main": "Get medical help if you have:",
+      "items": [
+        "Blood in your stool or black stools",
+        "Weight loss you cannot explain",
+        "Coeliac disease or IBD in your family",
+        "Severe or worsening pain"
+      ]
+    },
+    {
+      "kind": "cta",
+      "kicker": "Save this",
+      "main": "Full guide with 11 sources: link in bio",
+      "cta": "Find your likely triggers with Fennly."
+    }
+  ]
+}

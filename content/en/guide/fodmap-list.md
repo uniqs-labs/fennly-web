@@ -113,7 +113,7 @@ Monash is clear on this: the FODMAP diet is meant for people with medically diag
 
 ### Get tested for coeliac disease before cutting out wheat
 
-Wheat, rye and barley are on the list because of their fructans, but they also contain gluten. NICE recommends coeliac testing for, among others, adults with IBS [13]. The test is only accurate while you are eating gluten: eat some gluten in more than one meal every day for at least 6 weeks before the test, and do not start a gluten-free diet until a specialist has confirmed the diagnosis [13]. Cutting down wheat, rye and barley before the test can therefore make the result unreliable [13].
+Wheat, rye and barley are on the list because of their fructans, but they also contain gluten. NICE recommends coeliac testing for, among others, adults with IBS [13]. The test is only accurate while you are eating gluten: eat some gluten in more than one meal every day for at least 6 weeks before the test, and do not start a gluten-free diet until a specialist has confirmed the diagnosis [13]. Cutting down wheat, rye and barley before the test can therefore make the result unreliable [13]. What else can be behind symptoms after wheat once coeliac disease is ruled out is covered in our guide to [gluten intolerance](/en/guides/gluten-intolerance/).
 
 ### What the guidelines say
 

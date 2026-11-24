@@ -115,7 +115,7 @@ Monash ist hier sehr klar: Die FODMAP-Diät ist für Menschen mit ärztlich fest
 
 ### Erst auf Zöliakie testen, dann Weizen weglassen
 
-Weizen, Roggen und Gerste stehen auf der Liste wegen ihrer Fruktane, enthalten aber auch Gluten. Die britische Leitlinie NICE empfiehlt den Zöliakie-Test unter anderem bei Erwachsenen mit Reizdarm [13]. Der Test ist nur aussagekräftig, solange du Gluten isst: Iss vor dem Test mindestens 6 Wochen lang täglich in mehr als einer Mahlzeit etwas Gluten, und stell nicht auf glutenfrei um, bevor eine Fachärztin oder ein Facharzt die Diagnose bestätigt hat [13]. Wer Weizen, Roggen und Gerste vor dem Test schon weitgehend weglässt, kann deshalb ein unzuverlässiges Ergebnis bekommen [13].
+Weizen, Roggen und Gerste stehen auf der Liste wegen ihrer Fruktane, enthalten aber auch Gluten. Die britische Leitlinie NICE empfiehlt den Zöliakie-Test unter anderem bei Erwachsenen mit Reizdarm [13]. Der Test ist nur aussagekräftig, solange du Gluten isst: Iss vor dem Test mindestens 6 Wochen lang täglich in mehr als einer Mahlzeit etwas Gluten, und stell nicht auf glutenfrei um, bevor eine Fachärztin oder ein Facharzt die Diagnose bestätigt hat [13]. Wer Weizen, Roggen und Gerste vor dem Test schon weitgehend weglässt, kann deshalb ein unzuverlässiges Ergebnis bekommen [13]. Was hinter Beschwerden nach Weizen stecken kann, wenn Zöliakie ausgeschlossen ist, steht im Ratgeber zur [Glutenunverträglichkeit](/de/ratgeber/glutenunvertraeglichkeit/).
 
 ### Was die Leitlinien sagen
 

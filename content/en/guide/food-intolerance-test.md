@@ -86,7 +86,7 @@ And for IBS: NICE says a hydrogen breath test is not needed to confirm a diagnos
 
 Whenever gut symptoms persist without explanation, coeliac disease belongs on the list too: NICE recommends offering the blood test in that situation and to adults with IBS [7]. The first-choice tests are total IgA and IgA tissue transglutaminase (tTG) antibodies [7].
 
-Timing matters. The test is only reliable while you are eating gluten. NICE advises eating some gluten in more than one meal every day for at least 6 weeks before testing, and not starting a gluten-free diet, even after a positive blood test, until a specialist has confirmed the diagnosis [7].
+Timing matters. The test is only reliable while you are eating gluten. NICE advises eating some gluten in more than one meal every day for at least 6 weeks before testing, and not starting a gluten-free diet, even after a positive blood test, until a specialist has confirmed the diagnosis [7]. How coeliac disease, wheat allergy and gluten sensitivity differ is explained in our guide to [gluten intolerance](/en/guides/gluten-intolerance/).
 
 ### Allergy tests: IgE blood test, skin prick test, food challenge
 
