@@ -1,0 +1,53 @@
+{
+  "lang": "en",
+  "translationKey": "stomach-pain-after-eating",
+  "slides": [
+    {
+      "kind": "hook",
+      "kicker": "Stomach pain after eating",
+      "main": "Stomach pain after meals? 4 patterns that can point to the cause.",
+      "sub": "Where, when and how it hurts, and when to get help."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Upper tummy, soon after",
+      "main": "Burning or fullness during or soon after a meal can point towards indigestion.",
+      "sub": "Most chronic indigestion is functional dyspepsia: real symptoms, but no other cause found."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Under the right ribs",
+      "main": "Severe, constant pain after heavy meals can be gallstones.",
+      "sub": "Pain lasting longer than 30 minutes deserves an urgent GP appointment."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Hours later",
+      "main": "Food intolerance symptoms usually start a few hours after eating.",
+      "sub": "So the meal you ate last is not always the one to blame."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Eases after the toilet",
+      "main": "Pain that eases after a bowel movement is a key IBS symptom.",
+      "sub": "With IBS the pain can be anywhere in the tummy and can move around."
+    },
+    {
+      "kind": "warning",
+      "kicker": "See a doctor first",
+      "main": "Get medical help if you have:",
+      "items": [
+        "Blood in your stool or black stools",
+        "Weight loss you cannot explain",
+        "Fever",
+        "Severe or worsening pain"
+      ]
+    },
+    {
+      "kind": "cta",
+      "kicker": "Save this",
+      "main": "Full guide with 14 sources: link in bio",
+      "cta": "Find your likely triggers with Fennly."
+    }
+  ]
+}

@@ -116,7 +116,7 @@ According to the NHS, the most common reason is a lot of gas in your gut, for ex
 - irritable bowel syndrome (IBS)
 - for some people, around their period
 
-Bloating that does not go away can occasionally be a sign of something more serious [1]. More on that in the warning signs section below.
+Bloating that does not go away can occasionally be a sign of something more serious [1]. More on that in the warning signs section below; if pain rather than fullness is your main problem, see our guide to [stomach pain after eating](/en/guides/stomach-pain-after-eating/).
 
 ## How to reduce bloating after eating
 

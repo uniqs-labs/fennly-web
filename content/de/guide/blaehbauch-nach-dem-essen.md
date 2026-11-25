@@ -118,7 +118,7 @@ Laut NHS ist die häufigste Ursache viel Gas im Darm, etwa aus bestimmten Lebens
 - Reizdarmsyndrom
 - bei manchen Menschen die Zeit rund um die Periode
 
-Ein Blähbauch, der nicht mehr weggeht, kann manchmal auch ein Zeichen einer ernsten Erkrankung sein [1]. Mehr dazu unten bei den Warnzeichen.
+Ein Blähbauch, der nicht mehr weggeht, kann manchmal auch ein Zeichen einer ernsten Erkrankung sein [1]. Mehr dazu unten bei den Warnzeichen; stehen eher Schmerzen als Völle im Vordergrund, hilft unser Ratgeber zu [Bauchschmerzen nach dem Essen](/de/ratgeber/bauchschmerzen-nach-dem-essen/).
 
 ## Was hilft gegen Blähbauch nach dem Essen?
 
