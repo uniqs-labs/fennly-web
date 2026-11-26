@@ -93,6 +93,7 @@ If bloating is your main problem, our guide to [bloating after eating](/en/guide
 - Avoid sorbitol, a sweetener in sugar-free sweets, gum and drinks [1]. The BDA also lists mannitol and xylitol [3].
 - Try cutting down on high-fiber foods such as wholegrain bread, brown rice, nuts and seeds [9].
 - Drink plenty of non-caffeinated fluid to replace what you lose, and keep caffeinated drinks to 3 a day [3].
+- What else can be behind diarrhea after meals, from lactose to bile acids, is explained in our guide to [diarrhea after eating](/en/guides/diarrhea-after-eating/).
 
 ### For constipation
 

@@ -90,6 +90,7 @@ Wenn dich vor allem der Bauch nach dem Essen plagt, findest du mehr dazu im [Rat
 - Sorbit meiden, einen Süßstoff in zuckerfreien Süßigkeiten, Kaugummis und Getränken [1]. Die BDA nennt zusätzlich Mannit und Xylit [3].
 - Ballaststoffreiche Lebensmittel wie Vollkorncerealien und Vollkornbrot testweise reduzieren [3].
 - Viel koffeinfreie Flüssigkeit trinken, um verlorene Flüssigkeit zu ersetzen, und höchstens drei koffeinhaltige Getränke am Tag [3].
+- Welche anderen Ursachen hinter Durchfall nach dem Essen stecken können, von Laktose bis Gallensäuren, erklärt unser [Ratgeber zu Durchfall nach dem Essen](/de/ratgeber/durchfall-nach-dem-essen/).
 
 ### Bei Verstopfung
 

@@ -1,0 +1,53 @@
+{
+  "lang": "en",
+  "translationKey": "diarrhea-after-eating",
+  "slides": [
+    {
+      "kind": "hook",
+      "kicker": "Diarrhea after eating",
+      "main": "Diarrhea after eating? 4 things worth checking.",
+      "sub": "From timing to sugar-free gum, and when to get help."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Right after meals",
+      "main": "Diarrhea, sometimes with a sudden urge to go, is a main IBS symptom.",
+      "sub": "Alcohol, caffeine and spicy or fatty food can trigger IBS flare-ups."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Hours later",
+      "main": "Food intolerance symptoms usually start a few hours after eating.",
+      "sub": "So diarrhea in the evening can come from lunch."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Sugar-free sweets",
+      "main": "Sorbitol and other sugar alcohols may cause diarrhea in some people.",
+      "sub": "In the EU and UK, foods with over 10% added polyols carry a laxative warning."
+    },
+    {
+      "kind": "learning",
+      "kicker": "Bile acids",
+      "main": "Bile acid diarrhea is an often overlooked cause.",
+      "sub": "Up to 30% of people with diarrhea-type IBS show signs of it on testing."
+    },
+    {
+      "kind": "warning",
+      "kicker": "See a doctor first",
+      "main": "Get medical help if you have:",
+      "items": [
+        "Blood in your stool or black stools",
+        "Weight loss you cannot explain",
+        "Fever",
+        "Severe or worsening pain"
+      ]
+    },
+    {
+      "kind": "cta",
+      "kicker": "Save this",
+      "main": "Full guide with 15 sources: link in bio",
+      "cta": "Find your likely triggers with Fennly."
+    }
+  ]
+}
