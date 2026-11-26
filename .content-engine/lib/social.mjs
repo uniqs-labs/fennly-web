@@ -1,14 +1,17 @@
 // content/social/<YYYY-MM-DD>-<slug>/: Instagram and TikTok carousels (slides.json,
 // caption.md, ig/NN.jpg, tiktok/NN.jpg), written and rendered by the engine's daily run,
 // and since v1.6 the guide reel made from the TikTok slides with music (reel.mp4 plus
-// reel.json {"music": "<track file>"}, scripts/reel.mjs in the engine).
+// reel.json {"music": "<track file>"}, scripts/reel.mjs in the engine). Since v1.7 the reel can
+// open with an AI generated B-roll clip (reel.json "broll" and "ki_inhalt": true); then the
+// index also carries reelCaption, the caption plus the AI line, for Instagram and TikTok.
 // content/social/reels/<YYYY-MM-DD>-<slug>/: reels (video.mp4, caption.md and optionally
 // meta.json {"kind": "ugc" | "demo"}, default ugc), brought in by scripts/sync-reels.sh in
 // the engine (since v1.4; kinds since v1.5).
 // The build copies every file to /social/ byte for byte and writes /social/index.json:
 // every carousel whose article is live and every complete reel, newest first, with
 // absolute URLs, so the Instagram API can fetch them. A carousel with reel.mp4 also gets
-// reelUrl, coverUrl (slide 1, 9:16) and music (the track, from reel.json). Never in the sitemap, hubs or
+// reelUrl, coverUrl (slide 1, 9:16) and music (the track, from reel.json), and with an AI clip
+// kiInhalt, broll and reelCaption (since v1.7). Never in the sitemap, hubs or
 // llms.txt, and robots.txt does not block it. A broken carousel or reel is a warning; a
 // file over 50 MB is a build error (keeps the repo small).
 import fs from 'node:fs';
@@ -24,6 +27,14 @@ export const DEFAULT_REEL_KIND = 'ugc';
 /** The guide reel in a carousel folder (slideshow of tiktok/NN.jpg with music) and its facts. */
 export const GUIDE_REEL = 'reel.mp4';
 export const GUIDE_REEL_META = 'reel.json';
+/** The last caption line of a reel with an AI generated clip (docs/RATGEBER_REEL_HOOK_SPEC.md, section 6). */
+export const AI_LINE = 'Made with AI: AI generated background clip.';
+
+/** The caption of a reel with AI content: the caption, a blank line, the AI line (once). */
+export function withAiLine(caption) {
+  const c = String(caption || '').replace(/\r\n/g, '\n').trim();
+  return c.endsWith(AI_LINE) ? c : `${c}\n\n${AI_LINE}`;
+}
 /** Files above this size are copied from disk at write time instead of being held in memory. */
 const INLINE_BYTES = 2 * 1024 * 1024;
 const FOLDER_RE = /^(\d{4}-\d{2}-\d{2})-([a-z0-9]+(?:-[a-z0-9]+)*)$/;
@@ -154,10 +165,17 @@ export function loadSocial(root, { config, live }) {
     if (fs.existsSync(reel) && fs.statSync(reel).isFile() && fs.statSync(reel).size <= MAX_FILE_BYTES) {
       item.reelUrl = config.url.abs(`/${SOCIAL_DIR}/${name}/${GUIDE_REEL}`);
       item.coverUrl = tiktok[0] || ig[0];
+      let meta = null;
       try {
-        const meta = JSON.parse(fs.readFileSync(path.join(folder, GUIDE_REEL_META), 'utf8'));
-        if (typeof meta?.music === 'string' && meta.music) item.music = meta.music;
+        meta = JSON.parse(fs.readFileSync(path.join(folder, GUIDE_REEL_META), 'utf8'));
       } catch { /* no or broken reel.json: the reel is listed without its track */ }
+      if (typeof meta?.music === 'string' && meta.music) item.music = meta.music;
+      // An AI generated clip in the reel: the posts of the reel end with the AI line.
+      if (meta?.ki_inhalt === true) {
+        item.kiInhalt = true;
+        if (typeof meta.broll === 'string' && meta.broll) item.broll = meta.broll;
+        item.reelCaption = withAiLine(item.caption);
+      }
     }
     out.items.push(item);
   }

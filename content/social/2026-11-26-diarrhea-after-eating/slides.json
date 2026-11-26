@@ -1,6 +1,7 @@
 {
   "lang": "en",
   "translationKey": "diarrhea-after-eating",
+  "hook": "Evening diarrhea? It can come from lunch.",
   "slides": [
     {
       "kind": "hook",

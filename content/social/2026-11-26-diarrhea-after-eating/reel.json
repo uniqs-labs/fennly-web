@@ -1,9 +1,27 @@
 {
   "music": "03-modern-elektronisch.mp3",
-  "seconds": 17,
+  "seconds": 18.5,
   "slides": 7,
-  "tempo": 1,
+  "tempo": 0.959,
   "lufs": -14.1,
-  "truePeak": -1.9,
-  "bytes": 2129164
+  "truePeak": -1.8,
+  "bytes": 2524996,
+  "hook": "Evening diarrhea? It can come from lunch.",
+  "hookQuelle": "slides.json",
+  "hookSeconds": 1.5,
+  "broll": "abend-check/12.mp4",
+  "szene": "abend-check",
+  "ki_inhalt": true,
+  "hookBox": {
+    "x1": 181,
+    "x2": 890,
+    "y1": 544,
+    "y2": 693
+  },
+  "hookCheck": {
+    "frame0": 55.4,
+    "frame30": 56.4,
+    "frame44": 56.7,
+    "frame45": 6.3
+  }
 }
