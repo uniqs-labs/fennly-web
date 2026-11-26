@@ -2,7 +2,7 @@
   "name": "fennly-web",
   "private": true,
   "scripts": {
-    "build": "node .content-engine/build.mjs --engine v1.6"
+    "build": "node .content-engine/build.mjs --engine v1.7"
   },
   "devDependencies": {
     "gray-matter": "4.0.3",

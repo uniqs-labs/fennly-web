@@ -1,6 +1,7 @@
 {
   "lang": "en",
   "translationKey": "stomach-pain-after-eating",
+  "hook": "Pain after eating? Where it hurts matters.",
   "slides": [
     {
       "kind": "hook",

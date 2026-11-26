@@ -1,9 +1,27 @@
 {
   "music": "02-piano-pads-puls.mp3",
-  "seconds": 17,
+  "seconds": 18.5,
   "slides": 7,
-  "tempo": 1,
+  "tempo": 0.9824,
   "lufs": -14,
   "truePeak": -2,
-  "bytes": 2227370
+  "bytes": 2792693,
+  "hook": "Pain after eating? Where it hurts matters.",
+  "hookQuelle": "slides.json",
+  "hookSeconds": 1.5,
+  "broll": "abend-check/10.mp4",
+  "szene": "abend-check",
+  "ki_inhalt": true,
+  "hookBox": {
+    "x1": 160,
+    "x2": 912,
+    "y1": 544,
+    "y2": 693
+  },
+  "hookCheck": {
+    "frame0": 88.1,
+    "frame30": 98,
+    "frame44": 103.2,
+    "frame45": 6.3
+  }
 }
