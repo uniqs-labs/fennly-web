@@ -5,7 +5,7 @@ lang: en
 type: guide
 translationKey: bloating-after-eating
 published: 2026-11-14
-reviewed: 2026-11-14
+reviewed: 2026-11-27
 author: "Fennly editorial team (UNIQS)"
 reviewer: ""
 sources:
@@ -46,7 +46,7 @@ faq:
     a: "See a doctor if you feel bloated regularly, changing your diet has not helped, or you also have unexplained weight loss, blood in your stool, fever, vomiting or tummy pain. Call 999 in the UK, or your local emergency number, if a swollen tummy comes with sudden, severe stomach pain."
   - q: "Can gluten cause bloating?"
     a: "Yes, bloating can be a sign of coeliac disease. Get tested before you cut out gluten, because the test is only reliable if you keep eating gluten in the weeks beforehand."
-related: [food-diary]
+related: [food-diary, fodmap-list, stomach-pain-after-eating]
 redFlags:
   - "Bloating that is persistent or happens more than 12 times a month, especially in women aged 50 or over"
   - "A swelling or lump in your tummy"
@@ -55,13 +55,13 @@ redFlags:
   - "Sudden, severe stomach pain with a swollen tummy: call 999 in the UK or your local emergency number"
 draft: false
 ---
-Bloating after eating is often harmless: some gas from swallowed air and from gut bacteria breaking down undigested carbohydrates is normal, especially during and after meals [1] [2]. It tends to get worse with large meals, eating quickly, fizzy drinks and certain foods such as onion, beans or apples, and it can also come from constipation, food intolerance, coeliac disease or irritable bowel syndrome (IBS) [1] [2] [4]. It often helps to find your own triggers rather than cutting out long lists of foods without advice, and to get checked if you have warning signs such as weight loss, blood in your stool or severe pain [1] [6].
+Bloating after eating is often harmless: some gas from swallowed air and from gut bacteria breaking down undigested carbohydrates is normal, especially during and after meals [1] [2]. It tends to get worse with large meals, eating quickly, chewing gum, fizzy drinks and certain foods such as onion, beans or apples, and it can also come from constipation, food intolerance, coeliac disease or irritable bowel syndrome (IBS) [1] [2] [4]. It often helps to find your own triggers rather than cutting out long lists of foods without advice, and to get checked if you have warning signs such as weight loss, blood in your stool or severe pain [1] [6].
 
 ## Is it normal to feel bloated after eating?
 
 Within limits, yes. The US National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) says that having some gas symptoms is normal, especially during or after meals. It becomes a problem when symptoms happen often, bother you or affect your daily activities [2].
 
-It is also very common. In a survey of 88,795 adults in the United States, 13.9% reported bloating in the past seven days, nearly 1 in 7 people. Women and people with conditions such as IBS or chronic constipation were more likely to be affected, and 58.5% of those with recent bloating had never sought care for it [3].
+It is also very common. In a survey of 88,795 Americans, 13.9% reported bloating in the past seven days, nearly 1 in 7 people. Women and people with conditions such as IBS or chronic constipation were more likely to be affected, and 58.5% of those with recent bloating had never sought care for it [3].
 
 Doctors separate two things that can feel alike:
 
@@ -98,7 +98,7 @@ One important distinction with fructose: in fructose malabsorption, the gut cann
 
 With a food intolerance, the NHS says symptoms usually start a few hours after eating and can last for hours or days. Bloating, wind, diarrhoea and tummy pain are typical, and lactose intolerance is the most common type [6]. So if you feel bloated after dinner, dinner is not automatically the culprit.
 
-### Why your belly swells when there is barely more volume inside
+### Can your belly swell without more gas inside?
 
 A small study suggests that a visibly swollen belly is not always down to more gas. Using CT scans, it looked at 56 people whose main symptom was bloating, before and during a bloating episode. In those with functional gut disorders such as IBS, the volume inside the abdomen rose by only about 0.3 litres. Their bellies still visibly pushed out, and this went along with the diaphragm moving down, which likely shifted the contents forward. Only a small group with a gut motility disorder had a marked increase in volume, around 1.4 litres on average [10]. It is a single finding, not proof, but it helps explain why a swollen belly does not always mean "too much gas".
 
@@ -106,7 +106,7 @@ A review from the Mayo Clinic lists several possible causes side by side: food i
 
 ## Common causes at a glance
 
-According to the NHS, the most common reason is a lot of gas in your gut, for example from certain foods, drinks or swallowed air. Other possible causes include [1]:
+According to the NHS, the most common reason is a lot of gas in your gut, for example from certain foods, drinks or swallowed air. Possible causes, according to the NHS, include [1]:
 
 - gas from certain foods and drinks, such as some vegetables and fizzy drinks
 - swallowing air while eating
@@ -133,7 +133,9 @@ The NHS recommends [1]:
 - exercising regularly, even when you feel bloated
 - gently massaging your tummy, which the NHS describes as from right to left
 
-The UK IBS guideline from NICE adds: have regular meals, take time to eat, and avoid missing meals or leaving long gaps between them [7]. Our [IBS diet guide](/en/guides/ibs-diet/) covers the rest of the advice.
+NIDDK adds that you swallow more air when you chew gum or suck on hard sweets, drink fizzy drinks, eat or drink too fast, smoke or wear loose-fitting dentures [2].
+
+The UK IBS guideline from NICE adds: have regular meals, take time to eat, and avoid missing meals or leaving long gaps between them [7].
 
 ### What you eat and drink
 
@@ -145,13 +147,13 @@ The NHS advises against drinking lots of fizzy drinks, alcohol or caffeine, eati
 - avoid sorbitol if you have diarrhoea; it is found in sugar-free sweets, chewing gum and drinks
 - for wind and bloating, oats and linseeds (up to 1 tablespoon a day) may help
 
-If you are constipated, the NHS suggests foods with soluble fibre, such as oats or linseed [1]. If bloating comes with constipation, talk to your doctor, because treating the constipation may help too [8].
+If you are constipated, the NHS suggests foods with soluble fibre, such as oats or linseed [1]. If bloating comes with constipation, talk to your doctor about the constipation.
 
 ### Find your triggers instead of cutting everything out
 
 If you get bloated after eating again and again, it is tempting to look for the one list of foods to avoid. There isn't one. The NHS specifically warns against cutting foods out without advice from a GP or dietitian, because you could miss out on vitamins and minerals [6]. A food and symptom diary can help you narrow down triggers instead [6]. Our guide on [how to keep a food diary](/en/guides/food-diary/) explains how to make one that actually shows patterns. It is also why we built our app, Fennly: it links your meals with how you feel, accounts for delayed reactions, up to 48 hours for slow triggers such as gluten, and after a few days shows your most likely suspects, explicitly not a diagnosis.
 
-If general advice is not enough, a low FODMAP diet is one option. NICE says exclusion diets such as low FODMAP should only be advised by a healthcare professional with expertise in dietary management [7], and the AGA prefers that a gastroenterology dietitian monitors it [8]. Monash says it is intended for people with medically diagnosed IBS, after similar conditions such as coeliac disease have been ruled out [4]. It is always temporary: a strict phase of 2 to 6 weeks, after which foods are gradually reintroduced [4] to find out what and how much you tolerate.
+If general diet tips are not helping, the NHS says a GP may refer you to an NHS dietitian or to a specialist for tests to find the cause [1]. One option at that point is a low FODMAP diet. NICE says exclusion diets such as low FODMAP should only be advised by a healthcare professional with expertise in dietary management [7], and the AGA prefers that a gastroenterology dietitian monitors it [8]. Monash says it is intended for people with medically diagnosed IBS, after similar conditions such as coeliac disease have been ruled out [4]. It is always temporary: a strict phase of 2 to 6 weeks, after which foods are gradually reintroduced [4] to find out what and how much you tolerate.
 
 ### Probiotics, mind and breathing: what experts say
 
@@ -159,7 +161,7 @@ The AGA advises that probiotics should not be used to treat bloating and distens
 
 ## Which tests make sense?
 
-The AGA says that carbohydrate intolerances can be checked with a period of dietary restriction or a breath test, and a blood test can rule out coeliac disease [8]. Examples of such intolerances are lactose intolerance and dietary fructose intolerance [2], and the NHS mentions a breath test if you might be lactose intolerant [6]. The NHS does not recommend home tests that claim to diagnose food intolerances: there is limited evidence they are accurate, and they may push you to avoid many foods, which can be harmful [6]. Scans and endoscopy are recommended only for people with alarm features, recently worsening symptoms or an abnormal examination [8].
+The AGA says that carbohydrate intolerances can be checked with a period of dietary restriction or a breath test, and a blood test can rule out coeliac disease [8]. Examples of such intolerances are lactose intolerance and dietary fructose intolerance [2], and the NHS mentions a breath test if you might be lactose intolerant [6]. The NHS does not recommend some home tests that claim to diagnose food intolerances: there is limited evidence they are accurate, and they may push you to avoid many foods, which can be harmful [6]. Scans and endoscopy are recommended only for people with alarm features, recently worsening symptoms or an abnormal examination [8].
 
 ### Get tested before going gluten-free
 
@@ -167,8 +169,8 @@ NICE recommends coeliac testing for, among others, people with persistent unexpl
 
 ## When should you see a doctor about bloating?
 
-The NHS says to see a GP if you feel bloated regularly, changing your diet has not helped, or you have bloating with unintentional weight loss or blood in your poo [1]. Ask for an urgent GP appointment, or call NHS 111 in the UK, if bloating comes with vomiting, diarrhoea or constipation, a stomach ache, a high temperature or shivering, a swelling or lump in your tummy, or if you cannot pee, poo or fart [1].
+The NHS says to see a GP if you feel bloated regularly, changing your diet has not helped, or you have bloating with unintentional weight loss or blood in your poo [1]. Ask for an urgent GP appointment, or call NHS 111 in the UK, if bloating comes with vomiting, diarrhoea or constipation, a stomach ache, a high temperature or shivering, a swelling or lump in your tummy, acid reflux (a burning feeling in your chest as stomach acid travels up towards your throat), or if you cannot pee, poo or fart [1].
 
 Call 999 in the UK, or your local emergency number, straight away if you have a swollen tummy together with a sudden, severe stomach ache, vomiting blood or vomit that looks like ground coffee, or severe difficulty breathing [1].
 
-There is one more point for women: NICE recommends tests in primary care when bloating is persistent or frequent, particularly more than 12 times a month and especially from the age of 50 [12]. That is not a reason to panic, but it is a good reason not to simply live with constant bloating.
+There is one more point for women: NICE recommends tests in primary care when bloating is persistent or frequent, particularly more than 12 times a month and especially from the age of 50 [12]. It also recommends tests for women aged 50 or over who have had symptoms suggesting IBS within the last 12 months, because IBS rarely starts for the first time at that age [12]. That is not a reason to panic, but it is a good reason not to simply live with constant bloating.

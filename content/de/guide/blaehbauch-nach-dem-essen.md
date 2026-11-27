@@ -5,7 +5,7 @@ lang: de
 type: guide
 translationKey: bloating-after-eating
 published: 2026-11-14
-reviewed: 2026-11-14
+reviewed: 2026-11-27
 author: "Fennly-Redaktion (UNIQS)"
 reviewer: ""
 sources:
@@ -45,25 +45,25 @@ faq:
   - q: "Welche Lebensmittel verursachen einen Blähbauch?"
     a: "Häufig sind es Lebensmittel mit vergärbaren Kohlenhydraten (FODMAPs), etwa Zwiebeln, Knoblauch, Hülsenfrüchte, Weizenprodukte, Äpfel, Birnen, Milch und zuckerfreie Süßigkeiten mit Zuckeralkoholen, außerdem Kohl und kohlensäurehaltige Getränke. Welche davon dich betreffen, ist sehr individuell."
   - q: "Wann sollte ich wegen Blähbauch zum Arzt?"
-    a: "Wenn du regelmäßig einen Blähbauch hast, eine Ernährungsumstellung nicht geholfen hat oder Gewichtsverlust, Blut im Stuhl, Fieber, Erbrechen oder starke Bauchschmerzen dazukommen. Bei plötzlichen, sehr starken Bauchschmerzen mit aufgetriebenem Bauch ruf den Notruf 112."
+    a: "Wenn du regelmäßig einen Blähbauch hast, eine Ernährungsumstellung nicht geholfen hat oder Gewichtsverlust, Blut im Stuhl, Fieber, Erbrechen oder Bauchschmerzen dazukommen. Bei plötzlichen, sehr starken Bauchschmerzen mit aufgetriebenem Bauch ruf den Notruf 112."
   - q: "Kann ein Blähbauch von Gluten kommen?"
     a: "Ja, ein Blähbauch kann ein Zeichen einer Zöliakie sein. Lass dich vor einer glutenfreien Ernährung testen, denn der Test ist nur aussagekräftig, wenn du in den Wochen davor weiter Gluten isst."
-related: [food-diary]
+related: [food-diary, fodmap-list, stomach-pain-after-eating]
 redFlags:
   - "Blähbauch, der anhält oder öfter als 12 Mal im Monat auftritt, besonders bei Frauen ab 50"
   - "Eine Schwellung oder ein Knoten im Bauch"
   - "Erbrechen, besonders von Blut oder von Erbrochenem, das wie Kaffeesatz aussieht"
-  - "Wenn weder Stuhlgang noch Winde abgehen"
+  - "Wenn du keinen Stuhlgang hast oder keine Winde ablassen kannst"
   - "Plötzliche, sehr starke Bauchschmerzen mit aufgetriebenem Bauch: sofort 112"
 draft: false
 ---
-Ein Blähbauch nach dem Essen ist oft harmlos: Gas im Darm aus geschluckter Luft und aus vergärbaren Kohlenhydraten, die Darmbakterien abbauen, ist normal, besonders während und nach den Mahlzeiten [1] [2]. Häufige Verstärker sind große Mahlzeiten, hastiges Essen, Kohlensäure und bestimmte Lebensmittel wie Zwiebeln, Hülsenfrüchte oder Äpfel; dazu kommen Verstopfung, Unverträglichkeiten, Zöliakie und Reizdarm [1] [2] [4]. Oft hilft es, die eigenen Auslöser zu finden, statt ohne fachlichen Rat viel wegzulassen, und bei Warnzeichen wie Gewichtsverlust, Blut im Stuhl oder starken Schmerzen ärztlich abklären zu lassen [1] [6].
+Ein Blähbauch nach dem Essen ist oft harmlos: Gas im Darm aus geschluckter Luft und aus vergärbaren Kohlenhydraten, die Darmbakterien abbauen, ist normal, besonders während und nach den Mahlzeiten [1] [2]. Häufige Verstärker sind große Mahlzeiten, hastiges Essen, Kaugummi, Kohlensäure und bestimmte Lebensmittel wie Zwiebeln, Hülsenfrüchte oder Äpfel; dazu kommen Verstopfung, Unverträglichkeiten, Zöliakie und Reizdarm [1] [2] [4]. Oft hilft es, die eigenen Auslöser zu finden, statt ohne fachlichen Rat viel wegzulassen, und bei Warnzeichen wie Gewichtsverlust, Blut im Stuhl oder starken Schmerzen ärztlich abklären zu lassen [1] [6].
 
 ## Ist ein Blähbauch nach dem Essen normal?
 
 In Maßen ja. Laut dem US-Gesundheitsinstitut NIDDK ist es normal, vor allem während oder nach dem Essen etwas Gas und Blähgefühl zu spüren. Zum Problem wird es erst, wenn die Beschwerden oft auftreten, dich stören oder deinen Alltag beeinträchtigen [2].
 
-Du bist damit nicht allein. In einer Befragung von 88.795 Erwachsenen in den USA gaben 13,9 Prozent an, in den letzten sieben Tagen einen Blähbauch gehabt zu haben, also fast jede siebte Person. Frauen und Menschen mit Reizdarm oder chronischer Verstopfung waren häufiger betroffen. Mehr als die Hälfte der Betroffenen (58,5 Prozent) hatte deswegen nie ärztliche Hilfe gesucht [3].
+Du bist damit nicht allein. In einer Befragung von 88.795 Menschen in den USA gaben 13,9 Prozent an, in den letzten sieben Tagen einen Blähbauch gehabt zu haben, also fast jede siebte Person. Frauen und Menschen mit Reizdarm oder chronischer Verstopfung waren häufiger betroffen. Mehr als die Hälfte der Betroffenen (58,5 Prozent) hatte deswegen nie ärztliche Hilfe gesucht [3].
 
 Fachleute unterscheiden zwei Dinge, die sich oft gleich anfühlen:
 
@@ -100,7 +100,7 @@ Ein wichtiger Unterschied bei Fruktose: Bei einer Fruktosemalabsorption nimmt de
 
 Bei einer Nahrungsmittelunverträglichkeit kommen die Beschwerden laut NHS meist einige Stunden nach dem Essen und können Stunden bis Tage anhalten. Zu den typischen Beschwerden gehören Blähbauch, Blähungen, Durchfall und Bauchschmerzen; die häufigste Form ist die Laktoseintoleranz [6]. Deshalb ist der Blähbauch nach dem Abendessen nicht automatisch die Schuld des Abendessens.
 
-### Warum der Bauch dick wird, obwohl kaum mehr Inhalt im Bauch ist
+### Kann der Bauch dick werden, ohne dass mehr Luft drin ist?
 
 Eine kleine Studie deutet darauf hin, dass ein sichtbar dicker Bauch nicht immer an mehr Gas liegt. Sie untersuchte per Computertomografie 56 Menschen, bei denen der Blähbauch im Vordergrund stand, vor und während einer Blähattacke. Bei Menschen mit funktionellen Darmbeschwerden wie Reizdarm nahm das Volumen im Bauch nur um etwa 0,3 Liter zu. Der Bauch wölbte sich trotzdem sichtbar vor; dabei trat das Zwerchfell tiefer, was den Bauchinhalt vermutlich nach vorne verlagerte. Nur bei einer kleinen Gruppe mit einer Störung der Darmbewegung war deutlich mehr Inhalt im Bauch, im Mittel 1,4 Liter [10]. Das ist ein Einzelbefund und kein Beweis, aber er macht verständlich, warum ein Blähbauch nicht immer „zu viel Luft“ bedeutet.
 
@@ -108,7 +108,7 @@ Ein Übersichtsartikel aus der Mayo Clinic nennt mehrere mögliche Ursachen nebe
 
 ## Häufige Ursachen auf einen Blick
 
-Laut NHS ist die häufigste Ursache viel Gas im Darm, etwa aus bestimmten Lebensmitteln, Getränken oder geschluckter Luft. Daneben kommen unter anderem in Frage [1]:
+Laut NHS ist die häufigste Ursache viel Gas im Darm, etwa aus bestimmten Lebensmitteln, Getränken oder geschluckter Luft. Mögliche Ursachen sind laut NHS unter anderem [1]:
 
 - Gas aus bestimmten Lebensmitteln und Getränken, etwa einigen Gemüsesorten oder kohlensäurehaltigen Getränken
 - geschluckte Luft beim Essen
@@ -135,7 +135,9 @@ Der britische Gesundheitsdienst NHS empfiehlt [1]:
 - regelmäßig bewegen, auch dann, wenn du dich gerade aufgebläht fühlst
 - den Bauch sanft massieren, laut NHS von rechts nach links
 
-Die britische Reizdarm-Leitlinie von NICE ergänzt: regelmäßig essen, dir Zeit dafür nehmen und keine langen Pausen zwischen den Mahlzeiten lassen [7]; mehr dazu im [Ratgeber zur Reizdarm-Ernährung](/de/ratgeber/reizdarm-ernaehrung/). Auch das Gesundheitsportal des Bundesgesundheitsministeriums schreibt, dass sich bei manchen Menschen mit Reizdarm die Beschwerden verringern, wenn sie ihre Mahlzeiten in mehreren kleinen Portionen über den Tag verteilen [14].
+Laut NIDDK schluckst du außerdem mehr Luft, wenn du Kaugummi kaust oder Bonbons lutschst, kohlensäurehaltige Getränke trinkst, zu schnell isst oder trinkst, rauchst oder eine locker sitzende Zahnprothese trägst [2].
+
+Die britische Reizdarm-Leitlinie von NICE ergänzt: regelmäßig essen, dir Zeit dafür nehmen und keine langen Pausen zwischen den Mahlzeiten lassen [7]. Auch das Gesundheitsportal des Bundesgesundheitsministeriums schreibt, dass sich bei manchen Menschen mit Reizdarm die Beschwerden verringern, wenn sie ihre Mahlzeiten in mehreren kleinen Portionen über den Tag verteilen [14].
 
 ### Was du isst und trinkst
 
@@ -147,13 +149,13 @@ Der NHS rät, nicht viel Kohlensäure, Alkohol und Koffein zu trinken, nicht vie
 - bei Durchfall Sorbit meiden, das zum Beispiel in zuckerfreien Bonbons und Kaugummis steckt
 - bei Blähungen und Blähbauch können Haferflocken und Leinsamen (bis zu 1 Esslöffel am Tag) helfen
 
-Wenn Verstopfung mit im Spiel ist, empfiehlt der NHS Lebensmittel mit löslichen Ballaststoffen wie Hafer oder Leinsamen [1]. Hast du einen Blähbauch und Verstopfung, lohnt sich das ärztliche Gespräch, denn dann kann es sinnvoll sein, die Verstopfung mitzubehandeln [8].
+Wenn Verstopfung mit im Spiel ist, empfiehlt der NHS Lebensmittel mit löslichen Ballaststoffen wie Hafer oder Leinsamen [1]. Hast du einen Blähbauch und Verstopfung, lohnt sich das ärztliche Gespräch über die Verstopfung.
 
 ### Eigene Auslöser finden statt pauschal verzichten
 
 Wer immer wieder nach dem Essen aufgebläht ist, sucht oft nach der einen Liste mit verbotenen Lebensmitteln. Die gibt es nicht. Der NHS rät ausdrücklich davon ab, Lebensmittel ohne Rat von Ärztin, Arzt oder Ernährungsfachkraft wegzulassen, weil dir sonst Vitamine und Mineralstoffe fehlen können [6]. Stattdessen kann ein Ernährungs- und Symptomtagebuch helfen, Auslöser einzugrenzen [6] [14]. Wie du es so führst, dass es wirklich Muster zeigt, erklären wir im [Ratgeber zum Ernährungstagebuch](/de/ratgeber/ernaehrungstagebuch/). Für genau diesen Zweck haben wir auch unsere App Fennly gebaut: Sie verknüpft deine Mahlzeiten mit deinem Befinden, bezieht verzögerte Reaktionen ein, bei langsamen Auslösern wie Gluten bis 48 Stunden, und zeigt nach einigen Tagen Verdachtsmomente, ausdrücklich keine Diagnose.
 
-Wenn allgemeine Tipps nicht reichen, ist eine FODMAP-arme Ernährung eine Möglichkeit. NICE sieht vor, dass Auslassdiäten wie Low FODMAP nur von Fachleuten mit Erfahrung in Ernährungstherapie begleitet werden [7], und die AGA empfiehlt dafür bevorzugt eine auf Magen und Darm spezialisierte Ernährungsfachkraft [8]. Gedacht ist sie laut Monash für Menschen mit ärztlich festgestelltem Reizdarm, nachdem ähnliche Erkrankungen wie Zöliakie ausgeschlossen wurden [4]. Sie ist immer eine zeitlich begrenzte Phase: Die strenge Phase dauert 2 bis 6 Wochen, danach werden Lebensmittel schrittweise wieder eingeführt [4], um herauszufinden, was und wie viel du verträgst.
+Helfen allgemeine Ernährungstipps nicht, kann die Hausarztpraxis laut NHS an eine Ernährungsfachkraft überweisen oder Untersuchungen veranlassen, um die Ursache zu finden [1]. Eine Möglichkeit ist dann eine FODMAP-arme Ernährung. NICE sieht vor, dass Auslassdiäten wie Low FODMAP nur von Fachleuten mit Erfahrung in Ernährungstherapie begleitet werden [7], und die AGA empfiehlt dafür bevorzugt eine auf Magen und Darm spezialisierte Ernährungsfachkraft [8]. Gedacht ist sie laut Monash für Menschen mit ärztlich festgestelltem Reizdarm, nachdem ähnliche Erkrankungen wie Zöliakie ausgeschlossen wurden [4]. Sie ist immer eine zeitlich begrenzte Phase: Die strenge Phase dauert 2 bis 6 Wochen, danach werden Lebensmittel schrittweise wieder eingeführt [4], um herauszufinden, was und wie viel du verträgst.
 
 ### Probiotika, Psyche und Atmung: was Fachleute sagen
 
@@ -161,7 +163,7 @@ Die AGA rät davon ab, Probiotika zur Behandlung von Blähbauch einzusetzen [8].
 
 ## Welche Untersuchungen sinnvoll sind
 
-Laut AGA lassen sich Unverträglichkeiten gegen Kohlenhydrate mit einer gezielten Auslassphase oder einem Atemtest prüfen, und ein Bluttest kann eine Zöliakie ausschließen [8]. Zu solchen Unverträglichkeiten gehören etwa die Laktoseintoleranz und die Fruktosemalabsorption [2]; bei Verdacht auf Laktoseintoleranz nennt der NHS einen Atemtest [6]. Von Tests zum Selbstkaufen, die Unverträglichkeiten angeblich erkennen, rät der NHS dagegen ab: Es gibt kaum Belege, dass sie verlässlich sind, und sie können dazu führen, dass du unnötig viele Lebensmittel meidest, was schaden kann [6]. Bildgebung und Magenspiegelung empfiehlt die AGA nur bei Warnzeichen, kürzlich deutlich schlechter gewordenen Beschwerden oder einem auffälligen Untersuchungsbefund [8].
+Laut AGA lassen sich Unverträglichkeiten gegen Kohlenhydrate mit einer gezielten Auslassphase oder einem Atemtest prüfen, und ein Bluttest kann eine Zöliakie ausschließen [8]. Zu solchen Unverträglichkeiten gehören etwa die Laktoseintoleranz und die Fruktosemalabsorption [2]; bei Verdacht auf Laktoseintoleranz nennt der NHS einen Atemtest [6]. Von manchen Tests zum Selbstkaufen, die Unverträglichkeiten angeblich erkennen, rät der NHS ab: Es gibt nur wenige Belege, dass sie verlässlich sind, und sie können dazu führen, dass du unnötig viele Lebensmittel meidest, was schaden kann [6]. Bildgebung und Magenspiegelung empfiehlt die AGA nur bei Warnzeichen, kürzlich deutlich schlechter gewordenen Beschwerden oder einem auffälligen Untersuchungsbefund [8].
 
 ### Erst testen, dann glutenfrei
 
@@ -169,8 +171,8 @@ NICE empfiehlt den Zöliakie-Test unter anderem bei anhaltenden, ungeklärten Ma
 
 ## Wann solltest du mit dem Blähbauch zum Arzt?
 
-Laut NHS solltest du deine Hausarztpraxis aufsuchen, wenn du regelmäßig einen Blähbauch hast, eine Ernährungsumstellung nicht geholfen hat, du ungewollt abnimmst oder Blut im Stuhl hast [1]. Lass dir dringend einen Termin in der Hausarztpraxis geben (außerhalb der Sprechzeiten beim ärztlichen Bereitschaftsdienst unter 116 117) bei Blähbauch zusammen mit Erbrechen, Durchfall oder Verstopfung, mit Bauchschmerzen, Fieber oder Schüttelfrost, mit einer Schwellung oder einem Knoten im Bauch, oder wenn weder Urin, Stuhl noch Winde abgehen [1].
+Laut NHS solltest du deine Hausarztpraxis aufsuchen, wenn du regelmäßig einen Blähbauch hast, eine Ernährungsumstellung nicht geholfen hat, du ungewollt abnimmst oder Blut im Stuhl hast [1]. Lass dir dringend einen Termin in der Hausarztpraxis geben (außerhalb der Sprechzeiten beim ärztlichen Bereitschaftsdienst unter 116 117) bei Blähbauch zusammen mit Erbrechen, Durchfall oder Verstopfung, mit Bauchschmerzen, Fieber oder Schüttelfrost, mit einer Schwellung oder einem Knoten im Bauch, mit Sodbrennen (einem brennenden Gefühl in der Brust, weil Magensäure Richtung Hals aufsteigt) oder wenn du kein Wasser lassen, keinen Stuhlgang haben oder keine Winde ablassen kannst [1].
 
 Ruf sofort den Notruf 112, wenn der Bauch aufgetrieben ist und dazu plötzlich sehr starke Bauchschmerzen, Bluterbrechen oder Erbrochenes wie Kaffeesatz oder starke Atemnot kommen [1].
 
-Für Frauen gibt es einen zusätzlichen Punkt: Die NICE-Leitlinie empfiehlt Untersuchungen in der Hausarztpraxis, wenn ein Blähbauch anhaltend oder häufig auftritt, besonders mehr als 12 Mal im Monat und besonders ab 50 Jahren [12]. Das ist kein Grund zur Panik, aber ein guter Grund, einen ständigen Blähbauch nicht einfach hinzunehmen.
+Für Frauen gibt es einen zusätzlichen Punkt: Die NICE-Leitlinie empfiehlt Untersuchungen in der Hausarztpraxis, wenn ein Blähbauch anhaltend oder häufig auftritt, besonders mehr als 12 Mal im Monat und besonders ab 50 Jahren [12]. Untersuchungen empfiehlt sie auch, wenn Frauen ab 50 in den letzten 12 Monaten reizdarmähnliche Beschwerden hatten, weil ein Reizdarm in diesem Alter selten zum ersten Mal auftritt [12]. Das ist kein Grund zur Panik, aber ein guter Grund, einen ständigen Blähbauch nicht einfach hinzunehmen.
