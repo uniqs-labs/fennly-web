@@ -98,7 +98,7 @@ The gold standard for diagnosing IgE-mediated food allergy is the double-blind, 
 
 For many suspicions, the practical route is what is left: cut out the suspected food for a while, see whether you feel better, then reintroduce it on purpose. The NHS describes exactly this as a test for suspected food intolerance, together with a food and symptom diary [9].
 
-The allergy guideline keeps a diagnostic elimination diet short on purpose. For chronic conditions such as atopic eczema, it says it should usually last no longer than 1 to 2 weeks; reactions that are not driven by IgE antibodies may need 3 to 4 weeks [1]. If your symptoms do not improve during that time, either they are not related to food or not all triggers have been removed, or other factors affect the reaction [1]. For FODMAPs, our [FODMAP food list](/en/guides/fodmap-list/) shows how the elimination and reintroduction phases work.
+The allergy guideline keeps a diagnostic elimination diet short on purpose. For chronic conditions such as atopic eczema, it says it should usually last no longer than 1 to 2 weeks; reactions that are not driven by IgE antibodies may need 3 to 4 weeks [1]. If your symptoms do not improve during that time, either they are not related to food or not all triggers have been removed, or other factors affect the reaction [1]. For FODMAPs, our [FODMAP food list](/en/guides/fodmap-list/) shows how the elimination and reintroduction phases work, and our guide to the [elimination diet](/en/guides/elimination-diet/) walks you through each step.
 
 ## Which food intolerance tests to skip
 

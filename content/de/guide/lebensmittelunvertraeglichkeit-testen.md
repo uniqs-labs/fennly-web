@@ -98,7 +98,7 @@ Als Goldstandard für die Diagnose einer IgE-vermittelten Allergie gilt der dopp
 
 Für viele Verdachtsfälle bleibt am Ende der praktische Weg: das verdächtige Lebensmittel eine Zeit lang weglassen, schauen, ob es dir besser geht, und es dann gezielt wieder essen. Der NHS beschreibt genau dieses Vorgehen als Test bei Verdacht auf Unverträglichkeit, ergänzt durch ein Ernährungs- und Symptomtagebuch [9].
 
-Die Allergie-Leitlinie hält eine solche diagnostische Auslassdiät bewusst kurz. Für chronische Erkrankungen wie Neurodermitis nennt sie in der Regel höchstens 1 bis 2 Wochen; bei Reaktionen, die nicht über IgE-Antikörper laufen, können 3 bis 4 Wochen nötig sein [1]. Bessern sich die Beschwerden in dieser Zeit nicht, hängen sie entweder nicht mit dem Essen zusammen, oder es wurden nicht alle Auslöser erfasst, oder andere Faktoren beeinflussen die Reaktion [1]. Wie das für FODMAPs aussieht, zeigt unsere [FODMAP-Liste](/de/ratgeber/fodmap-liste/).
+Die Allergie-Leitlinie hält eine solche diagnostische Auslassdiät bewusst kurz. Für chronische Erkrankungen wie Neurodermitis nennt sie in der Regel höchstens 1 bis 2 Wochen; bei Reaktionen, die nicht über IgE-Antikörper laufen, können 3 bis 4 Wochen nötig sein [1]. Bessern sich die Beschwerden in dieser Zeit nicht, hängen sie entweder nicht mit dem Essen zusammen, oder es wurden nicht alle Auslöser erfasst, oder andere Faktoren beeinflussen die Reaktion [1]. Wie das für FODMAPs aussieht, zeigt unsere [FODMAP-Liste](/de/ratgeber/fodmap-liste/), und wie du Schritt für Schritt vorgehst, erklärt der Ratgeber zur [Eliminationsdiät](/de/ratgeber/eliminationsdiaet/).
 
 ## Welche Tests du dir sparen kannst
 

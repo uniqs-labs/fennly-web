@@ -1,0 +1,27 @@
+{
+  "music": "04-akustik-gitarre-morgen.mp3",
+  "seconds": 18.5,
+  "slides": 7,
+  "tempo": 0.9641,
+  "lufs": -14,
+  "truePeak": -1.9,
+  "bytes": 2807695,
+  "hook": "Cut a food out? Plan its return too.",
+  "hookQuelle": "slides.json",
+  "hookSeconds": 1.5,
+  "broll": "foto-zu-zutaten/04.mp4",
+  "szene": "foto-zu-zutaten",
+  "ki_inhalt": true,
+  "hookBox": {
+    "x1": 236,
+    "x2": 834,
+    "y1": 545,
+    "y2": 693
+  },
+  "hookCheck": {
+    "frame0": 58.8,
+    "frame30": 50.2,
+    "frame44": 49.3,
+    "frame45": 6.4
+  }
+}
